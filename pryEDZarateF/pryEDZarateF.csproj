@@ -46,27 +46,76 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frmAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmAlumnos.Designer.cs">
+      <DependentUpon>frmAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmColores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColores.Designer.cs">
+      <DependentUpon>frmColores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicial.Designer.cs">
+      <DependentUpon>frmInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosDesarrollador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosDesarrollador.Designer.cs">
+      <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeses.Designer.cs">
+      <DependentUpon>frmMeses.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAlumnos.resx">
+      <DependentUpon>frmAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmColores.resx">
+      <DependentUpon>frmColores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicial.resx">
+      <DependentUpon>frmInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosDesarrollador.resx">
+      <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeses.resx">
+      <DependentUpon>frmMeses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -75,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-fairy-tail-minimalistic-wallpaper-by-greenmapple17.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

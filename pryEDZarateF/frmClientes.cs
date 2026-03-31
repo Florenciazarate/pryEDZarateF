@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryEDZarateF
 {
-    public partial class Form1 : Form
+    public partial class frmClientes : Form
     {
-        public Form1()
+        public frmClientes()
         {
             InitializeComponent();
         }

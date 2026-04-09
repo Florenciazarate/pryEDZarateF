@@ -19,6 +19,12 @@ namespace pryEDZarateF
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
+            if(txtNombreMes.Text == "" || txtNombreMes.Text == "Ingrese un mes")
+            {
+                MessageBox.Show("Ingrese un mes");
+                txtNombreMes.Text = "";
+                return;
+            }
             clsArchivoTexto x= new clsArchivoTexto();
             x.NombreArchivo = "Meses.txt";
             x.Grabar(txtNombreMes.Text);

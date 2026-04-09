@@ -16,5 +16,19 @@ namespace pryEDZarateF
         {
             InitializeComponent();
         }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto objCliente = new clsArchivoTexto();
+            objCliente.NombreArchivo = "Clientes.csv";
+            objCliente.Grabar(txtCodigo.Text, txtNombre.Text, txtDeuda.Text);
+            MessageBox.Show("Cliente grabado exitosamente");
+            objCliente.Recorrer(dgvClientes);
+        }
+
+        private void frmClientes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

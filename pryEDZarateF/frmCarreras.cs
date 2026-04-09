@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace pryEDZarateF
 {
-    public partial class frmColores : Form
+    public partial class frmCarreras : Form
     {
-        public frmColores()
+        public frmCarreras()
         {
             InitializeComponent();
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
-            clsArchivoTexto x= new clsArchivoTexto();
-            x.NombreArchivo = "Colores.csv";
-            x.Grabar(txtNombreColor.Text);
-            x.Recorrer(lstColor); 
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NombreArchivo = "Carreras.txt";
+            x.Grabar(txtNombreCarrera.Text);
+            x.Recorrer(lstCarrera);
         }
     }
 }

@@ -16,5 +16,13 @@ namespace pryEDZarateF
         {
             InitializeComponent();
         }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x= new clsArchivoTexto();
+            x.NombreArchivo = "Meses.txt";
+            x.Grabar(txtNombreMes.Text);
+            x.Recorrer(lstMeses);
+        }
     }
 }

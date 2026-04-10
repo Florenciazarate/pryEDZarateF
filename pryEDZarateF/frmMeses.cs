@@ -30,5 +30,11 @@ namespace pryEDZarateF
             x.Grabar(txtNombreMes.Text);
             x.Recorrer(lstMeses);
         }
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NombreArchivo = "Meses.txt";
+            x.Recorrer(lstMeses);
+        }
     }
 }

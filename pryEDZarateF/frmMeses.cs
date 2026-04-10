@@ -19,7 +19,7 @@ namespace pryEDZarateF
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
-            if(txtNombreMes.Text == "" || txtNombreMes.Text == "Ingrese un mes")
+            if(txtNombreMes.Text == "" || txtNombreMes.Text.Any (char.IsDigit))
             {
                 MessageBox.Show("Ingrese un mes");
                 txtNombreMes.Text = "";

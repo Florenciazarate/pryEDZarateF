@@ -67,7 +67,6 @@
             this.txtNombreColor.Name = "txtNombreColor";
             this.txtNombreColor.Size = new System.Drawing.Size(250, 29);
             this.txtNombreColor.TabIndex = 3;
-            this.txtNombreColor.Text = "Ingrese un color";
             // 
             // lblColor
             // 
@@ -91,14 +90,13 @@
             // 
             // lstColor
             // 
-            this.lstColor.BackColor = System.Drawing.Color.Bisque;
-            this.lstColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lstColor.BackColor = System.Drawing.Color.AntiqueWhite;
             this.lstColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.lstColor.FormattingEnabled = true;
             this.lstColor.ItemHeight = 20;
             this.lstColor.Location = new System.Drawing.Point(432, 81);
             this.lstColor.Name = "lstColor";
-            this.lstColor.Size = new System.Drawing.Size(337, 162);
+            this.lstColor.Size = new System.Drawing.Size(337, 144);
             this.lstColor.TabIndex = 8;
             // 
             // frmColores

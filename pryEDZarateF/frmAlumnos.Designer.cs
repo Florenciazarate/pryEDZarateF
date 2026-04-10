@@ -28,21 +28,139 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblBienvenidoMeses = new System.Windows.Forms.Label();
+            this.lblCodigo = new System.Windows.Forms.Label();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.btnGrabar = new System.Windows.Forms.Button();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblCarrera = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cmbCarrera = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lblBienvenidoMeses
+            // 
+            this.lblBienvenidoMeses.AutoSize = true;
+            this.lblBienvenidoMeses.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBienvenidoMeses.Location = new System.Drawing.Point(29, 44);
+            this.lblBienvenidoMeses.Name = "lblBienvenidoMeses";
+            this.lblBienvenidoMeses.Size = new System.Drawing.Size(147, 17);
+            this.lblBienvenidoMeses.TabIndex = 19;
+            this.lblBienvenidoMeses.Text = "Bienvenido a alumnos";
+            // 
+            // lblCodigo
+            // 
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigo.Location = new System.Drawing.Point(30, 94);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(58, 20);
+            this.lblCodigo.TabIndex = 18;
+            this.lblCodigo.Text = "Código";
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigo.Location = new System.Drawing.Point(92, 89);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(250, 29);
+            this.txtCodigo.TabIndex = 17;
+            // 
+            // btnGrabar
+            // 
+            this.btnGrabar.BackColor = System.Drawing.Color.FloralWhite;
+            this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnGrabar.Location = new System.Drawing.Point(264, 221);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Size = new System.Drawing.Size(78, 36);
+            this.btnGrabar.TabIndex = 16;
+            this.btnGrabar.Text = "Grabar";
+            this.btnGrabar.UseVisualStyleBackColor = false;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(30, 142);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(64, 20);
+            this.lblNombre.TabIndex = 22;
+            this.lblNombre.Text = "Nombre";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(92, 137);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(250, 29);
+            this.txtNombre.TabIndex = 21;
+            // 
+            // lblCarrera
+            // 
+            this.lblCarrera.AutoSize = true;
+            this.lblCarrera.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCarrera.Location = new System.Drawing.Point(30, 188);
+            this.lblCarrera.Name = "lblCarrera";
+            this.lblCarrera.Size = new System.Drawing.Size(57, 20);
+            this.lblCarrera.TabIndex = 24;
+            this.lblCarrera.Text = "Carrera";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.AntiqueWhite;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(391, 89);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(274, 245);
+            this.dataGridView1.TabIndex = 25;
+            // 
+            // cmbCarrera
+            // 
+            this.cmbCarrera.FormattingEnabled = true;
+            this.cmbCarrera.Location = new System.Drawing.Point(92, 188);
+            this.cmbCarrera.Name = "cmbCarrera";
+            this.cmbCarrera.Size = new System.Drawing.Size(249, 21);
+            this.cmbCarrera.TabIndex = 26;
             // 
             // frmAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmbCarrera);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.lblCarrera);
+            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.lblBienvenidoMeses);
+            this.Controls.Add(this.lblCodigo);
+            this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.btnGrabar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmAlumnos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alumnos";
+            this.Load += new System.EventHandler(this.frmAlumnos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+        private System.Windows.Forms.Label lblBienvenidoMeses;
+        private System.Windows.Forms.Label lblCodigo;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.Button btnGrabar;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label lblCarrera;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cmbCarrera;
     }
 }

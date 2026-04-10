@@ -37,7 +37,7 @@
             // 
             // lstCarrera
             // 
-            this.lstCarrera.BackColor = System.Drawing.Color.Bisque;
+            this.lstCarrera.BackColor = System.Drawing.Color.AntiqueWhite;
             this.lstCarrera.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstCarrera.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.lstCarrera.FormattingEnabled = true;
@@ -74,7 +74,6 @@
             this.txtNombreCarrera.Name = "txtNombreCarrera";
             this.txtNombreCarrera.Size = new System.Drawing.Size(250, 29);
             this.txtNombreCarrera.TabIndex = 11;
-            this.txtNombreCarrera.Text = "Ingrese una carrera";
             // 
             // btnGrabar
             // 

@@ -38,7 +38,7 @@
             // 
             // lstMeses
             // 
-            this.lstMeses.BackColor = System.Drawing.Color.Bisque;
+            this.lstMeses.BackColor = System.Drawing.Color.AntiqueWhite;
             this.lstMeses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstMeses.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.lstMeses.FormattingEnabled = true;
@@ -75,7 +75,6 @@
             this.txtNombreMes.Name = "txtNombreMes";
             this.txtNombreMes.Size = new System.Drawing.Size(250, 29);
             this.txtNombreMes.TabIndex = 11;
-            this.txtNombreMes.Text = "Ingrese un mes";
             // 
             // btnGrabar
             // 

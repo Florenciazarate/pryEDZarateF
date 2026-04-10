@@ -19,6 +19,12 @@ namespace pryEDZarateF
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
+            if (txtNombreCarrera.Text == "" || txtNombreCarrera.Text.Any(char.IsDigit))
+            {
+                MessageBox.Show("Ingrese una carrera valida");
+                txtNombreCarrera.Text = "";
+                return;
+            }
             clsArchivoTexto x = new clsArchivoTexto();
             x.NombreArchivo = "Carreras.txt";
             x.Grabar(txtNombreCarrera.Text);

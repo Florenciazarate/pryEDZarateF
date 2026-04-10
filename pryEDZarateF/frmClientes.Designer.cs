@@ -78,7 +78,7 @@
             this.btnGrabar.Location = new System.Drawing.Point(29, 230);
             this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(78, 36);
+            this.btnGrabar.Size = new System.Drawing.Size(78, 30);
             this.btnGrabar.TabIndex = 16;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = false;

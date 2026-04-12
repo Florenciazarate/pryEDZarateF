@@ -15,19 +15,28 @@ namespace pryEDZarateF
         public frmAlumnos()
         {
             InitializeComponent();
+            ActualizarEstadoBotonGrabar();
         }
 
         private void frmAlumnos_Load(object sender, EventArgs e)
         {
-            if (txtNombre.Text == "" || txtNombre.Text.Any(char.IsDigit))
-            {
-                MessageBox.Show("Ingrese un mes");
-                txtNombre.Text = "";
-                return;
-            }
-
         }
 
+        private bool CamposCompletos()
+        {
+            return txtCodigo.Text.Trim() != "" &&
+                   txtNombre.Text.Trim() != "";
+        }
+
+        private void ActualizarEstadoBotonGrabar()
+        {
+            btnGrabar.Enabled = CamposCompletos();
+        }
+
+        private void txtCampos_TextChanged(object sender, EventArgs e)
+        {
+            ActualizarEstadoBotonGrabar();
+        }
 
     }
 }

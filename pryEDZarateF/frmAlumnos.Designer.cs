@@ -67,10 +67,12 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(250, 29);
             this.txtCodigo.TabIndex = 17;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCampos_TextChanged);
             // 
             // btnGrabar
             // 
             this.btnGrabar.BackColor = System.Drawing.Color.FloralWhite;
+            this.btnGrabar.Enabled = false;
             this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnGrabar.Location = new System.Drawing.Point(264, 221);
             this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
@@ -97,6 +99,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(250, 29);
             this.txtNombre.TabIndex = 21;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtCampos_TextChanged);
             // 
             // lblCarrera
             // 

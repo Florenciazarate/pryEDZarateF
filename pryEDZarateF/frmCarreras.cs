@@ -15,6 +15,7 @@ namespace pryEDZarateF
         public frmCarreras()
         {
             InitializeComponent();
+            ActualizarEstadoBotonGrabar();
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
@@ -26,9 +27,19 @@ namespace pryEDZarateF
                 return;
             }
             clsArchivoTexto x = new clsArchivoTexto();
-            x.NombreArchivo = "Carreras.txt";
+            x.NombreArchivo = "Carreras.csv";
             x.Grabar(txtNombreCarrera.Text);
             x.Recorrer(lstCarrera);
+        }
+
+        private void ActualizarEstadoBotonGrabar()
+        {
+            btnGrabar.Enabled = txtNombreCarrera.Text.Trim() != "";
+        }
+
+        private void txtNombreCarrera_TextChanged(object sender, EventArgs e)
+        {
+            ActualizarEstadoBotonGrabar();
         }
     }
 }

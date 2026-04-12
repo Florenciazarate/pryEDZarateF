@@ -46,50 +46,53 @@ namespace pryEDZarateF
                 AD.WriteLine(Dato3);
             }
         }
-        public void Recorrer(ListBox lstColor)
+        public void Recorrer(ListBox lst)
         {
             if (!File.Exists(NombreArchivo))
                 return;
 
             string DatoLeido;
-            lstColor.Items.Clear();
+            lst.Items.Clear();
             using (StreamReader AD = new StreamReader(NombreArchivo))
             {
                 DatoLeido = AD.ReadLine();
                 while (DatoLeido != null)
                 {
-                    lstColor.Items.Add(DatoLeido);
+                    lst.Items.Add(DatoLeido);
                     DatoLeido = AD.ReadLine();
                 }
             }
         }
-        public void Recorrer (DataGridView Grilla)
+        public void Recorrer(DataGridView Grilla)
         {
             String DatoLeido;
             Grilla.Rows.Clear();
-            StreamReader AD = new StreamReader (NombreArchivo);
-            DatoLeido= AD.ReadLine();
+            StreamReader AD = new StreamReader(NombreArchivo);
+            DatoLeido = AD.ReadLine();
             while (DatoLeido != null)
             {
-                Grilla.Rows.Add(DatoLeido.Split (';'));
+                Grilla.Rows.Add(DatoLeido.Split(';'));
                 DatoLeido = AD.ReadLine();
-             }
-             AD.Close();
+            }
+            AD.Close();
         }
-       // public void Recorrer (ComboBox lst)
-        //{
-         //   String DatoLeido;
-          //  lst.Items.Clear();
-            //while (DatoLeido !=null)
-            //{
-              //  lst.Items.Add(DatoLeido);
-                //DatoLeido = AD.ReadLine();
-            //}
-            //AD.Close();
-            //lst.SelectedIndex = 0;
+        public void Recorrer(ComboBox cmb)
+        {
+            String dato;
+            cmb.Items.Clear();
+            StreamReader AD = new StreamReader(NombreArchivo); //Abrir
+            dato = AD.ReadLine(); //Leer
+
+            while (dato != null)
+            {
+                cmb.Items.Add(dato);
+                dato = AD.ReadLine();
+            }
+
+            AD.Close(); //Cerrar
         }
     }
-
+}
 
 
 

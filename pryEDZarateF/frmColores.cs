@@ -15,6 +15,7 @@ namespace pryEDZarateF
         public frmColores()
         {
             InitializeComponent();
+            ActualizarEstadoBotonGrabar();
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
@@ -28,7 +29,19 @@ namespace pryEDZarateF
             clsArchivoTexto x= new clsArchivoTexto();
             x.NombreArchivo = "Colores.csv";
             x.Grabar(txtNombreColor.Text);
-            x.Recorrer(lstColor); 
+            x.Recorrer(lstColor);
+            MessageBox.Show("Color grabado correctamente");
+
+        }
+
+        private void ActualizarEstadoBotonGrabar()
+        {
+            btnGrabar.Enabled = txtNombreColor.Text.Trim() != "";
+        }
+
+        private void txtNombreColor_TextChanged(object sender, EventArgs e)
+        {
+            ActualizarEstadoBotonGrabar();
         }
     }
 }

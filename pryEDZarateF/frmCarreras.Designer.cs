@@ -74,10 +74,12 @@
             this.txtNombreCarrera.Name = "txtNombreCarrera";
             this.txtNombreCarrera.Size = new System.Drawing.Size(250, 29);
             this.txtNombreCarrera.TabIndex = 11;
+            this.txtNombreCarrera.TextChanged += new System.EventHandler(this.txtNombreCarrera_TextChanged);
             // 
             // btnGrabar
             // 
             this.btnGrabar.BackColor = System.Drawing.Color.FloralWhite;
+            this.btnGrabar.Enabled = false;
             this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnGrabar.Location = new System.Drawing.Point(255, 133);
             this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);

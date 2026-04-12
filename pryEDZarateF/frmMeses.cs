@@ -15,6 +15,7 @@ namespace pryEDZarateF
         public frmMeses()
         {
             InitializeComponent();
+            ActualizarEstadoBotonGrabar();
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
@@ -26,15 +27,27 @@ namespace pryEDZarateF
                 return;
             }
             clsArchivoTexto x= new clsArchivoTexto();
-            x.NombreArchivo = "Meses.txt";
+            x.NombreArchivo = "Meses.csv";
             x.Grabar(txtNombreMes.Text);
             x.Recorrer(lstMeses);
+            MessageBox.Show("Mes grabado correctamente");
+
         }
         private void btnListar_Click(object sender, EventArgs e)
         {
             clsArchivoTexto x = new clsArchivoTexto();
-            x.NombreArchivo = "Meses.txt";
+            x.NombreArchivo = "Meses.csv";
             x.Recorrer(lstMeses);
+        }
+
+        private void ActualizarEstadoBotonGrabar()
+        {
+            btnGrabar.Enabled = txtNombreMes.Text.Trim() != "";
+        }
+
+        private void txtNombreMes_TextChanged(object sender, EventArgs e)
+        {
+            ActualizarEstadoBotonGrabar();
         }
     }
 }

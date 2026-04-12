@@ -50,6 +50,7 @@
             // btnGrabar
             // 
             this.btnGrabar.BackColor = System.Drawing.Color.FloralWhite;
+            this.btnGrabar.Enabled = false;
             this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnGrabar.Location = new System.Drawing.Point(274, 138);
             this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
@@ -67,6 +68,7 @@
             this.txtNombreColor.Name = "txtNombreColor";
             this.txtNombreColor.Size = new System.Drawing.Size(250, 29);
             this.txtNombreColor.TabIndex = 3;
+            this.txtNombreColor.TextChanged += new System.EventHandler(this.txtNombreColor_TextChanged);
             // 
             // lblColor
             // 

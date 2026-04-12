@@ -75,10 +75,12 @@
             this.txtNombreMes.Name = "txtNombreMes";
             this.txtNombreMes.Size = new System.Drawing.Size(250, 29);
             this.txtNombreMes.TabIndex = 11;
+            this.txtNombreMes.TextChanged += new System.EventHandler(this.txtNombreMes_TextChanged);
             // 
             // btnGrabar
             // 
             this.btnGrabar.BackColor = System.Drawing.Color.FloralWhite;
+            this.btnGrabar.Enabled = false;
             this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnGrabar.Location = new System.Drawing.Point(264, 137);
             this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);

@@ -33,12 +33,6 @@ namespace pryEDZarateF
             MessageBox.Show("Mes grabado correctamente");
 
         }
-        private void btnListar_Click(object sender, EventArgs e)
-        {
-            clsArchivoTexto x = new clsArchivoTexto();
-            x.NombreArchivo = "Meses.csv";
-            x.Recorrer(lstMeses);
-        }
 
         private void ActualizarEstadoBotonGrabar()
         {
@@ -48,6 +42,13 @@ namespace pryEDZarateF
         private void txtNombreMes_TextChanged(object sender, EventArgs e)
         {
             ActualizarEstadoBotonGrabar();
+        }
+
+        private void btnListar_Click_1(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NombreArchivo = "Meses.csv";
+            x.Recorrer(lstMeses);
         }
     }
 }

@@ -43,7 +43,7 @@
             this.lstMeses.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.lstMeses.FormattingEnabled = true;
             this.lstMeses.ItemHeight = 20;
-            this.lstMeses.Location = new System.Drawing.Point(422, 80);
+            this.lstMeses.Location = new System.Drawing.Point(420, 80);
             this.lstMeses.Name = "lstMeses";
             this.lstMeses.Size = new System.Drawing.Size(337, 162);
             this.lstMeses.TabIndex = 14;
@@ -102,6 +102,7 @@
             this.btnListar.TabIndex = 15;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = false;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click_1);
             // 
             // frmMeses
             // 

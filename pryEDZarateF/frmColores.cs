@@ -43,5 +43,12 @@ namespace pryEDZarateF
         {
             ActualizarEstadoBotonGrabar();
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NombreArchivo = "Colores.csv";
+            x.Recorrer(lstColor);
+        }
     }
 }

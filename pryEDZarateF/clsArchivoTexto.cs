@@ -80,8 +80,8 @@ namespace pryEDZarateF
         {
             String dato;
             cmb.Items.Clear();
-            StreamReader AD = new StreamReader(NombreArchivo); //Abrir
-            dato = AD.ReadLine(); //Leer
+            StreamReader AD = new StreamReader(NombreArchivo); 
+            dato = AD.ReadLine(); 
 
             while (dato != null)
             {
@@ -89,7 +89,7 @@ namespace pryEDZarateF
                 dato = AD.ReadLine();
             }
 
-            AD.Close(); //Cerrar
+            AD.Close(); 
         }
     }
 }

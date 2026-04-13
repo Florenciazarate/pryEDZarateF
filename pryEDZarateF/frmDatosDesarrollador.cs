@@ -16,8 +16,6 @@ namespace pryEDZarateF
         {
             InitializeComponent();
         }
-
-   
     }
 }
  

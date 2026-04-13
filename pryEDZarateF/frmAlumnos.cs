@@ -18,10 +18,6 @@ namespace pryEDZarateF
             ActualizarEstadoBotonGrabar();
         }
 
-        private void frmAlumnos_Load(object sender, EventArgs e)
-        {
-        }
-
         private bool CamposCompletos()
         {
             return txtCodigo.Text.Trim() != "" &&
@@ -38,5 +34,9 @@ namespace pryEDZarateF
             ActualizarEstadoBotonGrabar();
         }
 
+        private void frmAlumnos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

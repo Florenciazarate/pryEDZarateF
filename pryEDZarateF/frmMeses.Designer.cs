@@ -39,13 +39,12 @@
             // lstMeses
             // 
             this.lstMeses.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.lstMeses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstMeses.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.lstMeses.FormattingEnabled = true;
             this.lstMeses.ItemHeight = 20;
             this.lstMeses.Location = new System.Drawing.Point(420, 80);
             this.lstMeses.Name = "lstMeses";
-            this.lstMeses.Size = new System.Drawing.Size(337, 162);
+            this.lstMeses.Size = new System.Drawing.Size(337, 144);
             this.lstMeses.TabIndex = 14;
             // 
             // lblBienvenidoMeses

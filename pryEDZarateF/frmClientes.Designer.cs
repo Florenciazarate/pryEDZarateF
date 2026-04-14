@@ -126,7 +126,10 @@
             // 
             // dgvClientes
             // 
-            this.dgvClientes.AllowUserToOrderColumns = true;
+            this.dgvClientes.AllowUserToAddRows = false;
+            this.dgvClientes.AllowUserToDeleteRows = false;
+            this.dgvClientes.AllowUserToResizeColumns = false;
+            this.dgvClientes.AllowUserToResizeRows = false;
             this.dgvClientes.BackgroundColor = System.Drawing.Color.AntiqueWhite;
             this.dgvClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -136,6 +139,7 @@
             this.clmDeuda});
             this.dgvClientes.Location = new System.Drawing.Point(387, 84);
             this.dgvClientes.Name = "dgvClientes";
+            this.dgvClientes.ReadOnly = true;
             this.dgvClientes.Size = new System.Drawing.Size(342, 244);
             this.dgvClientes.TabIndex = 25;
             // 
@@ -143,16 +147,19 @@
             // 
             this.clmCodigo.HeaderText = "Código";
             this.clmCodigo.Name = "clmCodigo";
+            this.clmCodigo.ReadOnly = true;
             // 
             // ClmNombre
             // 
             this.ClmNombre.HeaderText = "Nombre";
             this.ClmNombre.Name = "ClmNombre";
+            this.ClmNombre.ReadOnly = true;
             // 
             // clmDeuda
             // 
             this.clmDeuda.HeaderText = "Deuda";
             this.clmDeuda.Name = "clmDeuda";
+            this.clmDeuda.ReadOnly = true;
             // 
             // frmClientes
             // 

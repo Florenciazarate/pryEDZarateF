@@ -63,6 +63,16 @@ namespace pryEDZarateF.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap b10 {
+            get {
+                object obj = ResourceManager.GetObject("b10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap happy_fairy_tail_minimalistic_wallpaper_by_greenmapple17 {
             get {
                 object obj = ResourceManager.GetObject("happy-fairy-tail-minimalistic-wallpaper-by-greenmapple17", resourceCulture);

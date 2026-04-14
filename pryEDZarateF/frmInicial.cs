@@ -51,15 +51,14 @@ namespace pryEDZarateF
             x.ShowDialog();
         }
 
-        private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmAlumnos x = new frmAlumnos();
-            x.ShowDialog();
-        }
-
         private void carrerasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmCarreras x = new frmCarreras();
+            x.ShowDialog();
+        }
+        private void alumnosToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmAlumnos x = new frmAlumnos();
             x.ShowDialog();
         }
     }

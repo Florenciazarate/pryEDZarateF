@@ -35,9 +35,12 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblCarrera = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvAlumnos = new System.Windows.Forms.DataGridView();
             this.cmbCarrera = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.Código = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Carrera = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBienvenidoMeses
@@ -81,6 +84,7 @@
             this.btnGrabar.TabIndex = 16;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = false;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // lblNombre
             // 
@@ -111,15 +115,19 @@
             this.lblCarrera.TabIndex = 24;
             this.lblCarrera.Text = "Carrera";
             // 
-            // dataGridView1
+            // dgvAlumnos
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.AntiqueWhite;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(391, 89);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(274, 245);
-            this.dataGridView1.TabIndex = 25;
+            this.dgvAlumnos.BackgroundColor = System.Drawing.Color.AntiqueWhite;
+            this.dgvAlumnos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAlumnos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Código,
+            this.Nombre,
+            this.Carrera});
+            this.dgvAlumnos.Location = new System.Drawing.Point(391, 89);
+            this.dgvAlumnos.Name = "dgvAlumnos";
+            this.dgvAlumnos.Size = new System.Drawing.Size(341, 245);
+            this.dgvAlumnos.TabIndex = 25;
             // 
             // cmbCarrera
             // 
@@ -129,6 +137,21 @@
             this.cmbCarrera.Size = new System.Drawing.Size(249, 21);
             this.cmbCarrera.TabIndex = 26;
             // 
+            // Código
+            // 
+            this.Código.HeaderText = "clmCodigo";
+            this.Código.Name = "Código";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "clmNombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Carrera
+            // 
+            this.Carrera.HeaderText = "clmCarrera";
+            this.Carrera.Name = "Carrera";
+            // 
             // frmAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,7 +159,7 @@
             this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.cmbCarrera);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvAlumnos);
             this.Controls.Add(this.lblCarrera);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtNombre);
@@ -149,7 +172,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alumnos";
             this.Load += new System.EventHandler(this.frmAlumnos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,7 +186,10 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblCarrera;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvAlumnos;
         private System.Windows.Forms.ComboBox cmbCarrera;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Código;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Carrera;
     }
 }

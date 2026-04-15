@@ -63,6 +63,26 @@ namespace pryEDZarateF.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1 {
+            get {
+                object obj = ResourceManager.GetObject("1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _11 {
+            get {
+                object obj = ResourceManager.GetObject("11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _16__MG_9109 {
             get {
                 object obj = ResourceManager.GetObject("16-_MG_9109", resourceCulture);
@@ -86,6 +106,16 @@ namespace pryEDZarateF.Properties {
         internal static System.Drawing.Bitmap happy_fairy_tail_minimalistic_wallpaper_by_greenmapple17 {
             get {
                 object obj = ResourceManager.GetObject("happy-fairy-tail-minimalistic-wallpaper-by-greenmapple17", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logotipo_Estudio_Shonos_Diseño_multimedia_divertido_retro_y2k_rosa__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -154,5 +154,14 @@
   <ItemGroup>
     <None Include="Resources\16-_MG_9109.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

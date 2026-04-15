@@ -19,6 +19,24 @@ namespace pryEDZarateF
 
         private void frmDatosDesarrollador_Load(object sender, EventArgs e)
         {
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.FlatAppearance.BorderSize = 0;
+            btnSalir.BackColor = Color.Transparent;
+            btnSalir.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnSalir.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnSalir.Text = "";
+            btnSalir.Parent = pctDatos;
+            btnSalir.BackColor = Color.Transparent;
+
+        }
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            this.Close  ();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }

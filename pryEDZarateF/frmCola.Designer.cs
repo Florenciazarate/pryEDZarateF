@@ -43,18 +43,18 @@
             this.lblEliminado = new System.Windows.Forms.Label();
             this.lblCodigo2 = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpEliminado = new System.Windows.Forms.GroupBox();
+            this.lblTramiteEliminado = new System.Windows.Forms.Label();
+            this.lblNombreEliminado = new System.Windows.Forms.Label();
             this.lblCodigo22 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lstElementos = new System.Windows.Forms.ListBox();
             this.dgvElementos = new System.Windows.Forms.DataGridView();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.grpListado = new System.Windows.Forms.GroupBox();
+            this.lblListado = new System.Windows.Forms.Label();
             this.pctImagen = new System.Windows.Forms.PictureBox();
-            this.groupBox1.SuspendLayout();
+            this.grpEliminado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvElementos)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.grpListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctImagen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -202,17 +202,41 @@
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
             // 
-            // groupBox1
+            // grpEliminado
             // 
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.lblCodigo22);
-            this.groupBox1.Location = new System.Drawing.Point(384, 37);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(342, 242);
-            this.groupBox1.TabIndex = 42;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.grpEliminado.Controls.Add(this.lblTramiteEliminado);
+            this.grpEliminado.Controls.Add(this.lblNombreEliminado);
+            this.grpEliminado.Controls.Add(this.lblCodigo22);
+            this.grpEliminado.Location = new System.Drawing.Point(384, 37);
+            this.grpEliminado.Name = "grpEliminado";
+            this.grpEliminado.Size = new System.Drawing.Size(342, 242);
+            this.grpEliminado.TabIndex = 42;
+            this.grpEliminado.TabStop = false;
+            this.grpEliminado.Text = "grpEliminado";
+            // 
+            // lblTramiteEliminado
+            // 
+            this.lblTramiteEliminado.AutoSize = true;
+            this.lblTramiteEliminado.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblTramiteEliminado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTramiteEliminado.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.lblTramiteEliminado.Location = new System.Drawing.Point(76, 147);
+            this.lblTramiteEliminado.Name = "lblTramiteEliminado";
+            this.lblTramiteEliminado.Size = new System.Drawing.Size(78, 15);
+            this.lblTramiteEliminado.TabIndex = 2;
+            this.lblTramiteEliminado.Text = "                       ";
+            // 
+            // lblNombreEliminado
+            // 
+            this.lblNombreEliminado.AutoSize = true;
+            this.lblNombreEliminado.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblNombreEliminado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblNombreEliminado.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.lblNombreEliminado.Location = new System.Drawing.Point(76, 99);
+            this.lblNombreEliminado.Name = "lblNombreEliminado";
+            this.lblNombreEliminado.Size = new System.Drawing.Size(78, 15);
+            this.lblNombreEliminado.TabIndex = 1;
+            this.lblNombreEliminado.Text = "                       ";
             // 
             // lblCodigo22
             // 
@@ -225,30 +249,6 @@
             this.lblCodigo22.Size = new System.Drawing.Size(78, 15);
             this.lblCodigo22.TabIndex = 0;
             this.lblCodigo22.Text = "                       ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Location = new System.Drawing.Point(76, 99);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "                       ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label2.Location = new System.Drawing.Point(76, 147);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "                       ";
             // 
             // lstElementos
             // 
@@ -270,25 +270,25 @@
             this.dgvElementos.Size = new System.Drawing.Size(320, 95);
             this.dgvElementos.TabIndex = 44;
             // 
-            // groupBox2
+            // grpListado
             // 
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(22, 285);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(704, 153);
-            this.groupBox2.TabIndex = 45;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.grpListado.Controls.Add(this.lblListado);
+            this.grpListado.Location = new System.Drawing.Point(22, 285);
+            this.grpListado.Name = "grpListado";
+            this.grpListado.Size = new System.Drawing.Size(704, 153);
+            this.grpListado.TabIndex = 45;
+            this.grpListado.TabStop = false;
+            this.grpListado.Text = "grpNuevo";
             // 
-            // label3
+            // lblListado
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label3.Location = new System.Drawing.Point(7, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(212, 17);
-            this.label3.TabIndex = 46;
-            this.label3.Text = "Listado en una Lista y una Grilla";
+            this.lblListado.AutoSize = true;
+            this.lblListado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblListado.Location = new System.Drawing.Point(7, 0);
+            this.lblListado.Name = "lblListado";
+            this.lblListado.Size = new System.Drawing.Size(212, 17);
+            this.lblListado.TabIndex = 46;
+            this.lblListado.Text = "Listado en una Lista y una Grilla";
             // 
             // pctImagen
             // 
@@ -315,7 +315,7 @@
             this.Controls.Add(this.lblEliminado);
             this.Controls.Add(this.lblCodigo2);
             this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpEliminado);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblTramite);
@@ -325,16 +325,16 @@
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.grpElemento);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.grpListado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmCola";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura Dinámica Lineal - Cola";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grpEliminado.ResumeLayout(false);
+            this.grpEliminado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvElementos)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.grpListado.ResumeLayout(false);
+            this.grpListado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -357,14 +357,14 @@
         private System.Windows.Forms.Label lblEliminado;
         private System.Windows.Forms.Label lblCodigo2;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpEliminado;
         private System.Windows.Forms.Label lblCodigo22;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTramiteEliminado;
+        private System.Windows.Forms.Label lblNombreEliminado;
         private System.Windows.Forms.ListBox lstElementos;
         private System.Windows.Forms.DataGridView dgvElementos;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox grpListado;
+        private System.Windows.Forms.Label lblListado;
         private System.Windows.Forms.PictureBox pctImagen;
     }
 }

@@ -163,5 +163,8 @@
   <ItemGroup>
     <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa %283%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

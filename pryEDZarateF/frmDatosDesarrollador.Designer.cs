@@ -33,6 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pctDatos = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +60,7 @@
             this.label1.Size = new System.Drawing.Size(20, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "X";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -89,12 +91,25 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.DeepPink;
             this.label3.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label3.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.label3.Location = new System.Drawing.Point(16, 296);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(25, 26);
             this.label3.TabIndex = 5;
             this.label3.Text = "<";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.HotPink;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.HotPink;
+            this.button1.Location = new System.Drawing.Point(405, 299);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(22, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmDatosDesarrollador
             // 
@@ -102,8 +117,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(444, 334);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.pctDatos);
@@ -126,5 +142,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }

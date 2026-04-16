@@ -33,7 +33,18 @@ namespace pryEDZarateF
                 Ultimo.Siguiente = Nuevo;
                 Ultimo = Nuevo;
             }
-
+        }
+        public void Eliminar ()
+        {
+            if (Primero == Ultimo)
+            {
+                Primero = null;
+                Ultimo = null;
+            }
+            else
+            {
+                Primero = Primero.Siguiente;
+            }
         }
     }
 }

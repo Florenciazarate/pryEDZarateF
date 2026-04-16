@@ -35,10 +35,7 @@
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.programaciónOOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.coloresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mesesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.provinciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mesesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.díasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carrerasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,10 +99,7 @@
             // 
             this.programaciónOOToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.coloresToolStripMenuItem,
-            this.mesesToolStripMenuItem,
-            this.provinciasToolStripMenuItem,
             this.mesesToolStripMenuItem1,
-            this.díasToolStripMenuItem,
             this.clientesToolStripMenuItem,
             this.alumnosToolStripMenuItem,
             this.carrerasToolStripMenuItem});
@@ -121,31 +115,12 @@
             this.coloresToolStripMenuItem.Text = "Colores...";
             this.coloresToolStripMenuItem.Click += new System.EventHandler(this.coloresToolStripMenuItem_Click);
             // 
-            // mesesToolStripMenuItem
-            // 
-            this.mesesToolStripMenuItem.Name = "mesesToolStripMenuItem";
-            this.mesesToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.mesesToolStripMenuItem.Text = "Ciudades...";
-            this.mesesToolStripMenuItem.Click += new System.EventHandler(this.mesesToolStripMenuItem_Click);
-            // 
-            // provinciasToolStripMenuItem
-            // 
-            this.provinciasToolStripMenuItem.Name = "provinciasToolStripMenuItem";
-            this.provinciasToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.provinciasToolStripMenuItem.Text = "Provincias...";
-            // 
             // mesesToolStripMenuItem1
             // 
             this.mesesToolStripMenuItem1.Name = "mesesToolStripMenuItem1";
             this.mesesToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
             this.mesesToolStripMenuItem1.Text = "Meses...";
             this.mesesToolStripMenuItem1.Click += new System.EventHandler(this.mesesToolStripMenuItem1_Click);
-            // 
-            // díasToolStripMenuItem
-            // 
-            this.díasToolStripMenuItem.Name = "díasToolStripMenuItem";
-            this.díasToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.díasToolStripMenuItem.Text = "Días...";
             // 
             // clientesToolStripMenuItem
             // 
@@ -297,10 +272,7 @@
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem programaciónOOToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem coloresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mesesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem provinciasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mesesToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem díasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem estructurasLinealesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colaToolStripMenuItem;

@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsArchivoTexto.cs" />
+    <Compile Include="clsCola.cs" />
+    <Compile Include="clsNodo.cs" />
     <Compile Include="frmAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +167,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

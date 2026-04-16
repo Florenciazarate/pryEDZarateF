@@ -152,7 +152,7 @@
             // 
             this.lblNombre2.AutoSize = true;
             this.lblNombre2.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre2.Location = new System.Drawing.Point(392, 131);
+            this.lblNombre2.Location = new System.Drawing.Point(392, 132);
             this.lblNombre2.Name = "lblNombre2";
             this.lblNombre2.Size = new System.Drawing.Size(64, 20);
             this.lblNombre2.TabIndex = 41;
@@ -162,7 +162,7 @@
             // 
             this.lblTramite2.AutoSize = true;
             this.lblTramite2.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTramite2.Location = new System.Drawing.Point(392, 181);
+            this.lblTramite2.Location = new System.Drawing.Point(392, 182);
             this.lblTramite2.Name = "lblTramite2";
             this.lblTramite2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblTramite2.Size = new System.Drawing.Size(59, 20);
@@ -173,7 +173,7 @@
             // 
             this.lblEliminado.AutoSize = true;
             this.lblEliminado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lblEliminado.Location = new System.Drawing.Point(391, 34);
+            this.lblEliminado.Location = new System.Drawing.Point(391, 35);
             this.lblEliminado.Name = "lblEliminado";
             this.lblEliminado.Size = new System.Drawing.Size(132, 17);
             this.lblEliminado.TabIndex = 37;
@@ -183,7 +183,7 @@
             // 
             this.lblCodigo2.AutoSize = true;
             this.lblCodigo2.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo2.Location = new System.Drawing.Point(392, 84);
+            this.lblCodigo2.Location = new System.Drawing.Point(392, 85);
             this.lblCodigo2.Name = "lblCodigo2";
             this.lblCodigo2.Size = new System.Drawing.Size(58, 20);
             this.lblCodigo2.TabIndex = 36;
@@ -194,7 +194,7 @@
             this.btnEliminar.BackColor = System.Drawing.Color.FloralWhite;
             this.btnEliminar.Enabled = false;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnEliminar.Location = new System.Drawing.Point(396, 227);
+            this.btnEliminar.Location = new System.Drawing.Point(396, 228);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(308, 30);
@@ -207,7 +207,7 @@
             this.grpEliminado.Controls.Add(this.lblTramiteEliminado);
             this.grpEliminado.Controls.Add(this.lblNombreEliminado);
             this.grpEliminado.Controls.Add(this.lblCodigo22);
-            this.grpEliminado.Location = new System.Drawing.Point(384, 37);
+            this.grpEliminado.Location = new System.Drawing.Point(384, 38);
             this.grpEliminado.Name = "grpEliminado";
             this.grpEliminado.Size = new System.Drawing.Size(342, 242);
             this.grpEliminado.TabIndex = 42;

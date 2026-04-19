@@ -33,7 +33,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.pctDatos = new System.Windows.Forms.PictureBox();
-            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +42,7 @@
             this.lblSalir.BackColor = System.Drawing.Color.FloralWhite;
             this.lblSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalir.ForeColor = System.Drawing.Color.Navy;
-            this.lblSalir.Location = new System.Drawing.Point(20, 17);
+            this.lblSalir.Location = new System.Drawing.Point(21, 16);
             this.lblSalir.Name = "lblSalir";
             this.lblSalir.Size = new System.Drawing.Size(20, 20);
             this.lblSalir.TabIndex = 3;
@@ -100,27 +99,13 @@
             this.pctDatos.TabStop = false;
             this.pctDatos.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.FloralWhite;
-            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnSalir.Location = new System.Drawing.Point(16, 15);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(28, 23);
-            this.btnSalir.TabIndex = 7;
-            this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.button2_Click);
-            // 
             // frmDatosDesarrollador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(444, 334);
+            this.ClientSize = new System.Drawing.Size(444, 341);
             this.Controls.Add(this.lblSalir);
-            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblSiguiente);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.label3);
@@ -144,6 +129,5 @@
         private System.Windows.Forms.Label lblSiguiente;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSiguiente;
-        private System.Windows.Forms.Button btnSalir;
     }
 }

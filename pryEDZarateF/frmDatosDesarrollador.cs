@@ -30,7 +30,7 @@ namespace pryEDZarateF
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,7 +40,9 @@ namespace pryEDZarateF
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            frmDatosDesarrollador2 x = new frmDatosDesarrollador2();
+            x.ShowDialog();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)

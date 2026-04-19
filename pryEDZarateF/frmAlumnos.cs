@@ -82,11 +82,6 @@ namespace pryEDZarateF
                 x.Recorrer(cmbCarrera);
             }
         }
-
-        private void dgvAlumnos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }
 

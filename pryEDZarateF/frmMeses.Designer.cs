@@ -115,7 +115,6 @@
             this.groupMes.TabIndex = 16;
             this.groupMes.TabStop = false;
             this.groupMes.Text = "Ingrese un mes";
-            this.groupMes.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // groupBienvenido
             // 

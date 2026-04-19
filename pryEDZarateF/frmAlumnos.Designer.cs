@@ -131,7 +131,6 @@
             this.dgvAlumnos.Name = "dgvAlumnos";
             this.dgvAlumnos.Size = new System.Drawing.Size(341, 240);
             this.dgvAlumnos.TabIndex = 25;
-            this.dgvAlumnos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAlumnos_CellContentClick);
             // 
             // cmbCarrera
             // 

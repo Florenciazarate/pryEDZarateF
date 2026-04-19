@@ -17,7 +17,6 @@ namespace pryEDZarateF
             InitializeComponent();
             ActualizarEstadoBotonGrabar();
         }
-
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             if(txtNombreMes.Text == "" || txtNombreMes.Text.Any (char.IsDigit))
@@ -33,12 +32,10 @@ namespace pryEDZarateF
             MessageBox.Show("Mes grabado correctamente");
 
         }
-
         private void ActualizarEstadoBotonGrabar()
         {
             btnGrabar.Enabled = txtNombreMes.Text.Trim() != "";
         }
-
         private void txtNombreMes_TextChanged(object sender, EventArgs e)
         {
             ActualizarEstadoBotonGrabar();
@@ -50,12 +47,6 @@ namespace pryEDZarateF
             x.NombreArchivo = "Meses.csv";
             x.Recorrer(lstMeses);
         }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void frmMeses_Load(object sender, EventArgs e)
         {
 

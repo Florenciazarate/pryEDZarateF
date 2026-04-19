@@ -39,24 +39,24 @@ namespace pryEDZarateF
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Image = global::pryEDZarateF.Properties.Resources.Logotipo_Estudio_Shonos_Diseño_multimedia_divertido_retro_y2k_rosa__1_1;
-            this.pictureBox1.Location = new System.Drawing.Point(-5, -41);
+            this.pictureBox1.Location = new System.Drawing.Point(-6, -42);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(458, 444);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblSalir
             // 
             this.lblSalir.AutoSize = true;
             this.lblSalir.BackColor = System.Drawing.Color.FloralWhite;
             this.lblSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalir.Location = new System.Drawing.Point(23, 15);
+            this.lblSalir.Location = new System.Drawing.Point(23, 14);
             this.lblSalir.Name = "lblSalir";
             this.lblSalir.Size = new System.Drawing.Size(20, 20);
             this.lblSalir.TabIndex = 1;
             this.lblSalir.Text = "X";
+            this.lblSalir.Click += new System.EventHandler(this.lblSalir_Click);
             // 
             // lblSeguir
             // 
@@ -64,7 +64,7 @@ namespace pryEDZarateF
             this.lblSeguir.BackColor = System.Drawing.Color.AntiqueWhite;
             this.lblSeguir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSeguir.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lblSeguir.Location = new System.Drawing.Point(405, 300);
+            this.lblSeguir.Location = new System.Drawing.Point(405, 299);
             this.lblSeguir.Name = "lblSeguir";
             this.lblSeguir.Size = new System.Drawing.Size(18, 20);
             this.lblSeguir.TabIndex = 2;
@@ -76,11 +76,12 @@ namespace pryEDZarateF
             this.lblVolver.BackColor = System.Drawing.Color.AntiqueWhite;
             this.lblVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVolver.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblVolver.Location = new System.Drawing.Point(20, 300);
+            this.lblVolver.Location = new System.Drawing.Point(20, 299);
             this.lblVolver.Name = "lblVolver";
             this.lblVolver.Size = new System.Drawing.Size(18, 20);
             this.lblVolver.TabIndex = 3;
             this.lblVolver.Text = "<";
+            this.lblVolver.Click += new System.EventHandler(this.lblVolver_Click);
             // 
             // frmDatosDesarrollador2
             // 

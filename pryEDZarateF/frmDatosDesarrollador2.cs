@@ -21,10 +21,16 @@ namespace pryEDZarateF
         {
 
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void lblSalir_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void lblVolver_Click(object sender, EventArgs e)
+        {
+            frmDatosDesarrollador x = new frmDatosDesarrollador();
+            x.ShowDialog();
+            this.Close();
         }
     }
 }

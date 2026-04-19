@@ -85,7 +85,6 @@
             this.btnSiguiente.TabIndex = 6;
             this.btnSiguiente.Text = "button1";
             this.btnSiguiente.UseVisualStyleBackColor = false;
-            this.btnSiguiente.Click += new System.EventHandler(this.button1_Click);
             // 
             // pctDatos
             // 
@@ -97,7 +96,6 @@
             this.pctDatos.Size = new System.Drawing.Size(444, 498);
             this.pctDatos.TabIndex = 0;
             this.pctDatos.TabStop = false;
-            this.pctDatos.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // frmDatosDesarrollador
             // 

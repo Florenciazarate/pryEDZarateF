@@ -86,7 +86,6 @@
             this.lblColor.Size = new System.Drawing.Size(40, 17);
             this.lblColor.TabIndex = 4;
             this.lblColor.Text = "Color";
-            this.lblColor.Click += new System.EventHandler(this.lblColor_Click);
             // 
             // lstColor
             // 
@@ -114,7 +113,6 @@
             this.groupColor.TabIndex = 9;
             this.groupColor.TabStop = false;
             this.groupColor.Text = "Ingresar un color";
-            this.groupColor.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // groupBienvenido
             // 

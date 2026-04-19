@@ -32,17 +32,20 @@
             this.btnGrabar = new System.Windows.Forms.Button();
             this.txtNombreColor = new System.Windows.Forms.TextBox();
             this.lblColor = new System.Windows.Forms.Label();
-            this.lblBienvenido = new System.Windows.Forms.Label();
             this.lstColor = new System.Windows.Forms.ListBox();
+            this.groupColor = new System.Windows.Forms.GroupBox();
+            this.groupBienvenido = new System.Windows.Forms.GroupBox();
+            this.groupColor.SuspendLayout();
+            this.groupBienvenido.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnListar
             // 
             this.btnListar.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListar.Location = new System.Drawing.Point(196, 138);
+            this.btnListar.Location = new System.Drawing.Point(144, 69);
             this.btnListar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(70, 36);
+            this.btnListar.Size = new System.Drawing.Size(80, 30);
             this.btnListar.TabIndex = 0;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
@@ -53,10 +56,11 @@
             this.btnGrabar.BackColor = System.Drawing.Color.FloralWhite;
             this.btnGrabar.Enabled = false;
             this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnGrabar.Location = new System.Drawing.Point(274, 138);
+            this.btnGrabar.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrabar.Location = new System.Drawing.Point(232, 69);
             this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(78, 36);
+            this.btnGrabar.Size = new System.Drawing.Size(80, 30);
             this.btnGrabar.TabIndex = 1;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = false;
@@ -64,43 +68,65 @@
             // 
             // txtNombreColor
             // 
+            this.txtNombreColor.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.txtNombreColor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombreColor.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreColor.Location = new System.Drawing.Point(102, 81);
+            this.txtNombreColor.Location = new System.Drawing.Point(62, 39);
             this.txtNombreColor.Name = "txtNombreColor";
-            this.txtNombreColor.Size = new System.Drawing.Size(250, 29);
+            this.txtNombreColor.Size = new System.Drawing.Size(250, 22);
             this.txtNombreColor.TabIndex = 3;
             this.txtNombreColor.TextChanged += new System.EventHandler(this.txtNombreColor_TextChanged);
             // 
             // lblColor
             // 
             this.lblColor.AutoSize = true;
-            this.lblColor.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColor.Location = new System.Drawing.Point(40, 86);
+            this.lblColor.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblColor.Location = new System.Drawing.Point(16, 42);
             this.lblColor.Name = "lblColor";
-            this.lblColor.Size = new System.Drawing.Size(45, 20);
+            this.lblColor.Size = new System.Drawing.Size(40, 17);
             this.lblColor.TabIndex = 4;
             this.lblColor.Text = "Color";
-            // 
-            // lblBienvenido
-            // 
-            this.lblBienvenido.AutoSize = true;
-            this.lblBienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lblBienvenido.Location = new System.Drawing.Point(39, 36);
-            this.lblBienvenido.Name = "lblBienvenido";
-            this.lblBienvenido.Size = new System.Drawing.Size(140, 17);
-            this.lblBienvenido.TabIndex = 7;
-            this.lblBienvenido.Text = "Bienvenido a colores";
+            this.lblColor.Click += new System.EventHandler(this.lblColor_Click);
             // 
             // lstColor
             // 
             this.lstColor.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lstColor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lstColor.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.lstColor.FormattingEnabled = true;
             this.lstColor.ItemHeight = 20;
-            this.lstColor.Location = new System.Drawing.Point(432, 81);
+            this.lstColor.Location = new System.Drawing.Point(409, 43);
             this.lstColor.Name = "lstColor";
-            this.lstColor.Size = new System.Drawing.Size(337, 144);
+            this.lstColor.Size = new System.Drawing.Size(337, 140);
             this.lstColor.TabIndex = 8;
+            // 
+            // groupColor
+            // 
+            this.groupColor.Controls.Add(this.btnGrabar);
+            this.groupColor.Controls.Add(this.lblColor);
+            this.groupColor.Controls.Add(this.txtNombreColor);
+            this.groupColor.Controls.Add(this.btnListar);
+            this.groupColor.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupColor.Location = new System.Drawing.Point(26, 34);
+            this.groupColor.Name = "groupColor";
+            this.groupColor.Size = new System.Drawing.Size(365, 150);
+            this.groupColor.TabIndex = 9;
+            this.groupColor.TabStop = false;
+            this.groupColor.Text = "Ingresar un color";
+            this.groupColor.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // groupBienvenido
+            // 
+            this.groupBienvenido.Controls.Add(this.groupColor);
+            this.groupBienvenido.Controls.Add(this.lstColor);
+            this.groupBienvenido.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBienvenido.Location = new System.Drawing.Point(23, 21);
+            this.groupBienvenido.Name = "groupBienvenido";
+            this.groupBienvenido.Size = new System.Drawing.Size(788, 222);
+            this.groupBienvenido.TabIndex = 10;
+            this.groupBienvenido.TabStop = false;
+            this.groupBienvenido.Text = "Bienvenido a la sección colores";
             // 
             // frmColores
             // 
@@ -108,20 +134,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FloralWhite;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(823, 293);
-            this.Controls.Add(this.lstColor);
-            this.Controls.Add(this.lblBienvenido);
-            this.Controls.Add(this.lblColor);
-            this.Controls.Add(this.txtNombreColor);
-            this.Controls.Add(this.btnGrabar);
-            this.Controls.Add(this.btnListar);
+            this.ClientSize = new System.Drawing.Size(823, 268);
+            this.Controls.Add(this.groupBienvenido);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmColores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Colores";
+            this.Load += new System.EventHandler(this.frmColores_Load);
+            this.groupColor.ResumeLayout(false);
+            this.groupColor.PerformLayout();
+            this.groupBienvenido.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -131,7 +155,8 @@
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.TextBox txtNombreColor;
         private System.Windows.Forms.Label lblColor;
-        private System.Windows.Forms.Label lblBienvenido;
         private System.Windows.Forms.ListBox lstColor;
+        private System.Windows.Forms.GroupBox groupColor;
+        private System.Windows.Forms.GroupBox groupBienvenido;
     }
 }

@@ -50,5 +50,15 @@ namespace pryEDZarateF
             x.NombreArchivo = "Meses.csv";
             x.Recorrer(lstMeses);
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmMeses_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -54,6 +54,5 @@ namespace pryEDZarateF
         {
             ActualizarEstadoBotonGrabar();
         }
-
     }
 }

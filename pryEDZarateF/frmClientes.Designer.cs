@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblBienvenido = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnGrabar = new System.Windows.Forms.Button();
@@ -37,38 +37,34 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
+            this.groupBienvenido = new System.Windows.Forms.GroupBox();
+            this.groupCliente = new System.Windows.Forms.GroupBox();
             this.clmCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmDeuda = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
+            this.groupBienvenido.SuspendLayout();
+            this.groupCliente.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblBienvenido
-            // 
-            this.lblBienvenido.AutoSize = true;
-            this.lblBienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lblBienvenido.Location = new System.Drawing.Point(24, 39);
-            this.lblBienvenido.Name = "lblBienvenido";
-            this.lblBienvenido.Size = new System.Drawing.Size(142, 17);
-            this.lblBienvenido.TabIndex = 19;
-            this.lblBienvenido.Text = "Bienvenido a clientes";
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(25, 89);
+            this.lblCodigo.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigo.Location = new System.Drawing.Point(15, 46);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(58, 20);
+            this.lblCodigo.Size = new System.Drawing.Size(51, 17);
             this.lblCodigo.TabIndex = 18;
             this.lblCodigo.Text = "Código";
             // 
             // txtCodigo
             // 
+            this.txtCodigo.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCodigo.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(87, 84);
+            this.txtCodigo.Location = new System.Drawing.Point(77, 43);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(250, 29);
+            this.txtCodigo.Size = new System.Drawing.Size(200, 22);
             this.txtCodigo.TabIndex = 17;
             this.txtCodigo.TextChanged += new System.EventHandler(this.txtCampos_TextChanged);
             // 
@@ -77,10 +73,11 @@
             this.btnGrabar.BackColor = System.Drawing.Color.FloralWhite;
             this.btnGrabar.Enabled = false;
             this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnGrabar.Location = new System.Drawing.Point(259, 232);
+            this.btnGrabar.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrabar.Location = new System.Drawing.Point(197, 172);
             this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(78, 30);
+            this.btnGrabar.Size = new System.Drawing.Size(80, 30);
             this.btnGrabar.TabIndex = 16;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = false;
@@ -89,38 +86,42 @@
             // lblDeuda
             // 
             this.lblDeuda.AutoSize = true;
-            this.lblDeuda.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeuda.Location = new System.Drawing.Point(25, 186);
+            this.lblDeuda.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeuda.Location = new System.Drawing.Point(15, 143);
             this.lblDeuda.Name = "lblDeuda";
-            this.lblDeuda.Size = new System.Drawing.Size(53, 20);
+            this.lblDeuda.Size = new System.Drawing.Size(46, 17);
             this.lblDeuda.TabIndex = 22;
             this.lblDeuda.Text = "Deuda";
             // 
             // txtDeuda
             // 
+            this.txtDeuda.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.txtDeuda.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDeuda.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDeuda.Location = new System.Drawing.Point(87, 181);
+            this.txtDeuda.Location = new System.Drawing.Point(77, 141);
             this.txtDeuda.Name = "txtDeuda";
-            this.txtDeuda.Size = new System.Drawing.Size(250, 29);
+            this.txtDeuda.Size = new System.Drawing.Size(200, 22);
             this.txtDeuda.TabIndex = 21;
             this.txtDeuda.TextChanged += new System.EventHandler(this.txtCampos_TextChanged);
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(25, 136);
+            this.lblNombre.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(15, 93);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(64, 20);
+            this.lblNombre.Size = new System.Drawing.Size(57, 17);
             this.lblNombre.TabIndex = 24;
             this.lblNombre.Text = "Nombre";
             // 
             // txtNombre
             // 
+            this.txtNombre.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(87, 131);
+            this.txtNombre.Location = new System.Drawing.Point(77, 91);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(250, 29);
+            this.txtNombre.Size = new System.Drawing.Size(200, 22);
             this.txtNombre.TabIndex = 23;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtCampos_TextChanged);
             // 
@@ -130,18 +131,49 @@
             this.dgvClientes.AllowUserToDeleteRows = false;
             this.dgvClientes.AllowUserToResizeColumns = false;
             this.dgvClientes.AllowUserToResizeRows = false;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvClientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvClientes.BackgroundColor = System.Drawing.Color.AntiqueWhite;
-            this.dgvClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmCodigo,
             this.ClmNombre,
             this.clmDeuda});
-            this.dgvClientes.Location = new System.Drawing.Point(387, 84);
+            this.dgvClientes.Location = new System.Drawing.Point(379, 40);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.ReadOnly = true;
-            this.dgvClientes.Size = new System.Drawing.Size(342, 244);
+            this.dgvClientes.Size = new System.Drawing.Size(342, 233);
             this.dgvClientes.TabIndex = 25;
+            // 
+            // groupBienvenido
+            // 
+            this.groupBienvenido.Controls.Add(this.dgvClientes);
+            this.groupBienvenido.Controls.Add(this.groupCliente);
+            this.groupBienvenido.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBienvenido.Location = new System.Drawing.Point(22, 19);
+            this.groupBienvenido.Name = "groupBienvenido";
+            this.groupBienvenido.Size = new System.Drawing.Size(758, 302);
+            this.groupBienvenido.TabIndex = 26;
+            this.groupBienvenido.TabStop = false;
+            this.groupBienvenido.Text = "Bienvenido a la sección clientes";
+            // 
+            // groupCliente
+            // 
+            this.groupCliente.Controls.Add(this.btnGrabar);
+            this.groupCliente.Controls.Add(this.lblNombre);
+            this.groupCliente.Controls.Add(this.txtDeuda);
+            this.groupCliente.Controls.Add(this.txtNombre);
+            this.groupCliente.Controls.Add(this.txtCodigo);
+            this.groupCliente.Controls.Add(this.lblDeuda);
+            this.groupCliente.Controls.Add(this.lblCodigo);
+            this.groupCliente.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupCliente.Location = new System.Drawing.Point(25, 40);
+            this.groupCliente.Name = "groupCliente";
+            this.groupCliente.Size = new System.Drawing.Size(328, 233);
+            this.groupCliente.TabIndex = 0;
+            this.groupCliente.TabStop = false;
+            this.groupCliente.Text = "Ingresar datos del cliente";
             // 
             // clmCodigo
             // 
@@ -166,29 +198,22 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(766, 413);
-            this.Controls.Add(this.dgvClientes);
-            this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.lblDeuda);
-            this.Controls.Add(this.txtDeuda);
-            this.Controls.Add(this.lblBienvenido);
-            this.Controls.Add(this.lblCodigo);
-            this.Controls.Add(this.txtCodigo);
-            this.Controls.Add(this.btnGrabar);
+            this.ClientSize = new System.Drawing.Size(804, 339);
+            this.Controls.Add(this.groupBienvenido);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.frmClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
+            this.groupBienvenido.ResumeLayout(false);
+            this.groupCliente.ResumeLayout(false);
+            this.groupCliente.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label lblBienvenido;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Button btnGrabar;
@@ -197,6 +222,8 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.DataGridView dgvClientes;
+        private System.Windows.Forms.GroupBox groupBienvenido;
+        private System.Windows.Forms.GroupBox groupCliente;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClmNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmDeuda;

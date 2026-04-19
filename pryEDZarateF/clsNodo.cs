@@ -28,7 +28,7 @@ namespace pryEDZarateF
             get { return tra; }
             set { tra = value; }
         }
-   public clsNodo Siguiente
+        public clsNodo Siguiente
         {
             get { return sig; }
             set { sig = value; }

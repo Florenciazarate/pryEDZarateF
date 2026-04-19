@@ -139,5 +139,15 @@ namespace pryEDZarateF.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logotipo_Estudio_Shonos_Diseño_multimedia_divertido_retro_y2k_rosa1 {
+            get {
+                object obj = ResourceManager.GetObject("Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

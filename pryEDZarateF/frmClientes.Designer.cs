@@ -103,6 +103,7 @@
             this.txtDeuda.Size = new System.Drawing.Size(200, 22);
             this.txtDeuda.TabIndex = 21;
             this.txtDeuda.TextChanged += new System.EventHandler(this.txtCampos_TextChanged);
+            this.txtDeuda.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDeuda_KeyPress);
             // 
             // lblNombre
             // 
@@ -140,7 +141,7 @@
             this.clmCodigo,
             this.ClmNombre,
             this.clmDeuda});
-            this.dgvClientes.Location = new System.Drawing.Point(379, 40);
+            this.dgvClientes.Location = new System.Drawing.Point(379, 47);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.ReadOnly = true;
             this.dgvClientes.Size = new System.Drawing.Size(342, 233);
@@ -188,7 +189,7 @@
             this.groupCliente.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupCliente.Location = new System.Drawing.Point(25, 40);
             this.groupCliente.Name = "groupCliente";
-            this.groupCliente.Size = new System.Drawing.Size(328, 233);
+            this.groupCliente.Size = new System.Drawing.Size(328, 240);
             this.groupCliente.TabIndex = 0;
             this.groupCliente.TabStop = false;
             this.groupCliente.Text = "Ingresar datos del cliente";

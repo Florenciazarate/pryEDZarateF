@@ -29,7 +29,7 @@ namespace pryEDZarateF
             clsArchivoTexto x = new clsArchivoTexto();
             x.NombreArchivo = "Carreras.csv";
             x.Grabar(txtNombreCarrera.Text);
-            x.Recorrer(Carreras);
+            x.Recorrer(lstCarreras);
         }
 
         private void ActualizarEstadoBotonGrabar()

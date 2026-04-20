@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Carreras = new System.Windows.Forms.ListBox();
+            this.lstCarreras = new System.Windows.Forms.ListBox();
             this.lblCarrera = new System.Windows.Forms.Label();
             this.txtNombreCarrera = new System.Windows.Forms.TextBox();
             this.btnGrabar = new System.Windows.Forms.Button();
@@ -38,18 +38,18 @@
             this.groupBienvenido.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Carreras
+            // lstCarreras
             // 
-            this.Carreras.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.Carreras.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Carreras.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.Carreras.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.Carreras.FormattingEnabled = true;
-            this.Carreras.ItemHeight = 20;
-            this.Carreras.Location = new System.Drawing.Point(357, 50);
-            this.Carreras.Name = "Carreras";
-            this.Carreras.Size = new System.Drawing.Size(337, 140);
-            this.Carreras.TabIndex = 14;
+            this.lstCarreras.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lstCarreras.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lstCarreras.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lstCarreras.ForeColor = System.Drawing.Color.OliveDrab;
+            this.lstCarreras.FormattingEnabled = true;
+            this.lstCarreras.ItemHeight = 20;
+            this.lstCarreras.Location = new System.Drawing.Point(357, 50);
+            this.lstCarreras.Name = "lstCarreras";
+            this.lstCarreras.Size = new System.Drawing.Size(337, 140);
+            this.lstCarreras.TabIndex = 14;
             // 
             // lblCarrera
             // 
@@ -100,7 +100,7 @@
             // 
             // groupBienvenido
             // 
-            this.groupBienvenido.Controls.Add(this.Carreras);
+            this.groupBienvenido.Controls.Add(this.lstCarreras);
             this.groupBienvenido.Controls.Add(this.txtNombreCarrera);
             this.groupBienvenido.Controls.Add(this.lblCarrera);
             this.groupBienvenido.Controls.Add(this.groupCarrera);
@@ -132,7 +132,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox Carreras;
+        private System.Windows.Forms.ListBox lstCarreras;
         private System.Windows.Forms.Label lblCarrera;
         private System.Windows.Forms.TextBox txtNombreCarrera;
         private System.Windows.Forms.Button btnGrabar;

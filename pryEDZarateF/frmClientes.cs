@@ -54,5 +54,18 @@ namespace pryEDZarateF
         {
             ActualizarEstadoBotonGrabar();
         }
+
+        private void txtDeuda_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string separador = System.Globalization.CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator;
+
+            if (char.IsControl(e.KeyChar)) return;
+
+            if (char.IsDigit(e.KeyChar)) return;
+
+            if (e.KeyChar.ToString() == separador && !txtDeuda.Text.Contains(separador)) return;
+
+            e.Handled = true;
+        }
     }
 }

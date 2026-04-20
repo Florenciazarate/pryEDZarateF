@@ -129,10 +129,10 @@
             this.clmCodigo,
             this.clmNombre,
             this.clmCarrera});
-            this.dgvAlumnos.Location = new System.Drawing.Point(375, 46);
+            this.dgvAlumnos.Location = new System.Drawing.Point(375, 55);
             this.dgvAlumnos.Name = "dgvAlumnos";
             this.dgvAlumnos.ReadOnly = true;
-            this.dgvAlumnos.Size = new System.Drawing.Size(341, 240);
+            this.dgvAlumnos.Size = new System.Drawing.Size(341, 233);
             this.dgvAlumnos.TabIndex = 25;
             // 
             // clmCodigo
@@ -171,7 +171,7 @@
             this.groupAlumnos.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupAlumnos.Location = new System.Drawing.Point(28, 46);
             this.groupAlumnos.Name = "groupAlumnos";
-            this.groupAlumnos.Size = new System.Drawing.Size(326, 240);
+            this.groupAlumnos.Size = new System.Drawing.Size(326, 242);
             this.groupAlumnos.TabIndex = 27;
             this.groupAlumnos.TabStop = false;
             this.groupAlumnos.Text = "Ingresar datos del alumno";

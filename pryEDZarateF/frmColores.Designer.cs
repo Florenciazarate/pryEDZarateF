@@ -92,7 +92,7 @@
             this.lstColor.BackColor = System.Drawing.Color.AntiqueWhite;
             this.lstColor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lstColor.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.lstColor.ForeColor = System.Drawing.Color.OliveDrab;
             this.lstColor.FormattingEnabled = true;
             this.lstColor.ItemHeight = 20;
             this.lstColor.Location = new System.Drawing.Point(409, 43);

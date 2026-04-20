@@ -41,5 +41,30 @@ namespace pryEDZarateF
         {
 
         }
+
+        private void lblNombre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNombreEliminado_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNombre2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTramiteEliminado_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTramite2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

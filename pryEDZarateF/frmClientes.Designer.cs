@@ -51,7 +51,7 @@
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(15, 46);
+            this.lblCodigo.Location = new System.Drawing.Point(22, 49);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(51, 17);
             this.lblCodigo.TabIndex = 18;
@@ -62,7 +62,7 @@
             this.txtCodigo.BackColor = System.Drawing.Color.AntiqueWhite;
             this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCodigo.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(77, 43);
+            this.txtCodigo.Location = new System.Drawing.Point(84, 46);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(200, 22);
             this.txtCodigo.TabIndex = 17;
@@ -74,7 +74,7 @@
             this.btnGrabar.Enabled = false;
             this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnGrabar.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.Location = new System.Drawing.Point(197, 172);
+            this.btnGrabar.Location = new System.Drawing.Point(204, 161);
             this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(80, 30);
@@ -87,7 +87,7 @@
             // 
             this.lblDeuda.AutoSize = true;
             this.lblDeuda.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeuda.Location = new System.Drawing.Point(15, 143);
+            this.lblDeuda.Location = new System.Drawing.Point(22, 132);
             this.lblDeuda.Name = "lblDeuda";
             this.lblDeuda.Size = new System.Drawing.Size(46, 17);
             this.lblDeuda.TabIndex = 22;
@@ -98,7 +98,7 @@
             this.txtDeuda.BackColor = System.Drawing.Color.AntiqueWhite;
             this.txtDeuda.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDeuda.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDeuda.Location = new System.Drawing.Point(77, 141);
+            this.txtDeuda.Location = new System.Drawing.Point(84, 130);
             this.txtDeuda.Name = "txtDeuda";
             this.txtDeuda.Size = new System.Drawing.Size(200, 22);
             this.txtDeuda.TabIndex = 21;
@@ -109,7 +109,7 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(15, 93);
+            this.lblNombre.Location = new System.Drawing.Point(22, 89);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(57, 17);
             this.lblNombre.TabIndex = 24;
@@ -120,7 +120,7 @@
             this.txtNombre.BackColor = System.Drawing.Color.AntiqueWhite;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(77, 91);
+            this.txtNombre.Location = new System.Drawing.Point(84, 87);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(200, 22);
             this.txtNombre.TabIndex = 23;

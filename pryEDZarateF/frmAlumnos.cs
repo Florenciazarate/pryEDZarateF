@@ -20,7 +20,6 @@ namespace pryEDZarateF
             ActualizarEstadoBotonGrabar();
 
         }
-
         public List<string> ObtenerCarreras()
         {
             List<string> lista = new List<string>();
@@ -36,8 +35,6 @@ namespace pryEDZarateF
 
             return lista;
         }
-
-
         private bool CamposCompletos()
         {
             return txtCodigo.Text.Trim() != "" &&

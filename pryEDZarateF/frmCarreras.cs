@@ -26,9 +26,22 @@ namespace pryEDZarateF
                 txtNombreCarrera.Text = "";
                 return;
             }
+
+            string nueva = txtNombreCarrera.Text.Trim();
+            string archivo = "Carreras.csv";
+
+            if (System.IO.File.Exists(archivo) &&
+                System.IO.File.ReadAllLines(archivo)
+                    .Any(l => l.Trim().Equals(nueva, StringComparison.OrdinalIgnoreCase)))
+            {
+                MessageBox.Show("Esa carrera ya está cargada.");
+                txtNombreCarrera.Text = "";
+                return;
+            }
+
             clsArchivoTexto x = new clsArchivoTexto();
-            x.NombreArchivo = "Carreras.csv";
-            x.Grabar(txtNombreCarrera.Text);
+            x.NombreArchivo = archivo;
+            x.Grabar(nueva);
             x.Recorrer(lstCarreras);
         }
 

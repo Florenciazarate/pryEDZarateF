@@ -56,7 +56,7 @@
             // 
             this.lblMes.AutoSize = true;
             this.lblMes.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMes.Location = new System.Drawing.Point(15, 45);
+            this.lblMes.Location = new System.Drawing.Point(15, 53);
             this.lblMes.Name = "lblMes";
             this.lblMes.Size = new System.Drawing.Size(46, 17);
             this.lblMes.TabIndex = 12;
@@ -68,7 +68,7 @@
             this.cmbMeses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbMeses.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMeses.FormattingEnabled = true;
-            this.cmbMeses.Location = new System.Drawing.Point(77, 40);
+            this.cmbMeses.Location = new System.Drawing.Point(77, 48);
             this.cmbMeses.Name = "cmbMeses";
             this.cmbMeses.Size = new System.Drawing.Size(250, 29);
             this.cmbMeses.TabIndex = 11;
@@ -80,7 +80,7 @@
             this.btnGrabar.Enabled = false;
             this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnGrabar.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.Location = new System.Drawing.Point(247, 71);
+            this.btnGrabar.Location = new System.Drawing.Point(247, 86);
             this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(80, 30);
@@ -94,7 +94,7 @@
             this.btnListar.BackColor = System.Drawing.Color.FloralWhite;
             this.btnListar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnListar.Font = new System.Drawing.Font("Nirmala Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListar.Location = new System.Drawing.Point(159, 71);
+            this.btnListar.Location = new System.Drawing.Point(159, 86);
             this.btnListar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(80, 30);

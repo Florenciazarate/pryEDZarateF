@@ -42,7 +42,7 @@
             // btnListar
             // 
             this.btnListar.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListar.Location = new System.Drawing.Point(144, 69);
+            this.btnListar.Location = new System.Drawing.Point(148, 79);
             this.btnListar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(80, 30);
@@ -57,7 +57,7 @@
             this.btnGrabar.Enabled = false;
             this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnGrabar.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.Location = new System.Drawing.Point(232, 69);
+            this.btnGrabar.Location = new System.Drawing.Point(236, 79);
             this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(80, 30);
@@ -71,7 +71,7 @@
             this.txtNombreColor.BackColor = System.Drawing.Color.AntiqueWhite;
             this.txtNombreColor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombreColor.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreColor.Location = new System.Drawing.Point(62, 39);
+            this.txtNombreColor.Location = new System.Drawing.Point(66, 49);
             this.txtNombreColor.Name = "txtNombreColor";
             this.txtNombreColor.Size = new System.Drawing.Size(250, 22);
             this.txtNombreColor.TabIndex = 3;
@@ -81,7 +81,7 @@
             // 
             this.lblColor.AutoSize = true;
             this.lblColor.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColor.Location = new System.Drawing.Point(16, 42);
+            this.lblColor.Location = new System.Drawing.Point(20, 52);
             this.lblColor.Name = "lblColor";
             this.lblColor.Size = new System.Drawing.Size(40, 17);
             this.lblColor.TabIndex = 4;

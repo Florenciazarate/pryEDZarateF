@@ -62,18 +62,19 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(30, 131);
+            this.lblNombre.Location = new System.Drawing.Point(30, 124);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(64, 20);
             this.lblNombre.TabIndex = 32;
             this.lblNombre.Text = "Nombre";
+            this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
             // 
             // txtNombre
             // 
             this.txtNombre.BackColor = System.Drawing.Color.AntiqueWhite;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(92, 128);
+            this.txtNombre.Location = new System.Drawing.Point(92, 121);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(171, 22);
             this.txtNombre.TabIndex = 31;
@@ -83,7 +84,7 @@
             // 
             this.lblTramite.AutoSize = true;
             this.lblTramite.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTramite.Location = new System.Drawing.Point(30, 181);
+            this.lblTramite.Location = new System.Drawing.Point(30, 167);
             this.lblTramite.Name = "lblTramite";
             this.lblTramite.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblTramite.Size = new System.Drawing.Size(59, 20);
@@ -95,7 +96,7 @@
             this.txtTramite.BackColor = System.Drawing.Color.AntiqueWhite;
             this.txtTramite.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTramite.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTramite.Location = new System.Drawing.Point(93, 180);
+            this.txtTramite.Location = new System.Drawing.Point(93, 166);
             this.txtTramite.Name = "txtTramite";
             this.txtTramite.Size = new System.Drawing.Size(171, 22);
             this.txtTramite.TabIndex = 29;
@@ -158,22 +159,24 @@
             // 
             this.lblNombre2.AutoSize = true;
             this.lblNombre2.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre2.Location = new System.Drawing.Point(392, 132);
+            this.lblNombre2.Location = new System.Drawing.Point(392, 119);
             this.lblNombre2.Name = "lblNombre2";
             this.lblNombre2.Size = new System.Drawing.Size(64, 20);
             this.lblNombre2.TabIndex = 41;
             this.lblNombre2.Text = "Nombre";
+            this.lblNombre2.Click += new System.EventHandler(this.lblNombre2_Click);
             // 
             // lblTramite2
             // 
             this.lblTramite2.AutoSize = true;
             this.lblTramite2.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTramite2.Location = new System.Drawing.Point(392, 182);
+            this.lblTramite2.Location = new System.Drawing.Point(392, 155);
             this.lblTramite2.Name = "lblTramite2";
             this.lblTramite2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblTramite2.Size = new System.Drawing.Size(59, 20);
             this.lblTramite2.TabIndex = 39;
             this.lblTramite2.Text = "Trámite";
+            this.lblTramite2.Click += new System.EventHandler(this.lblTramite2_Click);
             // 
             // lblEliminado
             // 
@@ -226,11 +229,12 @@
             this.lblTramiteEliminado.BackColor = System.Drawing.Color.AntiqueWhite;
             this.lblTramiteEliminado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTramiteEliminado.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.lblTramiteEliminado.Location = new System.Drawing.Point(76, 147);
+            this.lblTramiteEliminado.Location = new System.Drawing.Point(76, 120);
             this.lblTramiteEliminado.Name = "lblTramiteEliminado";
             this.lblTramiteEliminado.Size = new System.Drawing.Size(78, 15);
             this.lblTramiteEliminado.TabIndex = 2;
             this.lblTramiteEliminado.Text = "                       ";
+            this.lblTramiteEliminado.Click += new System.EventHandler(this.lblTramiteEliminado_Click);
             // 
             // lblNombreEliminado
             // 
@@ -238,11 +242,12 @@
             this.lblNombreEliminado.BackColor = System.Drawing.Color.AntiqueWhite;
             this.lblNombreEliminado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblNombreEliminado.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.lblNombreEliminado.Location = new System.Drawing.Point(76, 99);
+            this.lblNombreEliminado.Location = new System.Drawing.Point(76, 86);
             this.lblNombreEliminado.Name = "lblNombreEliminado";
             this.lblNombreEliminado.Size = new System.Drawing.Size(78, 15);
             this.lblNombreEliminado.TabIndex = 1;
             this.lblNombreEliminado.Text = "                       ";
+            this.lblNombreEliminado.Click += new System.EventHandler(this.lblNombreEliminado_Click);
             // 
             // lblCodigo22
             // 

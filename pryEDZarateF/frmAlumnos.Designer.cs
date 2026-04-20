@@ -75,7 +75,7 @@
             this.btnGrabar.Enabled = false;
             this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnGrabar.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.Location = new System.Drawing.Point(204, 172);
+            this.btnGrabar.Location = new System.Drawing.Point(206, 161);
             this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(79, 32);
@@ -88,7 +88,7 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(70, 157);
+            this.lblNombre.Location = new System.Drawing.Point(70, 152);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(57, 17);
             this.lblNombre.TabIndex = 22;
@@ -100,7 +100,7 @@
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtNombre.Location = new System.Drawing.Point(135, 154);
+            this.txtNombre.Location = new System.Drawing.Point(135, 149);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(200, 22);
             this.txtNombre.TabIndex = 21;
@@ -110,7 +110,7 @@
             // 
             this.lblCarrera.AutoSize = true;
             this.lblCarrera.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCarrera.Location = new System.Drawing.Point(70, 203);
+            this.lblCarrera.Location = new System.Drawing.Point(70, 192);
             this.lblCarrera.Name = "lblCarrera";
             this.lblCarrera.Size = new System.Drawing.Size(52, 17);
             this.lblCarrera.TabIndex = 24;
@@ -160,7 +160,7 @@
             this.cmbCarrera.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cmbCarrera.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.cmbCarrera.FormattingEnabled = true;
-            this.cmbCarrera.Location = new System.Drawing.Point(134, 200);
+            this.cmbCarrera.Location = new System.Drawing.Point(134, 189);
             this.cmbCarrera.Name = "cmbCarrera";
             this.cmbCarrera.Size = new System.Drawing.Size(200, 21);
             this.cmbCarrera.TabIndex = 26;

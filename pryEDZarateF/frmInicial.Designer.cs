@@ -58,7 +58,7 @@
             // 
             // menu
             // 
-            this.menu.BackColor = System.Drawing.Color.CadetBlue;
+            this.menu.BackColor = System.Drawing.Color.SlateGray;
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sistemaToolStripMenuItem,
             this.programaciónOOToolStripMenuItem,

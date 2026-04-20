@@ -16,5 +16,30 @@ namespace pryEDZarateF
         {
             InitializeComponent();
         }
+
+        private void lstElementos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvElementos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpElemento_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

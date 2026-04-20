@@ -55,7 +55,7 @@
             this.lblSiguiente.BackColor = System.Drawing.Color.AntiqueWhite;
             this.lblSiguiente.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSiguiente.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblSiguiente.Location = new System.Drawing.Point(397, 297);
+            this.lblSiguiente.Location = new System.Drawing.Point(400, 297);
             this.lblSiguiente.Name = "lblSiguiente";
             this.lblSiguiente.Size = new System.Drawing.Size(25, 26);
             this.lblSiguiente.TabIndex = 4;

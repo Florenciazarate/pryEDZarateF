@@ -71,11 +71,13 @@
             // txtNombre
             // 
             this.txtNombre.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(92, 126);
+            this.txtNombre.Location = new System.Drawing.Point(92, 128);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(171, 29);
+            this.txtNombre.Size = new System.Drawing.Size(171, 22);
             this.txtNombre.TabIndex = 31;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // lblTramite
             // 
@@ -91,10 +93,11 @@
             // txtTramite
             // 
             this.txtTramite.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.txtTramite.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTramite.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTramite.Location = new System.Drawing.Point(92, 176);
+            this.txtTramite.Location = new System.Drawing.Point(93, 180);
             this.txtTramite.Name = "txtTramite";
-            this.txtTramite.Size = new System.Drawing.Size(171, 29);
+            this.txtTramite.Size = new System.Drawing.Size(171, 22);
             this.txtTramite.TabIndex = 29;
             // 
             // lblNuevo
@@ -120,11 +123,13 @@
             // txtCodigo
             // 
             this.txtCodigo.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCodigo.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(92, 79);
+            this.txtCodigo.Location = new System.Drawing.Point(92, 82);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(171, 29);
+            this.txtCodigo.Size = new System.Drawing.Size(171, 22);
             this.txtCodigo.TabIndex = 26;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // btnGrabar
             // 
@@ -143,10 +148,11 @@
             // 
             this.grpElemento.Location = new System.Drawing.Point(22, 37);
             this.grpElemento.Name = "grpElemento";
-            this.grpElemento.Size = new System.Drawing.Size(342, 242);
+            this.grpElemento.Size = new System.Drawing.Size(342, 243);
             this.grpElemento.TabIndex = 33;
             this.grpElemento.TabStop = false;
             this.grpElemento.Text = "groupBox1";
+            this.grpElemento.Enter += new System.EventHandler(this.grpElemento_Enter);
             // 
             // lblNombre2
             // 
@@ -253,22 +259,25 @@
             // lstElementos
             // 
             this.lstElementos.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lstElementos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstElementos.FormattingEnabled = true;
             this.lstElementos.Location = new System.Drawing.Point(44, 316);
             this.lstElementos.Name = "lstElementos";
-            this.lstElementos.Size = new System.Drawing.Size(320, 95);
+            this.lstElementos.Size = new System.Drawing.Size(320, 104);
             this.lstElementos.TabIndex = 43;
+            this.lstElementos.SelectedIndexChanged += new System.EventHandler(this.lstElementos_SelectedIndexChanged);
             // 
             // dgvElementos
             // 
             this.dgvElementos.BackgroundColor = System.Drawing.Color.AntiqueWhite;
-            this.dgvElementos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvElementos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvElementos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvElementos.GridColor = System.Drawing.Color.AntiqueWhite;
             this.dgvElementos.Location = new System.Drawing.Point(384, 316);
             this.dgvElementos.Name = "dgvElementos";
-            this.dgvElementos.Size = new System.Drawing.Size(320, 95);
+            this.dgvElementos.Size = new System.Drawing.Size(320, 104);
             this.dgvElementos.TabIndex = 44;
+            this.dgvElementos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvElementos_CellContentClick);
             // 
             // grpListado
             // 
@@ -292,12 +301,13 @@
             // 
             // pctImagen
             // 
+            this.pctImagen.BackColor = System.Drawing.Color.MintCream;
             this.pctImagen.BackgroundImage = global::pryEDZarateF.Properties.Resources.b10;
             this.pctImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pctImagen.InitialImage = ((System.Drawing.Image)(resources.GetObject("pctImagen.InitialImage")));
-            this.pctImagen.Location = new System.Drawing.Point(743, 87);
+            this.pctImagen.Location = new System.Drawing.Point(748, 85);
             this.pctImagen.Name = "pctImagen";
-            this.pctImagen.Size = new System.Drawing.Size(291, 297);
+            this.pctImagen.Size = new System.Drawing.Size(281, 284);
             this.pctImagen.TabIndex = 46;
             this.pctImagen.TabStop = false;
             // 

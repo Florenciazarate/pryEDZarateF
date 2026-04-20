@@ -36,12 +36,12 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblCarrera = new System.Windows.Forms.Label();
             this.dgvAlumnos = new System.Windows.Forms.DataGridView();
-            this.cmbCarrera = new System.Windows.Forms.ComboBox();
-            this.groupAlumnos = new System.Windows.Forms.GroupBox();
-            this.groupBienvenido = new System.Windows.Forms.GroupBox();
             this.clmCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmCarrera = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmbCarrera = new System.Windows.Forms.ComboBox();
+            this.groupAlumnos = new System.Windows.Forms.GroupBox();
+            this.groupBienvenido = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).BeginInit();
             this.groupAlumnos.SuspendLayout();
             this.groupBienvenido.SuspendLayout();
@@ -118,6 +118,8 @@
             // 
             // dgvAlumnos
             // 
+            this.dgvAlumnos.AllowUserToAddRows = false;
+            this.dgvAlumnos.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvAlumnos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvAlumnos.BackgroundColor = System.Drawing.Color.AntiqueWhite;
@@ -129,8 +131,27 @@
             this.clmCarrera});
             this.dgvAlumnos.Location = new System.Drawing.Point(375, 46);
             this.dgvAlumnos.Name = "dgvAlumnos";
+            this.dgvAlumnos.ReadOnly = true;
             this.dgvAlumnos.Size = new System.Drawing.Size(341, 240);
             this.dgvAlumnos.TabIndex = 25;
+            // 
+            // clmCodigo
+            // 
+            this.clmCodigo.HeaderText = "Código";
+            this.clmCodigo.Name = "clmCodigo";
+            this.clmCodigo.ReadOnly = true;
+            // 
+            // clmNombre
+            // 
+            this.clmNombre.HeaderText = "Nombre";
+            this.clmNombre.Name = "clmNombre";
+            this.clmNombre.ReadOnly = true;
+            // 
+            // clmCarrera
+            // 
+            this.clmCarrera.HeaderText = "Carrera";
+            this.clmCarrera.Name = "clmCarrera";
+            this.clmCarrera.ReadOnly = true;
             // 
             // cmbCarrera
             // 
@@ -166,24 +187,6 @@
             this.groupBienvenido.TabIndex = 28;
             this.groupBienvenido.TabStop = false;
             this.groupBienvenido.Text = "Bienvenido a la sección alumnos";
-            // 
-            // clmCodigo
-            // 
-            this.clmCodigo.HeaderText = "Código";
-            this.clmCodigo.Name = "clmCodigo";
-            this.clmCodigo.ReadOnly = true;
-            // 
-            // clmNombre
-            // 
-            this.clmNombre.HeaderText = "Nombre";
-            this.clmNombre.Name = "clmNombre";
-            this.clmNombre.ReadOnly = true;
-            // 
-            // clmCarrera
-            // 
-            this.clmCarrera.HeaderText = "Carrera";
-            this.clmCarrera.Name = "clmCarrera";
-            this.clmCarrera.ReadOnly = true;
             // 
             // frmAlumnos
             // 

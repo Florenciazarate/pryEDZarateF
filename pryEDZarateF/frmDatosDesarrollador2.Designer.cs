@@ -51,7 +51,7 @@ namespace pryEDZarateF
             this.lblSalir.AutoSize = true;
             this.lblSalir.BackColor = System.Drawing.Color.FloralWhite;
             this.lblSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalir.Location = new System.Drawing.Point(23, 14);
+            this.lblSalir.Location = new System.Drawing.Point(21, 14);
             this.lblSalir.Name = "lblSalir";
             this.lblSalir.Size = new System.Drawing.Size(20, 20);
             this.lblSalir.TabIndex = 1;
@@ -62,11 +62,11 @@ namespace pryEDZarateF
             // 
             this.lblSeguir.AutoSize = true;
             this.lblSeguir.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.lblSeguir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeguir.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSeguir.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lblSeguir.Location = new System.Drawing.Point(405, 299);
+            this.lblSeguir.Location = new System.Drawing.Point(399, 295);
             this.lblSeguir.Name = "lblSeguir";
-            this.lblSeguir.Size = new System.Drawing.Size(18, 20);
+            this.lblSeguir.Size = new System.Drawing.Size(25, 26);
             this.lblSeguir.TabIndex = 2;
             this.lblSeguir.Text = ">";
             // 
@@ -74,11 +74,11 @@ namespace pryEDZarateF
             // 
             this.lblVolver.AutoSize = true;
             this.lblVolver.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.lblVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVolver.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVolver.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblVolver.Location = new System.Drawing.Point(20, 299);
+            this.lblVolver.Location = new System.Drawing.Point(19, 295);
             this.lblVolver.Name = "lblVolver";
-            this.lblVolver.Size = new System.Drawing.Size(18, 20);
+            this.lblVolver.Size = new System.Drawing.Size(25, 26);
             this.lblVolver.TabIndex = 3;
             this.lblVolver.Text = "<";
             this.lblVolver.Click += new System.EventHandler(this.lblVolver_Click);

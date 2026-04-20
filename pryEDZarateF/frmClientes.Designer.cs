@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnGrabar = new System.Windows.Forms.Button();
@@ -37,11 +37,11 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.groupBienvenido = new System.Windows.Forms.GroupBox();
-            this.groupCliente = new System.Windows.Forms.GroupBox();
             this.clmCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClmNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmDeuda = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBienvenido = new System.Windows.Forms.GroupBox();
+            this.groupCliente = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.groupBienvenido.SuspendLayout();
             this.groupCliente.SuspendLayout();
@@ -131,8 +131,8 @@
             this.dgvClientes.AllowUserToDeleteRows = false;
             this.dgvClientes.AllowUserToResizeColumns = false;
             this.dgvClientes.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvClientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvClientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvClientes.BackgroundColor = System.Drawing.Color.AntiqueWhite;
             this.dgvClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -145,6 +145,24 @@
             this.dgvClientes.ReadOnly = true;
             this.dgvClientes.Size = new System.Drawing.Size(342, 233);
             this.dgvClientes.TabIndex = 25;
+            // 
+            // clmCodigo
+            // 
+            this.clmCodigo.HeaderText = "Código";
+            this.clmCodigo.Name = "clmCodigo";
+            this.clmCodigo.ReadOnly = true;
+            // 
+            // ClmNombre
+            // 
+            this.ClmNombre.HeaderText = "Nombre";
+            this.ClmNombre.Name = "ClmNombre";
+            this.ClmNombre.ReadOnly = true;
+            // 
+            // clmDeuda
+            // 
+            this.clmDeuda.HeaderText = "Deuda";
+            this.clmDeuda.Name = "clmDeuda";
+            this.clmDeuda.ReadOnly = true;
             // 
             // groupBienvenido
             // 
@@ -174,24 +192,6 @@
             this.groupCliente.TabIndex = 0;
             this.groupCliente.TabStop = false;
             this.groupCliente.Text = "Ingresar datos del cliente";
-            // 
-            // clmCodigo
-            // 
-            this.clmCodigo.HeaderText = "Código";
-            this.clmCodigo.Name = "clmCodigo";
-            this.clmCodigo.ReadOnly = true;
-            // 
-            // ClmNombre
-            // 
-            this.ClmNombre.HeaderText = "Nombre";
-            this.ClmNombre.Name = "ClmNombre";
-            this.ClmNombre.ReadOnly = true;
-            // 
-            // clmDeuda
-            // 
-            this.clmDeuda.HeaderText = "Deuda";
-            this.clmDeuda.Name = "clmDeuda";
-            this.clmDeuda.ReadOnly = true;
             // 
             // frmClientes
             // 

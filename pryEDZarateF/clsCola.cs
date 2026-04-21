@@ -67,7 +67,7 @@ namespace pryEDZarateF
             Lista.Items.Clear();
             while (aux != null)
             {
-                Lista.Items.Add(aux.Codigo);
+                Lista.Items.Add($" Código: {aux.Codigo}, Nombre: {aux.Nombre}, Trámite: {aux.Tramite}");
                 aux = aux.Siguiente;
             }
         }
@@ -83,7 +83,7 @@ namespace pryEDZarateF
         }
         public void Recorrer() {
             clsNodo aux = Primero;
-            StreamWriter AD = new StreamWriter("Cola.csv, false, Encoding,UTF8");
+            StreamWriter AD = new StreamWriter("Cola.csv", false, Encoding.UTF8);
             AD.WriteLine("Lista de espera/n");
             AD.WriteLine("Código;Nombre;Tramite");
             while (aux != null)

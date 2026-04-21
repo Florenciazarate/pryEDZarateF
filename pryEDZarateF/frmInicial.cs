@@ -56,5 +56,11 @@ namespace pryEDZarateF
             frmAlumnos x = new frmAlumnos();
             x.ShowDialog();
         }
+
+        private void colaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCola x = new frmCola();
+            x.ShowDialog();
+        }
     }
 }

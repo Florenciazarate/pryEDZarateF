@@ -17,53 +17,42 @@ namespace pryEDZarateF
             InitializeComponent();
         }
 
-        private void lstElementos_SelectedIndexChanged(object sender, EventArgs e)
+        clsCola fila = new clsCola();
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
-
+            if (fila.Primero != null)
+            {
+                MessageBox.Show("Se eliminó el elemento: " + fila.Primero.Nombre);
+                lblCodigo22.Text = Convert.ToString(fila.Primero.Codigo);
+                lblNombreEliminado.Text = fila.Primero.Nombre;
+                lblTramiteEliminado.Text = fila.Primero.Tramite;
+                fila.Eliminar();
+                fila.Recorrer(dgvElementos);
+                fila.Recorrer(lstElementos);
+                fila.Recorrer();
+            }
+            else
+            {
+                lblCodigo.Text = "";
+                lblNombre.Text = "";
+                lblTramite.Text = "";
+            }
         }
 
-        private void dgvElementos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnGrabar_Click(object sender, EventArgs e)
         {
+            clsNodo n = new clsNodo();
+            n.Codigo = Convert.ToInt32(txtCodigo.Text);
+            n.Nombre = txtNombre.Text;
+            n.Tramite = txtTramite.Text;
 
-        }
+            fila.Agregar(n);
+            fila.Recorrer(dgvElementos);
+            fila.Recorrer(lstElementos);
 
-        private void txtNombre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtCodigo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void grpElemento_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblNombre_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblNombreEliminado_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblNombre2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblTramiteEliminado_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblTramite2_Click(object sender, EventArgs e)
-        {
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
 
         }
     }

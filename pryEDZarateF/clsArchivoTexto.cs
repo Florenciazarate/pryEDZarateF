@@ -67,6 +67,8 @@ namespace pryEDZarateF
         {
             String DatoLeido;
             Grilla.Rows.Clear();
+            if (!File.Exists(NombreArchivo))
+                return;
             StreamReader AD = new StreamReader(NombreArchivo);
             DatoLeido = AD.ReadLine();
             while (DatoLeido != null)
@@ -80,7 +82,9 @@ namespace pryEDZarateF
         {
             String dato;
             cmb.Items.Clear();
-            StreamReader AD = new StreamReader (NombreArchivo); 
+            if (!File.Exists(NombreArchivo))
+                return;
+            StreamReader AD = new StreamReader (NombreArchivo);
             dato = AD.ReadLine(); 
 
             while (dato != null)

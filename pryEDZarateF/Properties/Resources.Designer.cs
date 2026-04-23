@@ -93,6 +93,16 @@ namespace pryEDZarateF.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1B340D90_E78C_4D4C_9687_A21DA5529231_ {
+            get {
+                object obj = ResourceManager.GetObject("{1B340D90-E78C-4D4C-9687-A21DA5529231}", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap b10 {
             get {
                 object obj = ResourceManager.GetObject("b10", resourceCulture);

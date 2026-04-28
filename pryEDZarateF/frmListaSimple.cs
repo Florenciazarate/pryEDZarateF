@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryEDZarateF
 {
-    public partial class ListaSimple : Form
+    public partial class frmListaSimple : Form
     {
-        public ListaSimple()
+        public frmListaSimple()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace pryEDZarateF
 {
-    partial class ListaSimple
+    partial class frmListaSimple
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListaSimple));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListaSimple));
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.dgvElementos = new System.Windows.Forms.DataGridView();
             this.clmCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,11 +48,11 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.grpElemento = new System.Windows.Forms.GroupBox();
-            this.grpListado = new System.Windows.Forms.GroupBox();
-            this.lblListado = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblTramite = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
+            this.grpListado = new System.Windows.Forms.GroupBox();
+            this.lblListado = new System.Windows.Forms.Label();
             this.pctImagen = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvElementos)).BeginInit();
             this.grpEliminado.SuspendLayout();
@@ -262,26 +262,6 @@
             this.grpElemento.TabStop = false;
             this.grpElemento.Text = "Nuevo elemento";
             // 
-            // grpListado
-            // 
-            this.grpListado.Controls.Add(this.lblListado);
-            this.grpListado.Location = new System.Drawing.Point(23, 276);
-            this.grpListado.Name = "grpListado";
-            this.grpListado.Size = new System.Drawing.Size(704, 153);
-            this.grpListado.TabIndex = 79;
-            this.grpListado.TabStop = false;
-            this.grpListado.Text = "grpNuevo";
-            // 
-            // lblListado
-            // 
-            this.lblListado.AutoSize = true;
-            this.lblListado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lblListado.Location = new System.Drawing.Point(7, 0);
-            this.lblListado.Name = "lblListado";
-            this.lblListado.Size = new System.Drawing.Size(212, 17);
-            this.lblListado.TabIndex = 46;
-            this.lblListado.Text = "Listado en una Lista y una Grilla";
-            // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
@@ -313,27 +293,48 @@
             this.lblCodigo.TabIndex = 33;
             this.lblCodigo.Text = "Código";
             // 
+            // grpListado
+            // 
+            this.grpListado.Controls.Add(this.lblListado);
+            this.grpListado.Location = new System.Drawing.Point(23, 276);
+            this.grpListado.Name = "grpListado";
+            this.grpListado.Size = new System.Drawing.Size(704, 153);
+            this.grpListado.TabIndex = 79;
+            this.grpListado.TabStop = false;
+            this.grpListado.Text = "grpNuevo";
+            // 
+            // lblListado
+            // 
+            this.lblListado.AutoSize = true;
+            this.lblListado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblListado.Location = new System.Drawing.Point(7, 0);
+            this.lblListado.Name = "lblListado";
+            this.lblListado.Size = new System.Drawing.Size(212, 17);
+            this.lblListado.TabIndex = 46;
+            this.lblListado.Text = "Listado en una Lista y una Grilla";
+            // 
             // pctImagen
             // 
             this.pctImagen.BackColor = System.Drawing.Color.MintCream;
             this.pctImagen.BackgroundImage = global::pryEDZarateF.Properties.Resources._01_ListasSimplementeEnlazadas;
             this.pctImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pctImagen.Image = global::pryEDZarateF.Properties.Resources._01_ListasSimplementeEnlazadas1;
             this.pctImagen.InitialImage = ((System.Drawing.Image)(resources.GetObject("pctImagen.InitialImage")));
-            this.pctImagen.Location = new System.Drawing.Point(749, 115);
+            this.pctImagen.Location = new System.Drawing.Point(744, 146);
             this.pctImagen.Name = "pctImagen";
-            this.pctImagen.Size = new System.Drawing.Size(281, 231);
+            this.pctImagen.Size = new System.Drawing.Size(455, 168);
             this.pctImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctImagen.TabIndex = 80;
             this.pctImagen.TabStop = false;
             // 
-            // ListaSimple
+            // frmListaSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(1048, 450);
-            this.Controls.Add(this.txtNombre);
+            this.ClientSize = new System.Drawing.Size(1218, 450);
             this.Controls.Add(this.pctImagen);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.dgvElementos);
             this.Controls.Add(this.lstElementos);
             this.Controls.Add(this.lblNombre2);
@@ -347,7 +348,7 @@
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.grpElemento);
             this.Controls.Add(this.grpListado);
-            this.Name = "ListaSimple";
+            this.Name = "frmListaSimple";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListaSimple";
             ((System.ComponentModel.ISupportInitialize)(this.dgvElementos)).EndInit();

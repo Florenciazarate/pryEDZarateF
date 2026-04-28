@@ -199,7 +199,7 @@
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.FloralWhite;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnEliminar.Location = new System.Drawing.Point(396, 228);
+            this.btnEliminar.Location = new System.Drawing.Point(396, 229);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(308, 30);
@@ -213,7 +213,7 @@
             this.grpEliminado.Controls.Add(this.lblTramiteEliminado);
             this.grpEliminado.Controls.Add(this.lblNombreEliminado);
             this.grpEliminado.Controls.Add(this.lblCodigo22);
-            this.grpEliminado.Location = new System.Drawing.Point(384, 38);
+            this.grpEliminado.Location = new System.Drawing.Point(384, 37);
             this.grpEliminado.Name = "grpEliminado";
             this.grpEliminado.Size = new System.Drawing.Size(342, 242);
             this.grpEliminado.TabIndex = 42;

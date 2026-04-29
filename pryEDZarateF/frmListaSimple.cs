@@ -12,9 +12,80 @@ namespace pryEDZarateF
 {
     public partial class frmListaSimple : Form
     {
+        clsListaSimple Lista = new clsListaSimple();
+
         public frmListaSimple()
         {
             InitializeComponent();
+        }
+
+
+
+        private void frmListaSimple_Load(object sender, EventArgs e)
+        {
+            ActualizarBotones();
+        }
+
+        private void ActualizarBotones()
+        {
+            bool camposCompletos = !string.IsNullOrWhiteSpace(txtCodigo.Text)
+                                && !string.IsNullOrWhiteSpace(txtNombre.Text)
+                                && !string.IsNullOrWhiteSpace(txtTramite.Text);
+            btnGrabar.Enabled = camposCompletos;
+
+            bool puedeEliminar = Lista.Primero != null && cmbCodigo.SelectedIndex >= 0;
+            btnEliminar.Enabled = puedeEliminar;
+        }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+            ActualizarBotones();
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            ActualizarBotones();
+        }
+
+        private void txtTramite_TextChanged(object sender, EventArgs e)
+        {
+            ActualizarBotones();
+        }
+
+        private void cmbCodigo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ActualizarBotones();
+        }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            clsNodo ObjNodo = new clsNodo();
+            ObjNodo.Codigo = Convert.ToInt32(txtCodigo.Text);
+            ObjNodo.Nombre = txtNombre.Text;
+            ObjNodo.Tramite = txtTramite.Text;
+            Lista.Agregar(ObjNodo);
+            Lista.Recorrer(dgvElementos);
+            Lista.Recorrer(lstElementos);
+            Lista.Recorrer(cmbCodigo);
+            Lista.Recorrer();
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
+            ActualizarBotones();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (Lista.Primero != null)
+            {
+                Int32 x = Convert.ToInt32(cmbCodigo.Text);
+                Lista.Eliminar1(x);
+                Lista.Recorrer(dgvElementos);
+                Lista.Recorrer(lstElementos);
+                Lista.Recorrer(cmbCodigo);
+                Lista.Recorrer();
+            }
+            ActualizarBotones();
         }
     }
 }

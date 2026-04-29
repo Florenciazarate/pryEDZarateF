@@ -55,5 +55,10 @@ namespace pryEDZarateF
             txtTramite.Text = "";
 
         }
+
+        private void frmCola_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -363,6 +363,7 @@
             this.Name = "frmCola";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura de datos: Cola";
+            this.Load += new System.EventHandler(this.frmCola_Load);
             this.grpEliminado.ResumeLayout(false);
             this.grpEliminado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvElementos)).EndInit();

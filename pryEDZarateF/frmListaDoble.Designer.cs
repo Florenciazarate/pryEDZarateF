@@ -313,6 +313,7 @@
             this.radioAscendente.TabStop = true;
             this.radioAscendente.Text = "Ascendente";
             this.radioAscendente.UseVisualStyleBackColor = true;
+            this.radioAscendente.CheckedChanged += new System.EventHandler(this.radioAscendente_CheckedChanged);
             // 
             // frmListaDoble
             // 

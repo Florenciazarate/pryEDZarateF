@@ -33,9 +33,9 @@ namespace pryEDZarateF
             }
             else
             {
-                lblCodigo.Text = "";
-                lblNombre.Text = "";
-                lblTramite.Text = "";
+                lblCodigo22.Text = "";
+                lblNombreEliminado.Text = "";
+                lblTramiteEliminado.Text = "";
             }
         }
 
@@ -49,6 +49,7 @@ namespace pryEDZarateF
             fila.Agregar(n);
             fila.Recorrer(dgvElementos);
             fila.Recorrer(lstElementos);
+            fila.Recorrer();
 
             txtCodigo.Text = "";
             txtNombre.Text = "";

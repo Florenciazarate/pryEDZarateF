@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="clsArchivoTexto.cs" />
     <Compile Include="clsCola.cs" />
+    <Compile Include="clsEstructurasLineales.cs" />
     <Compile Include="clsListaDoble.cs" />
     <Compile Include="clsListaSimple.cs" />
     <Compile Include="clsNodo.cs" />

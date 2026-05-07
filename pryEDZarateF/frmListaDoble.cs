@@ -32,7 +32,7 @@ namespace pryEDZarateF
                 lblCodigo.Text = Convert.ToString(lista.Primero.Codigo);
                 lblNombre.Text = lista.Primero.Nombre;
                 lblTramite.Text = lista.Primero.Tramite;
-                lista.Eliminar(lista.Primero.Codigo); 
+                lista.Eliminar(lista.Primero.Codigo);
                 lista.Recorrer(dgvElementos);
                 lista.Recorrer(lstElementos);
             }
@@ -60,7 +60,7 @@ namespace pryEDZarateF
         }
 
         private void radioAscendente_CheckedChanged(object sender, EventArgs e)
-            {
+        {
             if (radioAscendente.Checked)
             {
                 lista.Recorrer(dgvElementos);
@@ -73,5 +73,5 @@ namespace pryEDZarateF
             }
         }
     }
-    }
+}
 

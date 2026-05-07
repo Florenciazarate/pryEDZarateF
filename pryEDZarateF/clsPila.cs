@@ -8,14 +8,8 @@ using System.Windows.Forms;
 
 namespace pryEDZarateF
 {
-    internal class clsPila
+    internal class clsPila : clsEstructurasLineales
     {
-        private clsNodo pri;
-        public clsNodo Primero
-        {
-            get { return pri; }
-            set { pri = value; }
-        }
         public void Agregar(clsNodo Nuevo)
         {
             if (Primero == null)
@@ -35,50 +29,15 @@ namespace pryEDZarateF
                 Primero = Primero.Siguiente;
             }
         }
-        public void Recorrer(DataGridView Grilla)
+        public new void Recorrer()
         {
             clsNodo aux = Primero;
-            Grilla.Rows.Clear();
-            while (aux != null)
-            {
-                Grilla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);
-                aux = aux.Siguiente;
-            }
-        }
-
-        public void Recorrer (ListBox Lista)
-        {
-            clsNodo aux = Primero;
-            Lista.Items.Clear();
-            while (aux != null)
-            {
-                Lista.Items.Add($" Código: {aux.Codigo}, Nombre: {aux.Nombre}, Trámite: {aux.Tramite}");
-                aux = aux.Siguiente;
-            }
-        }
-        public void Recorrer (ComboBox Combo)
-        {
-            clsNodo aux = Primero;
-            Combo.Items.Clear();
-            while (aux != null)
-            {
-                Combo.Items.Add(aux.Nombre);
-                aux = aux.Siguiente;
-            }
-        }
-        public void Recorrer()
-        {
-            clsNodo aux = Primero;
-            StreamWriter AD = new StreamWriter("Cola.csv", false, Encoding.UTF8);
-            AD.WriteLine("Lista de espera/n");
+            StreamWriter AD = new StreamWriter("Pila.csv", false, Encoding.UTF8);
+            AD.WriteLine("Pila\n");
             AD.WriteLine("Código;Nombre;Tramite");
             while (aux != null)
             {
-                AD.WriteLine(aux.Codigo);
-                AD.Write(";");
-                AD.Write(aux.Nombre);
-                AD.Write(";");
-                AD.WriteLine(aux.Tramite);
+                AD.WriteLine(aux.Codigo + ";" + aux.Nombre + ";" + aux.Tramite);
                 aux = aux.Siguiente;
             }
             AD.Close();

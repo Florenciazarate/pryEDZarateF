@@ -79,7 +79,7 @@ namespace pryEDZarateF
             if (Lista.Primero != null)
             {
                 Int32 x = Convert.ToInt32(cmbCodigo.Text);
-                Lista.Eliminar1(x);
+                Lista.Eliminar(x);
                 Lista.Recorrer(dgvElementos);
                 Lista.Recorrer(lstElementos);
                 Lista.Recorrer(cmbCodigo);

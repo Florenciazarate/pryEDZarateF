@@ -16,7 +16,7 @@ namespace pryEDZarateF
         {
             InitializeComponent();
         }
-        clsCola fila = new clsCola();
+        clsPila fila = new clsPila();
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
@@ -28,6 +28,7 @@ namespace pryEDZarateF
             fila.Agregar(n);
             fila.Recorrer(dgvElementos);
             fila.Recorrer(lstElementos);
+            fila.Recorrer();
 
             txtCodigo.Text = "";
             txtNombre.Text = "";
@@ -50,9 +51,9 @@ namespace pryEDZarateF
             }
             else
             {
-                lblCodigo.Text = "";
-                lblNombre.Text = "";
-                lblTramite.Text = "";
+                lblCodigo22.Text = "";
+                lblNombreEliminado.Text = "";
+                lblTramiteEliminado.Text = "";
             }
         }
     }

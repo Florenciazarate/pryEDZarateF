@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="clsArchivoTexto.cs" />
     <Compile Include="clsCola.cs" />
+    <Compile Include="clsListaDoble.cs" />
     <Compile Include="clsListaSimple.cs" />
     <Compile Include="clsNodo.cs" />
     <Compile Include="clsPila.cs" />
@@ -223,6 +224,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\01 ListasSimplementeEnlazadas1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -117,10 +117,10 @@
             // lblEliminado
             // 
             this.lblEliminado.AutoSize = true;
-            this.lblEliminado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblEliminado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEliminado.Location = new System.Drawing.Point(392, 26);
             this.lblEliminado.Name = "lblEliminado";
-            this.lblEliminado.Size = new System.Drawing.Size(132, 17);
+            this.lblEliminado.Size = new System.Drawing.Size(138, 18);
             this.lblEliminado.TabIndex = 73;
             this.lblEliminado.Text = "Elemento a eliminar";
             // 
@@ -207,6 +207,7 @@
             this.grpElemento.Controls.Add(this.lblNombre);
             this.grpElemento.Controls.Add(this.lblTramite);
             this.grpElemento.Controls.Add(this.lblCodigo);
+            this.grpElemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpElemento.Location = new System.Drawing.Point(23, 28);
             this.grpElemento.Name = "grpElemento";
             this.grpElemento.Size = new System.Drawing.Size(342, 243);
@@ -297,9 +298,10 @@
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.grpElemento);
             this.Controls.Add(this.grpListado);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmListaSimple";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ListaSimple";
+            this.Text = "Lista Simple";
             this.Load += new System.EventHandler(this.frmListaSimple_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvElementos)).EndInit();
             this.grpEliminado.ResumeLayout(false);

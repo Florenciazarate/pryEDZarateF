@@ -16,5 +16,25 @@ namespace pryEDZarateF
         {
             InitializeComponent();
         }
+
+        private void frmListaDoble_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpElemento_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEliminado_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpListar_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

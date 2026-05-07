@@ -51,8 +51,8 @@
             this.lblListado = new System.Windows.Forms.Label();
             this.pctImagen = new System.Windows.Forms.PictureBox();
             this.grpListar = new System.Windows.Forms.GroupBox();
-            this.optAscendente = new System.Windows.Forms.RadioButton();
-            this.optDescendente = new System.Windows.Forms.RadioButton();
+            this.radioDescendente = new System.Windows.Forms.RadioButton();
+            this.radioAscendente = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvElementos)).BeginInit();
             this.grpEliminado.SuspendLayout();
             this.grpElemento.SuspendLayout();
@@ -126,7 +126,6 @@
             this.lblEliminado.Size = new System.Drawing.Size(138, 18);
             this.lblEliminado.TabIndex = 87;
             this.lblEliminado.Text = "Elemento a eliminar";
-            this.lblEliminado.Click += new System.EventHandler(this.lblEliminado_Click);
             // 
             // lblCodigo2
             // 
@@ -168,6 +167,7 @@
             this.btnEliminar.TabIndex = 71;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // txtTramite
             // 
@@ -200,6 +200,7 @@
             this.btnGrabar.TabIndex = 81;
             this.btnGrabar.Text = "Agregar";
             this.btnGrabar.UseVisualStyleBackColor = false;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // grpElemento
             // 
@@ -213,7 +214,6 @@
             this.grpElemento.TabIndex = 85;
             this.grpElemento.TabStop = false;
             this.grpElemento.Text = "Nuevo elemento";
-            this.grpElemento.Enter += new System.EventHandler(this.grpElemento_Enter);
             // 
             // lblNombre
             // 
@@ -282,8 +282,8 @@
             // 
             // grpListar
             // 
-            this.grpListar.Controls.Add(this.optDescendente);
-            this.grpListar.Controls.Add(this.optAscendente);
+            this.grpListar.Controls.Add(this.radioDescendente);
+            this.grpListar.Controls.Add(this.radioAscendente);
             this.grpListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpListar.Location = new System.Drawing.Point(381, 191);
             this.grpListar.Name = "grpListar";
@@ -291,29 +291,28 @@
             this.grpListar.TabIndex = 93;
             this.grpListar.TabStop = false;
             this.grpListar.Text = "Listar datos";
-            this.grpListar.Enter += new System.EventHandler(this.grpListar_Enter);
             // 
-            // optAscendente
+            // radioDescendente
             // 
-            this.optAscendente.AutoSize = true;
-            this.optAscendente.Location = new System.Drawing.Point(12, 26);
-            this.optAscendente.Name = "optAscendente";
-            this.optAscendente.Size = new System.Drawing.Size(103, 22);
-            this.optAscendente.TabIndex = 0;
-            this.optAscendente.TabStop = true;
-            this.optAscendente.Text = "Ascendente";
-            this.optAscendente.UseVisualStyleBackColor = true;
+            this.radioDescendente.AutoSize = true;
+            this.radioDescendente.Location = new System.Drawing.Point(12, 49);
+            this.radioDescendente.Name = "radioDescendente";
+            this.radioDescendente.Size = new System.Drawing.Size(113, 22);
+            this.radioDescendente.TabIndex = 1;
+            this.radioDescendente.TabStop = true;
+            this.radioDescendente.Text = "Descendente";
+            this.radioDescendente.UseVisualStyleBackColor = true;
             // 
-            // optDescendente
+            // radioAscendente
             // 
-            this.optDescendente.AutoSize = true;
-            this.optDescendente.Location = new System.Drawing.Point(12, 49);
-            this.optDescendente.Name = "optDescendente";
-            this.optDescendente.Size = new System.Drawing.Size(113, 22);
-            this.optDescendente.TabIndex = 1;
-            this.optDescendente.TabStop = true;
-            this.optDescendente.Text = "Descendente";
-            this.optDescendente.UseVisualStyleBackColor = true;
+            this.radioAscendente.AutoSize = true;
+            this.radioAscendente.Location = new System.Drawing.Point(12, 26);
+            this.radioAscendente.Name = "radioAscendente";
+            this.radioAscendente.Size = new System.Drawing.Size(103, 22);
+            this.radioAscendente.TabIndex = 0;
+            this.radioAscendente.TabStop = true;
+            this.radioAscendente.Text = "Ascendente";
+            this.radioAscendente.UseVisualStyleBackColor = true;
             // 
             // frmListaDoble
             // 
@@ -377,7 +376,7 @@
         private System.Windows.Forms.GroupBox grpListado;
         private System.Windows.Forms.Label lblListado;
         private System.Windows.Forms.GroupBox grpListar;
-        private System.Windows.Forms.RadioButton optDescendente;
-        private System.Windows.Forms.RadioButton optAscendente;
+        private System.Windows.Forms.RadioButton radioDescendente;
+        private System.Windows.Forms.RadioButton radioAscendente;
     }
 }

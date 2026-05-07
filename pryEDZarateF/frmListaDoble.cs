@@ -15,24 +15,22 @@ namespace pryEDZarateF
         public frmListaDoble()
         {
             InitializeComponent();
+            radioAscendente.Checked = true;
+
         }
+        clsListaDoble lista = new clsListaDoble();
 
         private void frmListaDoble_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void grpElemento_Enter(object sender, EventArgs e)
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lblEliminado_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void grpListar_Enter(object sender, EventArgs e)
+        private void btnGrabar_Click(object sender, EventArgs e)
         {
 
         }

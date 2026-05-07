@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,51 +27,62 @@ namespace pryEDZarateF
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (lista.Primero != null)
-            {
-                lblCodigo.Text = Convert.ToString(lista.Primero.Codigo);
-                lblNombre.Text = lista.Primero.Nombre;
-                lblTramite.Text = lista.Primero.Tramite;
-                lista.Eliminar(lista.Primero.Codigo);
-                lista.Recorrer(dgvElementos);
-                lista.Recorrer(lstElementos);
-            }
-            else
+            if (lista.Primero == null)
             {
                 MessageBox.Show("No hay elementos para eliminar.");
-                lblTramite.Text = "";
-                lblNombre.Text = "";
-                lblCodigo.Text = "";
+                return;
             }
+            if (cmbCodigo.SelectedItem == null)
+            {
+                MessageBox.Show("Seleccioná un código para eliminar.");
+                return;
+            }
+            int codigo = Convert.ToInt32(cmbCodigo.SelectedItem);
+            lista.Eliminar(codigo);
+            ActualizarVistas();
         }
         private void btnGrabar_Click(object sender, EventArgs e)
         {
+            if (!int.TryParse(txtCodigo.Text, out int codigo))
+            {
+                MessageBox.Show("Ingresá un código numérico válido.");
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtTramite.Text))
+            {
+                MessageBox.Show("Completá todos los campos.");
+                return;
+            }
             clsNodo n = new clsNodo();
-            n.Codigo = Convert.ToInt32(txtCodigo.Text);
+            n.Codigo = codigo;
             n.Nombre = txtNombre.Text;
             n.Tramite = txtTramite.Text;
             lista.Agregar(n);
-            lista.Recorrer(dgvElementos);
-            lista.Recorrer(lstElementos);
+            ActualizarVistas();
             txtCodigo.Clear();
             txtNombre.Clear();
             txtTramite.Clear();
-
         }
 
         private void radioAscendente_CheckedChanged(object sender, EventArgs e)
+        {
+            ActualizarVistas();
+        }
+
+        private void ActualizarVistas()
         {
             if (radioAscendente.Checked)
             {
                 lista.Recorrer(dgvElementos);
                 lista.Recorrer(lstElementos);
+                lista.Recorrer(cmbCodigo);
             }
             else
             {
                 lista.RecorrerDesc(dgvElementos);
                 lista.RecorrerDesc(lstElementos);
+                lista.RecorrerDesc(cmbCodigo);
             }
         }
     }
 }
-

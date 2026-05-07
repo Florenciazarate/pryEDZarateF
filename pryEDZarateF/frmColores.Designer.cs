@@ -1,4 +1,4 @@
-﻿namespace pryEDZarateF
+namespace pryEDZarateF
 {
     partial class frmColores
     {
@@ -28,133 +28,280 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnListar = new System.Windows.Forms.Button();
-            this.btnGrabar = new System.Windows.Forms.Button();
-            this.txtNombreColor = new System.Windows.Forms.TextBox();
+            this.pnlHeader = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlBarraColor = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblSubtitulo = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.pnlNuevo = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnListar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnGrabar = new Guna.UI2.WinForms.Guna2Button();
+            this.txtNombreColor = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblColor = new System.Windows.Forms.Label();
+            this.lblNuevoSub = new System.Windows.Forms.Label();
+            this.lblNuevoTitulo = new System.Windows.Forms.Label();
+            this.pnlListado = new Guna.UI2.WinForms.Guna2Panel();
             this.lstColor = new System.Windows.Forms.ListBox();
-            this.groupColor = new System.Windows.Forms.GroupBox();
-            this.groupBienvenido = new System.Windows.Forms.GroupBox();
-            this.groupColor.SuspendLayout();
-            this.groupBienvenido.SuspendLayout();
+            this.lblListadoSub = new System.Windows.Forms.Label();
+            this.lblListado = new System.Windows.Forms.Label();
+            this.pnlHeader.SuspendLayout();
+            this.pnlNuevo.SuspendLayout();
+            this.pnlListado.SuspendLayout();
             this.SuspendLayout();
-            // 
+            //
+            // pnlHeader
+            //
+            this.pnlHeader.BackColor = System.Drawing.Color.White;
+            this.pnlHeader.Controls.Add(this.pnlBarraColor);
+            this.pnlHeader.Controls.Add(this.lblSubtitulo);
+            this.pnlHeader.Controls.Add(this.lblTitulo);
+            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeader.Name = "pnlHeader";
+            this.pnlHeader.ShadowDecoration.Depth = 4;
+            this.pnlHeader.ShadowDecoration.Enabled = true;
+            this.pnlHeader.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 6);
+            this.pnlHeader.Size = new System.Drawing.Size(900, 95);
+            this.pnlHeader.TabIndex = 0;
+            //
+            // pnlBarraColor
+            //
+            this.pnlBarraColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(72)))), ((int)(((byte)(153)))));
+            this.pnlBarraColor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(72)))), ((int)(((byte)(153)))));
+            this.pnlBarraColor.Location = new System.Drawing.Point(35, 25);
+            this.pnlBarraColor.Name = "pnlBarraColor";
+            this.pnlBarraColor.Size = new System.Drawing.Size(5, 50);
+            this.pnlBarraColor.TabIndex = 2;
+            //
+            // lblSubtitulo
+            //
+            this.lblSubtitulo.AutoSize = true;
+            this.lblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
+            this.lblSubtitulo.Location = new System.Drawing.Point(54, 56);
+            this.lblSubtitulo.Name = "lblSubtitulo";
+            this.lblSubtitulo.Size = new System.Drawing.Size(217, 19);
+            this.lblSubtitulo.TabIndex = 1;
+            this.lblSubtitulo.Text = "Catálogo de colores del sistema";
+            //
+            // lblTitulo
+            //
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblTitulo.Location = new System.Drawing.Point(50, 20);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(105, 37);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "Colores";
+            //
+            // pnlNuevo
+            //
+            this.pnlNuevo.BackColor = System.Drawing.Color.Transparent;
+            this.pnlNuevo.BorderRadius = 14;
+            this.pnlNuevo.Controls.Add(this.btnListar);
+            this.pnlNuevo.Controls.Add(this.btnGrabar);
+            this.pnlNuevo.Controls.Add(this.txtNombreColor);
+            this.pnlNuevo.Controls.Add(this.lblColor);
+            this.pnlNuevo.Controls.Add(this.lblNuevoSub);
+            this.pnlNuevo.Controls.Add(this.lblNuevoTitulo);
+            this.pnlNuevo.FillColor = System.Drawing.Color.White;
+            this.pnlNuevo.Location = new System.Drawing.Point(25, 115);
+            this.pnlNuevo.Name = "pnlNuevo";
+            this.pnlNuevo.ShadowDecoration.BorderRadius = 14;
+            this.pnlNuevo.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(235)))));
+            this.pnlNuevo.ShadowDecoration.Depth = 8;
+            this.pnlNuevo.ShadowDecoration.Enabled = true;
+            this.pnlNuevo.Size = new System.Drawing.Size(380, 320);
+            this.pnlNuevo.TabIndex = 1;
+            //
             // btnListar
-            // 
-            this.btnListar.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListar.Location = new System.Drawing.Point(148, 79);
-            this.btnListar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            //
+            this.btnListar.BorderRadius = 8;
+            this.btnListar.BorderThickness = 0;
+            this.btnListar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnListar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnListar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
+            this.btnListar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(163)))), ((int)(((byte)(175)))));
+            this.btnListar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(231)))), ((int)(((byte)(243)))));
+            this.btnListar.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.btnListar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(39)))), ((int)(((byte)(119)))));
+            this.btnListar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(207)))), ((int)(((byte)(232)))));
+            this.btnListar.Location = new System.Drawing.Point(25, 195);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(80, 30);
-            this.btnListar.TabIndex = 0;
+            this.btnListar.Size = new System.Drawing.Size(150, 45);
+            this.btnListar.TabIndex = 5;
             this.btnListar.Text = "Listar";
-            this.btnListar.UseVisualStyleBackColor = true;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
-            // 
+            //
             // btnGrabar
-            // 
-            this.btnGrabar.BackColor = System.Drawing.Color.FloralWhite;
+            //
+            this.btnGrabar.BorderRadius = 8;
+            this.btnGrabar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGrabar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGrabar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
+            this.btnGrabar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(163)))), ((int)(((byte)(175)))));
             this.btnGrabar.Enabled = false;
-            this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnGrabar.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.Location = new System.Drawing.Point(236, 79);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnGrabar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(72)))), ((int)(((byte)(153)))));
+            this.btnGrabar.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.btnGrabar.ForeColor = System.Drawing.Color.White;
+            this.btnGrabar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(39)))), ((int)(((byte)(119)))));
+            this.btnGrabar.Location = new System.Drawing.Point(195, 195);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(80, 30);
-            this.btnGrabar.TabIndex = 1;
+            this.btnGrabar.Size = new System.Drawing.Size(160, 45);
+            this.btnGrabar.TabIndex = 4;
             this.btnGrabar.Text = "Grabar";
-            this.btnGrabar.UseVisualStyleBackColor = false;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
-            // 
+            //
             // txtNombreColor
-            // 
-            this.txtNombreColor.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.txtNombreColor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombreColor.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreColor.Location = new System.Drawing.Point(66, 49);
+            //
+            this.txtNombreColor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
+            this.txtNombreColor.BorderRadius = 8;
+            this.txtNombreColor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombreColor.DefaultText = "";
+            this.txtNombreColor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNombreColor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNombreColor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreColor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreColor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(72)))), ((int)(((byte)(153)))));
+            this.txtNombreColor.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtNombreColor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(207)))), ((int)(((byte)(232)))));
+            this.txtNombreColor.Location = new System.Drawing.Point(25, 140);
+            this.txtNombreColor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombreColor.Name = "txtNombreColor";
-            this.txtNombreColor.Size = new System.Drawing.Size(250, 22);
+            this.txtNombreColor.PlaceholderText = "Ej: Magenta";
+            this.txtNombreColor.SelectedText = "";
+            this.txtNombreColor.Size = new System.Drawing.Size(330, 40);
             this.txtNombreColor.TabIndex = 3;
             this.txtNombreColor.TextChanged += new System.EventHandler(this.txtNombreColor_TextChanged);
-            // 
+            //
             // lblColor
-            // 
+            //
             this.lblColor.AutoSize = true;
-            this.lblColor.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColor.Location = new System.Drawing.Point(20, 52);
+            this.lblColor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.lblColor.Location = new System.Drawing.Point(25, 120);
             this.lblColor.Name = "lblColor";
-            this.lblColor.Size = new System.Drawing.Size(40, 17);
-            this.lblColor.TabIndex = 4;
-            this.lblColor.Text = "Color";
-            // 
+            this.lblColor.Size = new System.Drawing.Size(46, 15);
+            this.lblColor.TabIndex = 2;
+            this.lblColor.Text = "COLOR";
+            //
+            // lblNuevoSub
+            //
+            this.lblNuevoSub.AutoSize = true;
+            this.lblNuevoSub.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblNuevoSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
+            this.lblNuevoSub.Location = new System.Drawing.Point(25, 60);
+            this.lblNuevoSub.Name = "lblNuevoSub";
+            this.lblNuevoSub.Size = new System.Drawing.Size(259, 15);
+            this.lblNuevoSub.TabIndex = 1;
+            this.lblNuevoSub.Text = "Cargá un color al catálogo del sistema";
+            //
+            // lblNuevoTitulo
+            //
+            this.lblNuevoTitulo.AutoSize = true;
+            this.lblNuevoTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.lblNuevoTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblNuevoTitulo.Location = new System.Drawing.Point(22, 25);
+            this.lblNuevoTitulo.Name = "lblNuevoTitulo";
+            this.lblNuevoTitulo.Size = new System.Drawing.Size(118, 25);
+            this.lblNuevoTitulo.TabIndex = 0;
+            this.lblNuevoTitulo.Text = "Nuevo color";
+            //
+            // pnlListado
+            //
+            this.pnlListado.BackColor = System.Drawing.Color.Transparent;
+            this.pnlListado.BorderRadius = 14;
+            this.pnlListado.Controls.Add(this.lstColor);
+            this.pnlListado.Controls.Add(this.lblListadoSub);
+            this.pnlListado.Controls.Add(this.lblListado);
+            this.pnlListado.FillColor = System.Drawing.Color.White;
+            this.pnlListado.Location = new System.Drawing.Point(425, 115);
+            this.pnlListado.Name = "pnlListado";
+            this.pnlListado.ShadowDecoration.BorderRadius = 14;
+            this.pnlListado.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(235)))));
+            this.pnlListado.ShadowDecoration.Depth = 8;
+            this.pnlListado.ShadowDecoration.Enabled = true;
+            this.pnlListado.Size = new System.Drawing.Size(450, 360);
+            this.pnlListado.TabIndex = 2;
+            //
             // lstColor
-            // 
-            this.lstColor.BackColor = System.Drawing.Color.AntiqueWhite;
+            //
+            this.lstColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.lstColor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lstColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lstColor.ForeColor = System.Drawing.Color.OliveDrab;
+            this.lstColor.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lstColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.lstColor.FormattingEnabled = true;
-            this.lstColor.ItemHeight = 20;
-            this.lstColor.Location = new System.Drawing.Point(409, 43);
+            this.lstColor.IntegralHeight = false;
+            this.lstColor.ItemHeight = 23;
+            this.lstColor.Location = new System.Drawing.Point(25, 95);
             this.lstColor.Name = "lstColor";
-            this.lstColor.Size = new System.Drawing.Size(337, 140);
-            this.lstColor.TabIndex = 8;
-            // 
-            // groupColor
-            // 
-            this.groupColor.Controls.Add(this.btnGrabar);
-            this.groupColor.Controls.Add(this.lblColor);
-            this.groupColor.Controls.Add(this.txtNombreColor);
-            this.groupColor.Controls.Add(this.btnListar);
-            this.groupColor.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupColor.Location = new System.Drawing.Point(26, 34);
-            this.groupColor.Name = "groupColor";
-            this.groupColor.Size = new System.Drawing.Size(365, 150);
-            this.groupColor.TabIndex = 9;
-            this.groupColor.TabStop = false;
-            this.groupColor.Text = "Ingresar un color";
-            // 
-            // groupBienvenido
-            // 
-            this.groupBienvenido.Controls.Add(this.groupColor);
-            this.groupBienvenido.Controls.Add(this.lstColor);
-            this.groupBienvenido.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBienvenido.Location = new System.Drawing.Point(23, 21);
-            this.groupBienvenido.Name = "groupBienvenido";
-            this.groupBienvenido.Size = new System.Drawing.Size(788, 222);
-            this.groupBienvenido.TabIndex = 10;
-            this.groupBienvenido.TabStop = false;
-            this.groupBienvenido.Text = "Bienvenido a la sección colores";
-            // 
+            this.lstColor.Size = new System.Drawing.Size(400, 240);
+            this.lstColor.TabIndex = 2;
+            //
+            // lblListadoSub
+            //
+            this.lblListadoSub.AutoSize = true;
+            this.lblListadoSub.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblListadoSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
+            this.lblListadoSub.Location = new System.Drawing.Point(25, 60);
+            this.lblListadoSub.Name = "lblListadoSub";
+            this.lblListadoSub.Size = new System.Drawing.Size(196, 15);
+            this.lblListadoSub.TabIndex = 1;
+            this.lblListadoSub.Text = "Colores cargados en el sistema";
+            //
+            // lblListado
+            //
+            this.lblListado.AutoSize = true;
+            this.lblListado.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.lblListado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblListado.Location = new System.Drawing.Point(22, 25);
+            this.lblListado.Name = "lblListado";
+            this.lblListado.Size = new System.Drawing.Size(154, 25);
+            this.lblListado.TabIndex = 0;
+            this.lblListado.Text = "Listado de colores";
+            //
             // frmColores
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            //
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FloralWhite;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(823, 268);
-            this.Controls.Add(this.groupBienvenido);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
+            this.ClientSize = new System.Drawing.Size(900, 500);
+            this.Controls.Add(this.pnlListado);
+            this.Controls.Add(this.pnlNuevo);
+            this.Controls.Add(this.pnlHeader);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frmColores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Colores";
             this.Load += new System.EventHandler(this.frmColores_Load);
-            this.groupColor.ResumeLayout(false);
-            this.groupColor.PerformLayout();
-            this.groupBienvenido.ResumeLayout(false);
+            this.pnlHeader.ResumeLayout(false);
+            this.pnlHeader.PerformLayout();
+            this.pnlNuevo.ResumeLayout(false);
+            this.pnlNuevo.PerformLayout();
+            this.pnlListado.ResumeLayout(false);
+            this.pnlListado.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnListar;
-        private System.Windows.Forms.Button btnGrabar;
-        private System.Windows.Forms.TextBox txtNombreColor;
+        private Guna.UI2.WinForms.Guna2Panel pnlHeader;
+        private Guna.UI2.WinForms.Guna2Panel pnlBarraColor;
+        private System.Windows.Forms.Label lblSubtitulo;
+        private System.Windows.Forms.Label lblTitulo;
+        private Guna.UI2.WinForms.Guna2Panel pnlNuevo;
+        private Guna.UI2.WinForms.Guna2Button btnListar;
+        private Guna.UI2.WinForms.Guna2Button btnGrabar;
+        private Guna.UI2.WinForms.Guna2TextBox txtNombreColor;
         private System.Windows.Forms.Label lblColor;
+        private System.Windows.Forms.Label lblNuevoSub;
+        private System.Windows.Forms.Label lblNuevoTitulo;
+        private Guna.UI2.WinForms.Guna2Panel pnlListado;
         private System.Windows.Forms.ListBox lstColor;
-        private System.Windows.Forms.GroupBox groupColor;
-        private System.Windows.Forms.GroupBox groupBienvenido;
+        private System.Windows.Forms.Label lblListadoSub;
+        private System.Windows.Forms.Label lblListado;
     }
 }

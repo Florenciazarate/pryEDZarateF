@@ -20,8 +20,18 @@ namespace pryEDZarateF
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
+            if (!int.TryParse(txtCodigo.Text, out int codigo))
+            {
+                MessageBox.Show("Ingresá un código numérico válido.");
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtTramite.Text))
+            {
+                MessageBox.Show("Completá todos los campos.");
+                return;
+            }
             clsNodo n = new clsNodo();
-            n.Codigo = Convert.ToInt32(txtCodigo.Text);
+            n.Codigo = codigo;
             n.Nombre = txtNombre.Text;
             n.Tramite = txtTramite.Text;
 

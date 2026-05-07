@@ -1,4 +1,4 @@
-﻿namespace pryEDZarateF
+namespace pryEDZarateF
 {
     partial class frmPrincipal
     {
@@ -53,12 +53,19 @@
             this.operacionesEnBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasVariasConOperacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.pnlAccent = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblSubtitulo = new System.Windows.Forms.Label();
+            this.lblHint = new System.Windows.Forms.Label();
+            this.lblFooter = new System.Windows.Forms.Label();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // menu
             // 
-            this.menu.BackColor = System.Drawing.Color.SlateGray;
+            this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.menu.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.menu.ForeColor = System.Drawing.Color.White;
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sistemaToolStripMenuItem,
             this.programaciónOOToolStripMenuItem,
@@ -67,7 +74,9 @@
             this.aToolStripMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(800, 29);
+            this.menu.Padding = new System.Windows.Forms.Padding(12, 4, 0, 4);
+            this.menu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.menu.Size = new System.Drawing.Size(940, 31);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -76,22 +85,23 @@
             this.sistemaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.acercaDeToolStripMenuItem,
             this.salirToolStripMenuItem});
-            this.sistemaToolStripMenuItem.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sistemaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.sistemaToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
-            this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(73, 25);
+            this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(68, 23);
             this.sistemaToolStripMenuItem.Text = "Sistema";
             // 
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
             this.acercaDeToolStripMenuItem.Text = "Acerca de...";
             this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -103,43 +113,44 @@
             this.clientesToolStripMenuItem,
             this.alumnosToolStripMenuItem,
             this.carrerasToolStripMenuItem});
-            this.programaciónOOToolStripMenuItem.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.programaciónOOToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.programaciónOOToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.programaciónOOToolStripMenuItem.Name = "programaciónOOToolStripMenuItem";
-            this.programaciónOOToolStripMenuItem.Size = new System.Drawing.Size(148, 25);
+            this.programaciónOOToolStripMenuItem.Size = new System.Drawing.Size(132, 23);
             this.programaciónOOToolStripMenuItem.Text = "Programación OO";
             // 
             // coloresToolStripMenuItem
             // 
             this.coloresToolStripMenuItem.Name = "coloresToolStripMenuItem";
-            this.coloresToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.coloresToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
             this.coloresToolStripMenuItem.Text = "Colores...";
             this.coloresToolStripMenuItem.Click += new System.EventHandler(this.coloresToolStripMenuItem_Click);
             // 
             // mesesToolStripMenuItem1
             // 
             this.mesesToolStripMenuItem1.Name = "mesesToolStripMenuItem1";
-            this.mesesToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
+            this.mesesToolStripMenuItem1.Size = new System.Drawing.Size(141, 24);
             this.mesesToolStripMenuItem1.Text = "Meses...";
             this.mesesToolStripMenuItem1.Click += new System.EventHandler(this.mesesToolStripMenuItem1_Click);
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
             this.clientesToolStripMenuItem.Text = "Clientes...";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // alumnosToolStripMenuItem
             // 
             this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
-            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
             this.alumnosToolStripMenuItem.Text = "Alumnos...";
             this.alumnosToolStripMenuItem.Click += new System.EventHandler(this.alumnosToolStripMenuItem_Click_1);
             // 
             // carrerasToolStripMenuItem
             // 
             this.carrerasToolStripMenuItem.Name = "carrerasToolStripMenuItem";
-            this.carrerasToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.carrerasToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
             this.carrerasToolStripMenuItem.Text = "Carreras...";
             this.carrerasToolStripMenuItem.Click += new System.EventHandler(this.carrerasToolStripMenuItem_Click);
             // 
@@ -150,36 +161,37 @@
             this.pilaToolStripMenuItem,
             this.listaSimpleToolStripMenuItem,
             this.listaDobleToolStripMenuItem});
-            this.estructurasLinealesToolStripMenuItem.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estructurasLinealesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.estructurasLinealesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.estructurasLinealesToolStripMenuItem.Name = "estructurasLinealesToolStripMenuItem";
-            this.estructurasLinealesToolStripMenuItem.Size = new System.Drawing.Size(155, 25);
+            this.estructurasLinealesToolStripMenuItem.Size = new System.Drawing.Size(137, 23);
             this.estructurasLinealesToolStripMenuItem.Text = "Estructuras lineales";
             // 
             // colaToolStripMenuItem
             // 
             this.colaToolStripMenuItem.Name = "colaToolStripMenuItem";
-            this.colaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.colaToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
             this.colaToolStripMenuItem.Text = "Cola...";
             this.colaToolStripMenuItem.Click += new System.EventHandler(this.colaToolStripMenuItem_Click);
             // 
             // pilaToolStripMenuItem
             // 
             this.pilaToolStripMenuItem.Name = "pilaToolStripMenuItem";
-            this.pilaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.pilaToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
             this.pilaToolStripMenuItem.Text = "Pila...";
             this.pilaToolStripMenuItem.Click += new System.EventHandler(this.pilaToolStripMenuItem_Click);
             // 
             // listaSimpleToolStripMenuItem
             // 
             this.listaSimpleToolStripMenuItem.Name = "listaSimpleToolStripMenuItem";
-            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
             this.listaSimpleToolStripMenuItem.Text = "Lista simple...";
             this.listaSimpleToolStripMenuItem.Click += new System.EventHandler(this.listaSimpleToolStripMenuItem_Click);
             // 
             // listaDobleToolStripMenuItem
             // 
             this.listaDobleToolStripMenuItem.Name = "listaDobleToolStripMenuItem";
-            this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
             this.listaDobleToolStripMenuItem.Text = "Lista doble...";
             this.listaDobleToolStripMenuItem.Click += new System.EventHandler(this.listaDobleToolStripMenuItem_Click);
             // 
@@ -188,21 +200,22 @@
             this.estructurasNoLinealesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arbolToolStripMenuItem,
             this.grafoToolStripMenuItem});
-            this.estructurasNoLinealesToolStripMenuItem.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estructurasNoLinealesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.estructurasNoLinealesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.estructurasNoLinealesToolStripMenuItem.Name = "estructurasNoLinealesToolStripMenuItem";
-            this.estructurasNoLinealesToolStripMenuItem.Size = new System.Drawing.Size(177, 25);
+            this.estructurasNoLinealesToolStripMenuItem.Size = new System.Drawing.Size(157, 23);
             this.estructurasNoLinealesToolStripMenuItem.Text = "Estructuras no lineales";
             // 
             // arbolToolStripMenuItem
             // 
             this.arbolToolStripMenuItem.Name = "arbolToolStripMenuItem";
-            this.arbolToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.arbolToolStripMenuItem.Size = new System.Drawing.Size(121, 24);
             this.arbolToolStripMenuItem.Text = "Arbol...";
             // 
             // grafoToolStripMenuItem
             // 
             this.grafoToolStripMenuItem.Name = "grafoToolStripMenuItem";
-            this.grafoToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.grafoToolStripMenuItem.Size = new System.Drawing.Size(121, 24);
             this.grafoToolStripMenuItem.Text = "Grafo...";
             // 
             // aToolStripMenuItem
@@ -212,33 +225,34 @@
             this.consultaDeUnaBaseDeDatosToolStripMenuItem,
             this.operacionesEnBaseDeDatosToolStripMenuItem,
             this.consultasVariasConOperacionesToolStripMenuItem});
-            this.aToolStripMenuItem.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.aToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.aToolStripMenuItem.Name = "aToolStripMenuItem";
-            this.aToolStripMenuItem.Size = new System.Drawing.Size(119, 25);
+            this.aToolStripMenuItem.Size = new System.Drawing.Size(108, 23);
             this.aToolStripMenuItem.Text = "Base de Datos";
             // 
             // consultaDeUnaTablaToolStripMenuItem
             // 
             this.consultaDeUnaTablaToolStripMenuItem.Name = "consultaDeUnaTablaToolStripMenuItem";
-            this.consultaDeUnaTablaToolStripMenuItem.Size = new System.Drawing.Size(319, 26);
+            this.consultaDeUnaTablaToolStripMenuItem.Size = new System.Drawing.Size(289, 24);
             this.consultaDeUnaTablaToolStripMenuItem.Text = "Consulta de una tabla...";
             // 
             // consultaDeUnaBaseDeDatosToolStripMenuItem
             // 
             this.consultaDeUnaBaseDeDatosToolStripMenuItem.Name = "consultaDeUnaBaseDeDatosToolStripMenuItem";
-            this.consultaDeUnaBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(319, 26);
+            this.consultaDeUnaBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(289, 24);
             this.consultaDeUnaBaseDeDatosToolStripMenuItem.Text = "Consulta de una Base de Datos...";
             // 
             // operacionesEnBaseDeDatosToolStripMenuItem
             // 
             this.operacionesEnBaseDeDatosToolStripMenuItem.Name = "operacionesEnBaseDeDatosToolStripMenuItem";
-            this.operacionesEnBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(319, 26);
+            this.operacionesEnBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(289, 24);
             this.operacionesEnBaseDeDatosToolStripMenuItem.Text = "Operaciones en Base de Datos...";
             // 
             // consultasVariasConOperacionesToolStripMenuItem
             // 
             this.consultasVariasConOperacionesToolStripMenuItem.Name = "consultasVariasConOperacionesToolStripMenuItem";
-            this.consultasVariasConOperacionesToolStripMenuItem.Size = new System.Drawing.Size(319, 26);
+            this.consultasVariasConOperacionesToolStripMenuItem.Size = new System.Drawing.Size(289, 24);
             this.consultasVariasConOperacionesToolStripMenuItem.Text = "Consultas varias con operaciones...";
             // 
             // contextMenuStrip1
@@ -246,21 +260,80 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // pnlAccent
+            // 
+            this.pnlAccent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
+            this.pnlAccent.BorderRadius = 2;
+            this.pnlAccent.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
+            this.pnlAccent.Location = new System.Drawing.Point(440, 195);
+            this.pnlAccent.Name = "pnlAccent";
+            this.pnlAccent.Size = new System.Drawing.Size(60, 4);
+            this.pnlAccent.TabIndex = 1;
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 28F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblTitulo.Location = new System.Drawing.Point(0, 215);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(940, 60);
+            this.lblTitulo.TabIndex = 2;
+            this.lblTitulo.Text = "Estructuras de Datos";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSubtitulo
+            // 
+            this.lblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.lblSubtitulo.Location = new System.Drawing.Point(0, 280);
+            this.lblSubtitulo.Name = "lblSubtitulo";
+            this.lblSubtitulo.Size = new System.Drawing.Size(940, 25);
+            this.lblSubtitulo.TabIndex = 3;
+            this.lblSubtitulo.Text = "Trabajo práctico · Programación Orientada a Objetos";
+            this.lblSubtitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHint
+            // 
+            this.lblHint.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblHint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(163)))), ((int)(((byte)(184)))));
+            this.lblHint.Location = new System.Drawing.Point(0, 350);
+            this.lblHint.Name = "lblHint";
+            this.lblHint.Size = new System.Drawing.Size(940, 22);
+            this.lblHint.TabIndex = 4;
+            this.lblHint.Text = "Seleccioná una sección desde el menú superior";
+            this.lblHint.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblFooter
+            // 
+            this.lblFooter.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.lblFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(163)))), ((int)(((byte)(184)))));
+            this.lblFooter.Location = new System.Drawing.Point(0, 590);
+            this.lblFooter.Name = "lblFooter";
+            this.lblFooter.Size = new System.Drawing.Size(940, 20);
+            this.lblFooter.TabIndex = 5;
+            this.lblFooter.Text = "Comisión MB - Profesora Erica Bongiovanni";
+            this.lblFooter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::pryEDZarateF.Properties.Resources.happy_fairy_tail_minimalistic_wallpaper_by_greenmapple17;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
+            this.ClientSize = new System.Drawing.Size(940, 620);
+            this.Controls.Add(this.lblFooter);
+            this.Controls.Add(this.lblHint);
+            this.Controls.Add(this.lblSubtitulo);
+            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.pnlAccent);
             this.Controls.Add(this.menu);
             this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menu;
+            this.MaximizeBox = false;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura de Datos";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             this.ResumeLayout(false);
@@ -294,6 +367,10 @@
         private System.Windows.Forms.ToolStripMenuItem alumnosToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem carrerasToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2Panel pnlAccent;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label lblSubtitulo;
+        private System.Windows.Forms.Label lblHint;
+        private System.Windows.Forms.Label lblFooter;
     }
 }
-

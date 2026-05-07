@@ -125,7 +125,7 @@ namespace pryEDZarateF
             combo.Items.Clear();
             while (aux != null)
             {
-                combo.Items.Add(aux.Nombre);
+                combo.Items.Add(aux.Codigo);
                 aux = aux.Anterior;
             }
         }

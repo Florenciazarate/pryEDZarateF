@@ -1,8 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,8 +19,6 @@ namespace pryEDZarateF
             "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
         };
 
-        private bool filtrando = false;
-
         public frmMeses()
         {
             InitializeComponent();
@@ -31,66 +30,42 @@ namespace pryEDZarateF
         {
         }
 
-        private string MesValido()
-        {
-            return meses.FirstOrDefault(m =>
-                m.Equals(cmbMeses.Text.Trim(), StringComparison.OrdinalIgnoreCase));
-        }
-
         private void ActualizarEstadoBotonGrabar()
         {
-            btnGrabar.Enabled = MesValido() != null;
+            btnGrabar.Enabled = cmbMeses.SelectedIndex >= 0;
         }
 
-        private void cmbMeses_TextChanged(object sender, EventArgs e)
+        private void cmbMeses_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (filtrando) return;
-            filtrando = true;
-            try
-            {
-                string texto = cmbMeses.Text;
-                int pos = cmbMeses.SelectionStart;
-
-                var coincidencias = string.IsNullOrWhiteSpace(texto)
-                    ? meses
-                    : meses.Where(m => m.StartsWith(texto, StringComparison.OrdinalIgnoreCase)).ToArray();
-
-                cmbMeses.BeginUpdate();
-                cmbMeses.Items.Clear();
-                cmbMeses.Items.AddRange(coincidencias);
-                cmbMeses.EndUpdate();
-                cmbMeses.Text = texto;
-                cmbMeses.SelectionStart = pos;
-                cmbMeses.SelectionLength = 0;
-
-                if (!string.IsNullOrWhiteSpace(texto) && coincidencias.Length > 0)
-                {
-                    cmbMeses.DroppedDown = true;
-                    Cursor.Current = Cursors.Default;
-                    cmbMeses.SelectionStart = pos;
-                }
-
-                ActualizarEstadoBotonGrabar();
-            }
-            finally
-            {
-                filtrando = false;
-            }
+            ActualizarEstadoBotonGrabar();
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
-            var mes = MesValido();
-            if (mes == null)
+            if (cmbMeses.SelectedIndex < 0)
             {
-                MessageBox.Show("Seleccione un mes válido");
+                MessageBox.Show("Seleccioná un mes válido");
                 return;
             }
+            string mes = cmbMeses.SelectedItem.ToString();
+
+            string archivo = "Meses.csv";
+            if (File.Exists(archivo))
+            {
+                var lineas = File.ReadAllLines(archivo);
+                if (lineas.Any(l => l.Trim().Equals(mes, StringComparison.OrdinalIgnoreCase)))
+                {
+                    MessageBox.Show("Ese mes ya está cargado.");
+                    return;
+                }
+            }
+
             clsArchivoTexto x = new clsArchivoTexto();
-            x.NombreArchivo = "Meses.csv";
+            x.NombreArchivo = archivo;
             x.Grabar(mes);
             MessageBox.Show("Mes grabado correctamente");
-            cmbMeses.Text = "";
+            cmbMeses.SelectedIndex = -1;
+            ActualizarEstadoBotonGrabar();
         }
 
         private void btnListar_Click_1(object sender, EventArgs e)

@@ -28,6 +28,7 @@ namespace pryEDZarateF
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmColores));
             this.pnlHeader = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlBarraColor = new Guna.UI2.WinForms.Guna2Panel();
             this.lblSubtitulo = new System.Windows.Forms.Label();
@@ -258,6 +259,7 @@ namespace pryEDZarateF
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmColores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

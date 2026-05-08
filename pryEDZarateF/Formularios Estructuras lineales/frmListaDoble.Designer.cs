@@ -31,6 +31,8 @@ namespace pryEDZarateF
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListaDoble));
             this.pnlHeader = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlBarraColor = new Guna.UI2.WinForms.Guna2Panel();
             this.lblSubtitulo = new System.Windows.Forms.Label();
@@ -50,10 +52,10 @@ namespace pryEDZarateF
             this.lblCodigo2 = new System.Windows.Forms.Label();
             this.lblEliminado = new System.Windows.Forms.Label();
             this.pnlOrden = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblDescendenteTxt = new System.Windows.Forms.Label();
+            this.lblAscendenteTxt = new System.Windows.Forms.Label();
             this.radioDescendente = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.radioAscendente = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.lblAscendenteTxt = new System.Windows.Forms.Label();
-            this.lblDescendenteTxt = new System.Windows.Forms.Label();
             this.lblOrdenSub = new System.Windows.Forms.Label();
             this.lblOrden = new System.Windows.Forms.Label();
             this.pnlListado = new Guna.UI2.WinForms.Guna2Panel();
@@ -71,9 +73,9 @@ namespace pryEDZarateF
             this.pnlListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvElementos)).BeginInit();
             this.SuspendLayout();
-            //
+            // 
             // pnlHeader
-            //
+            // 
             this.pnlHeader.BackColor = System.Drawing.Color.White;
             this.pnlHeader.Controls.Add(this.pnlBarraColor);
             this.pnlHeader.Controls.Add(this.lblSubtitulo);
@@ -86,40 +88,40 @@ namespace pryEDZarateF
             this.pnlHeader.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 6);
             this.pnlHeader.Size = new System.Drawing.Size(1100, 95);
             this.pnlHeader.TabIndex = 0;
-            //
+            // 
             // pnlBarraColor
-            //
+            // 
             this.pnlBarraColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
             this.pnlBarraColor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
             this.pnlBarraColor.Location = new System.Drawing.Point(35, 25);
             this.pnlBarraColor.Name = "pnlBarraColor";
             this.pnlBarraColor.Size = new System.Drawing.Size(5, 50);
             this.pnlBarraColor.TabIndex = 2;
-            //
+            // 
             // lblSubtitulo
-            //
+            // 
             this.lblSubtitulo.AutoSize = true;
             this.lblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
             this.lblSubtitulo.Location = new System.Drawing.Point(54, 56);
             this.lblSubtitulo.Name = "lblSubtitulo";
-            this.lblSubtitulo.Size = new System.Drawing.Size(217, 19);
+            this.lblSubtitulo.Size = new System.Drawing.Size(205, 19);
             this.lblSubtitulo.TabIndex = 1;
             this.lblSubtitulo.Text = "Estructura doblemente enlazada";
-            //
+            // 
             // lblTitulo
-            //
+            // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
             this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.lblTitulo.Location = new System.Drawing.Point(50, 20);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(165, 37);
+            this.lblTitulo.Size = new System.Drawing.Size(152, 37);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Lista Doble";
-            //
+            // 
             // pnlNuevo
-            //
+            // 
             this.pnlNuevo.BackColor = System.Drawing.Color.Transparent;
             this.pnlNuevo.BorderRadius = 14;
             this.pnlNuevo.Controls.Add(this.btnGrabar);
@@ -139,9 +141,9 @@ namespace pryEDZarateF
             this.pnlNuevo.ShadowDecoration.Enabled = true;
             this.pnlNuevo.Size = new System.Drawing.Size(380, 400);
             this.pnlNuevo.TabIndex = 1;
-            //
+            // 
             // btnGrabar
-            //
+            // 
             this.btnGrabar.BorderRadius = 8;
             this.btnGrabar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGrabar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -157,9 +159,9 @@ namespace pryEDZarateF
             this.btnGrabar.TabIndex = 7;
             this.btnGrabar.Text = "Agregar";
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
-            //
+            // 
             // txtTramite
-            //
+            // 
             this.txtTramite.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
             this.txtTramite.BorderRadius = 8;
             this.txtTramite.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -178,9 +180,9 @@ namespace pryEDZarateF
             this.txtTramite.SelectedText = "";
             this.txtTramite.Size = new System.Drawing.Size(330, 40);
             this.txtTramite.TabIndex = 6;
-            //
+            // 
             // txtNombre
-            //
+            // 
             this.txtNombre.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
             this.txtNombre.BorderRadius = 8;
             this.txtNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -199,9 +201,9 @@ namespace pryEDZarateF
             this.txtNombre.SelectedText = "";
             this.txtNombre.Size = new System.Drawing.Size(330, 40);
             this.txtNombre.TabIndex = 5;
-            //
+            // 
             // txtCodigo
-            //
+            // 
             this.txtCodigo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
             this.txtCodigo.BorderRadius = 8;
             this.txtCodigo.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -220,53 +222,53 @@ namespace pryEDZarateF
             this.txtCodigo.SelectedText = "";
             this.txtCodigo.Size = new System.Drawing.Size(330, 40);
             this.txtCodigo.TabIndex = 4;
-            //
+            // 
             // lblTramite
-            //
+            // 
             this.lblTramite.AutoSize = true;
             this.lblTramite.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblTramite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.lblTramite.Location = new System.Drawing.Point(25, 230);
             this.lblTramite.Name = "lblTramite";
-            this.lblTramite.Size = new System.Drawing.Size(57, 15);
+            this.lblTramite.Size = new System.Drawing.Size(58, 15);
             this.lblTramite.TabIndex = 3;
             this.lblTramite.Text = "TRÁMITE";
-            //
+            // 
             // lblNombre
-            //
+            // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.lblNombre.Location = new System.Drawing.Point(25, 160);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(64, 15);
+            this.lblNombre.Size = new System.Drawing.Size(58, 15);
             this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "NOMBRE";
-            //
+            // 
             // lblCodigo
-            //
+            // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.lblCodigo.Location = new System.Drawing.Point(25, 90);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(56, 15);
+            this.lblCodigo.Size = new System.Drawing.Size(54, 15);
             this.lblCodigo.TabIndex = 1;
             this.lblCodigo.Text = "CÓDIGO";
-            //
+            // 
             // lblNuevoTitulo
-            //
+            // 
             this.lblNuevoTitulo.AutoSize = true;
             this.lblNuevoTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.lblNuevoTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.lblNuevoTitulo.Location = new System.Drawing.Point(22, 25);
             this.lblNuevoTitulo.Name = "lblNuevoTitulo";
-            this.lblNuevoTitulo.Size = new System.Drawing.Size(154, 25);
+            this.lblNuevoTitulo.Size = new System.Drawing.Size(155, 25);
             this.lblNuevoTitulo.TabIndex = 0;
             this.lblNuevoTitulo.Text = "Nuevo elemento";
-            //
+            // 
             // pnlEliminar
-            //
+            // 
             this.pnlEliminar.BackColor = System.Drawing.Color.Transparent;
             this.pnlEliminar.BorderRadius = 14;
             this.pnlEliminar.Controls.Add(this.btnEliminar);
@@ -282,9 +284,9 @@ namespace pryEDZarateF
             this.pnlEliminar.ShadowDecoration.Enabled = true;
             this.pnlEliminar.Size = new System.Drawing.Size(380, 165);
             this.pnlEliminar.TabIndex = 2;
-            //
+            // 
             // btnEliminar
-            //
+            // 
             this.btnEliminar.BorderRadius = 8;
             this.btnEliminar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnEliminar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -300,9 +302,9 @@ namespace pryEDZarateF
             this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-            //
+            // 
             // cmbCodigo
-            //
+            // 
             this.cmbCodigo.BackColor = System.Drawing.Color.Transparent;
             this.cmbCodigo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
             this.cmbCodigo.BorderRadius = 8;
@@ -317,20 +319,20 @@ namespace pryEDZarateF
             this.cmbCodigo.Name = "cmbCodigo";
             this.cmbCodigo.Size = new System.Drawing.Size(210, 36);
             this.cmbCodigo.TabIndex = 2;
-            //
+            // 
             // lblCodigo2
-            //
+            // 
             this.lblCodigo2.AutoSize = true;
             this.lblCodigo2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblCodigo2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.lblCodigo2.Location = new System.Drawing.Point(25, 75);
             this.lblCodigo2.Name = "lblCodigo2";
-            this.lblCodigo2.Size = new System.Drawing.Size(132, 15);
+            this.lblCodigo2.Size = new System.Drawing.Size(124, 15);
             this.lblCodigo2.TabIndex = 1;
             this.lblCodigo2.Text = "CÓDIGO A ELIMINAR";
-            //
+            // 
             // lblEliminado
-            //
+            // 
             this.lblEliminado.AutoSize = true;
             this.lblEliminado.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.lblEliminado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
@@ -339,9 +341,9 @@ namespace pryEDZarateF
             this.lblEliminado.Size = new System.Drawing.Size(168, 25);
             this.lblEliminado.TabIndex = 0;
             this.lblEliminado.Text = "Eliminar elemento";
-            //
+            // 
             // pnlOrden
-            //
+            // 
             this.pnlOrden.BackColor = System.Drawing.Color.Transparent;
             this.pnlOrden.BorderRadius = 14;
             this.pnlOrden.Controls.Add(this.lblDescendenteTxt);
@@ -359,11 +361,32 @@ namespace pryEDZarateF
             this.pnlOrden.ShadowDecoration.Enabled = true;
             this.pnlOrden.Size = new System.Drawing.Size(650, 155);
             this.pnlOrden.TabIndex = 4;
-            //
+            // 
+            // lblDescendenteTxt
+            // 
+            this.lblDescendenteTxt.AutoSize = true;
+            this.lblDescendenteTxt.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblDescendenteTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.lblDescendenteTxt.Location = new System.Drawing.Point(255, 107);
+            this.lblDescendenteTxt.Name = "lblDescendenteTxt";
+            this.lblDescendenteTxt.Size = new System.Drawing.Size(88, 19);
+            this.lblDescendenteTxt.TabIndex = 5;
+            this.lblDescendenteTxt.Text = "Descendente";
+            // 
+            // lblAscendenteTxt
+            // 
+            this.lblAscendenteTxt.AutoSize = true;
+            this.lblAscendenteTxt.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblAscendenteTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.lblAscendenteTxt.Location = new System.Drawing.Point(75, 107);
+            this.lblAscendenteTxt.Name = "lblAscendenteTxt";
+            this.lblAscendenteTxt.Size = new System.Drawing.Size(80, 19);
+            this.lblAscendenteTxt.TabIndex = 4;
+            this.lblAscendenteTxt.Text = "Ascendente";
+            // 
             // radioDescendente
-            //
+            // 
             this.radioDescendente.Animated = true;
-            this.radioDescendente.AutoSize = true;
             this.radioDescendente.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
             this.radioDescendente.CheckedState.BorderThickness = 0;
             this.radioDescendente.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
@@ -380,12 +403,10 @@ namespace pryEDZarateF
             this.radioDescendente.UncheckedState.BorderThickness = 2;
             this.radioDescendente.UncheckedState.FillColor = System.Drawing.Color.White;
             this.radioDescendente.UncheckedState.InnerColor = System.Drawing.Color.White;
-            this.radioDescendente.UncheckedState.InnerOffset = 0;
-            //
+            // 
             // radioAscendente
-            //
+            // 
             this.radioAscendente.Animated = true;
-            this.radioAscendente.AutoSize = true;
             this.radioAscendente.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
             this.radioAscendente.CheckedState.BorderThickness = 0;
             this.radioAscendente.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
@@ -402,55 +423,32 @@ namespace pryEDZarateF
             this.radioAscendente.UncheckedState.BorderThickness = 2;
             this.radioAscendente.UncheckedState.FillColor = System.Drawing.Color.White;
             this.radioAscendente.UncheckedState.InnerColor = System.Drawing.Color.White;
-            this.radioAscendente.UncheckedState.InnerOffset = 0;
             this.radioAscendente.CheckedChanged += new System.EventHandler(this.radioAscendente_CheckedChanged);
-            //
-            // lblAscendenteTxt
-            //
-            this.lblAscendenteTxt.AutoSize = true;
-            this.lblAscendenteTxt.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblAscendenteTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.lblAscendenteTxt.Location = new System.Drawing.Point(75, 107);
-            this.lblAscendenteTxt.Name = "lblAscendenteTxt";
-            this.lblAscendenteTxt.Size = new System.Drawing.Size(82, 19);
-            this.lblAscendenteTxt.TabIndex = 4;
-            this.lblAscendenteTxt.Text = "Ascendente";
-            //
-            // lblDescendenteTxt
-            //
-            this.lblDescendenteTxt.AutoSize = true;
-            this.lblDescendenteTxt.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblDescendenteTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.lblDescendenteTxt.Location = new System.Drawing.Point(255, 107);
-            this.lblDescendenteTxt.Name = "lblDescendenteTxt";
-            this.lblDescendenteTxt.Size = new System.Drawing.Size(94, 19);
-            this.lblDescendenteTxt.TabIndex = 5;
-            this.lblDescendenteTxt.Text = "Descendente";
-            //
+            // 
             // lblOrdenSub
-            //
+            // 
             this.lblOrdenSub.AutoSize = true;
             this.lblOrdenSub.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblOrdenSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
             this.lblOrdenSub.Location = new System.Drawing.Point(25, 60);
             this.lblOrdenSub.Name = "lblOrdenSub";
-            this.lblOrdenSub.Size = new System.Drawing.Size(330, 15);
+            this.lblOrdenSub.Size = new System.Drawing.Size(258, 15);
             this.lblOrdenSub.TabIndex = 1;
             this.lblOrdenSub.Text = "Cambiá el orden de visualización en grilla y lista";
-            //
+            // 
             // lblOrden
-            //
+            // 
             this.lblOrden.AutoSize = true;
             this.lblOrden.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.lblOrden.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.lblOrden.Location = new System.Drawing.Point(22, 25);
             this.lblOrden.Name = "lblOrden";
-            this.lblOrden.Size = new System.Drawing.Size(165, 25);
+            this.lblOrden.Size = new System.Drawing.Size(153, 25);
             this.lblOrden.TabIndex = 0;
             this.lblOrden.Text = "Orden de listado";
-            //
+            // 
             // pnlListado
-            //
+            // 
             this.pnlListado.BackColor = System.Drawing.Color.Transparent;
             this.pnlListado.BorderRadius = 14;
             this.pnlListado.Controls.Add(this.lstElementos);
@@ -466,68 +464,65 @@ namespace pryEDZarateF
             this.pnlListado.ShadowDecoration.Enabled = true;
             this.pnlListado.Size = new System.Drawing.Size(650, 410);
             this.pnlListado.TabIndex = 3;
-            //
+            // 
             // lstElementos
-            //
+            // 
             this.lstElementos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.lstElementos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstElementos.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lstElementos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.lstElementos.FormattingEnabled = true;
             this.lstElementos.IntegralHeight = false;
-            this.lstElementos.ItemHeight = 23;
+            this.lstElementos.ItemHeight = 17;
             this.lstElementos.Location = new System.Drawing.Point(25, 280);
             this.lstElementos.Name = "lstElementos";
             this.lstElementos.Size = new System.Drawing.Size(600, 110);
             this.lstElementos.TabIndex = 3;
-            //
+            // 
             // dgvElementos
-            //
+            // 
             this.dgvElementos.AllowUserToAddRows = false;
             this.dgvElementos.AllowUserToDeleteRows = false;
             this.dgvElementos.AllowUserToResizeRows = false;
-            this.dgvElementos.BackgroundColor = System.Drawing.Color.White;
-            this.dgvElementos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvElementos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvElementos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvElementos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvElementos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvElementos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvElementos.ColumnHeadersHeight = 38;
-            this.dgvElementos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvElementos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvElementos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmCodigo,
             this.clmNombre,
             this.clmTramite});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvElementos.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvElementos.EnableHeadersVisualStyles = false;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvElementos.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvElementos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
             this.dgvElementos.Location = new System.Drawing.Point(25, 95);
             this.dgvElementos.Name = "dgvElementos";
             this.dgvElementos.ReadOnly = true;
             this.dgvElementos.RowHeadersVisible = false;
             this.dgvElementos.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvElementos.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvElementos.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvElementos.RowTemplate.Height = 32;
             this.dgvElementos.Size = new System.Drawing.Size(600, 170);
             this.dgvElementos.TabIndex = 2;
@@ -552,55 +547,52 @@ namespace pryEDZarateF
             this.dgvElementos.ThemeStyle.RowsStyle.Height = 32;
             this.dgvElementos.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.dgvElementos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            //
+            // 
             // clmCodigo
-            //
+            // 
             this.clmCodigo.HeaderText = "Código";
             this.clmCodigo.MinimumWidth = 6;
             this.clmCodigo.Name = "clmCodigo";
             this.clmCodigo.ReadOnly = true;
-            this.clmCodigo.Width = 110;
-            //
+            // 
             // clmNombre
-            //
+            // 
             this.clmNombre.HeaderText = "Nombre";
             this.clmNombre.MinimumWidth = 6;
             this.clmNombre.Name = "clmNombre";
             this.clmNombre.ReadOnly = true;
-            this.clmNombre.Width = 240;
-            //
+            // 
             // clmTramite
-            //
+            // 
             this.clmTramite.HeaderText = "Trámite";
             this.clmTramite.MinimumWidth = 6;
             this.clmTramite.Name = "clmTramite";
             this.clmTramite.ReadOnly = true;
-            this.clmTramite.Width = 240;
-            //
+            // 
             // lblListadoSub
-            //
+            // 
             this.lblListadoSub.AutoSize = true;
             this.lblListadoSub.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblListadoSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
             this.lblListadoSub.Location = new System.Drawing.Point(25, 60);
             this.lblListadoSub.Name = "lblListadoSub";
-            this.lblListadoSub.Size = new System.Drawing.Size(141, 15);
+            this.lblListadoSub.Size = new System.Drawing.Size(126, 15);
             this.lblListadoSub.TabIndex = 1;
             this.lblListadoSub.Text = "Vista en grilla y en lista";
-            //
+            // 
             // lblListado
-            //
+            // 
             this.lblListado.AutoSize = true;
             this.lblListado.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.lblListado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.lblListado.Location = new System.Drawing.Point(22, 25);
             this.lblListado.Name = "lblListado";
-            this.lblListado.Size = new System.Drawing.Size(212, 25);
+            this.lblListado.Size = new System.Drawing.Size(193, 25);
             this.lblListado.TabIndex = 0;
             this.lblListado.Text = "Listado de elementos";
-            //
+            // 
             // frmListaDoble
-            //
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
@@ -612,6 +604,7 @@ namespace pryEDZarateF
             this.Controls.Add(this.pnlHeader);
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmListaDoble";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -629,6 +622,7 @@ namespace pryEDZarateF
             this.pnlListado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvElementos)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -56,7 +56,6 @@ namespace pryEDZarateF
             this.pnlAccent = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblSubtitulo = new System.Windows.Forms.Label();
-            this.lblHint = new System.Windows.Forms.Label();
             this.lblFooter = new System.Windows.Forms.Label();
             this.menu.SuspendLayout();
             this.SuspendLayout();
@@ -289,19 +288,8 @@ namespace pryEDZarateF
             this.lblSubtitulo.Name = "lblSubtitulo";
             this.lblSubtitulo.Size = new System.Drawing.Size(940, 25);
             this.lblSubtitulo.TabIndex = 3;
-            this.lblSubtitulo.Text = "Trabajo práctico · Programación Orientada a Objetos";
+            this.lblSubtitulo.Text = "Instancia Evaluativa · Programación Orientada a Objetos";
             this.lblSubtitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblHint
-            // 
-            this.lblHint.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblHint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(163)))), ((int)(((byte)(184)))));
-            this.lblHint.Location = new System.Drawing.Point(0, 350);
-            this.lblHint.Name = "lblHint";
-            this.lblHint.Size = new System.Drawing.Size(940, 22);
-            this.lblHint.TabIndex = 4;
-            this.lblHint.Text = "Seleccioná una sección desde el menú superior";
-            this.lblHint.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblFooter
             // 
@@ -321,7 +309,6 @@ namespace pryEDZarateF
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(940, 620);
             this.Controls.Add(this.lblFooter);
-            this.Controls.Add(this.lblHint);
             this.Controls.Add(this.lblSubtitulo);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.pnlAccent);
@@ -370,7 +357,6 @@ namespace pryEDZarateF
         private Guna.UI2.WinForms.Guna2Panel pnlAccent;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblSubtitulo;
-        private System.Windows.Forms.Label lblHint;
         private System.Windows.Forms.Label lblFooter;
     }
 }

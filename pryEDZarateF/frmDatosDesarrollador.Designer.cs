@@ -39,9 +39,9 @@
             // lblSalir
             // 
             this.lblSalir.AutoSize = true;
-            this.lblSalir.BackColor = System.Drawing.Color.FloralWhite;
+            this.lblSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.lblSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalir.ForeColor = System.Drawing.Color.Navy;
+            this.lblSalir.ForeColor = System.Drawing.Color.White;
             this.lblSalir.Location = new System.Drawing.Point(21, 16);
             this.lblSalir.Name = "lblSalir";
             this.lblSalir.Size = new System.Drawing.Size(20, 20);
@@ -52,10 +52,10 @@
             // lblSiguiente
             // 
             this.lblSiguiente.AutoSize = true;
-            this.lblSiguiente.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.lblSiguiente.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSiguiente.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblSiguiente.Location = new System.Drawing.Point(400, 297);
+            this.lblSiguiente.ForeColor = System.Drawing.Color.White;
+            this.lblSiguiente.Location = new System.Drawing.Point(398, 297);
             this.lblSiguiente.Name = "lblSiguiente";
             this.lblSiguiente.Size = new System.Drawing.Size(25, 26);
             this.lblSiguiente.TabIndex = 4;
@@ -65,7 +65,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.label3.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.label3.Location = new System.Drawing.Point(18, 297);
@@ -88,10 +88,10 @@
             // 
             // pctDatos
             // 
-            this.pctDatos.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.pctDatos.BackgroundImage = global::pryEDZarateF.Properties.Resources.Logotipo_Estudio_Shonos_Diseño_multimedia_divertido_retro_y2k_rosa1;
+            this.pctDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
+            this.pctDatos.BackgroundImage = global::pryEDZarateF.Properties.Resources._12;
             this.pctDatos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pctDatos.Location = new System.Drawing.Point(1, -67);
+            this.pctDatos.Location = new System.Drawing.Point(0, -67);
             this.pctDatos.Name = "pctDatos";
             this.pctDatos.Size = new System.Drawing.Size(444, 498);
             this.pctDatos.TabIndex = 0;

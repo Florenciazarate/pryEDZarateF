@@ -320,7 +320,7 @@ namespace pryEDZarateF
             this.MaximizeBox = false;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Estructura de Datos";
+            this.Text = " ";
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             this.ResumeLayout(false);

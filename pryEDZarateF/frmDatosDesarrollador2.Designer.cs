@@ -28,29 +28,19 @@ namespace pryEDZarateF
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblSalir = new System.Windows.Forms.Label();
             this.lblSeguir = new System.Windows.Forms.Label();
             this.lblVolver = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Image = global::pryEDZarateF.Properties.Resources.Logotipo_Estudio_Shonos_Diseño_multimedia_divertido_retro_y2k_rosa__1_1;
-            this.pictureBox1.Location = new System.Drawing.Point(-6, -42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(458, 444);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // lblSalir
             // 
             this.lblSalir.AutoSize = true;
-            this.lblSalir.BackColor = System.Drawing.Color.FloralWhite;
+            this.lblSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.lblSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalir.ForeColor = System.Drawing.Color.White;
             this.lblSalir.Location = new System.Drawing.Point(21, 14);
             this.lblSalir.Name = "lblSalir";
             this.lblSalir.Size = new System.Drawing.Size(20, 20);
@@ -61,10 +51,10 @@ namespace pryEDZarateF
             // lblSeguir
             // 
             this.lblSeguir.AutoSize = true;
-            this.lblSeguir.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblSeguir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.lblSeguir.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSeguir.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lblSeguir.Location = new System.Drawing.Point(399, 295);
+            this.lblSeguir.Location = new System.Drawing.Point(398, 295);
             this.lblSeguir.Name = "lblSeguir";
             this.lblSeguir.Size = new System.Drawing.Size(25, 26);
             this.lblSeguir.TabIndex = 2;
@@ -73,15 +63,26 @@ namespace pryEDZarateF
             // lblVolver
             // 
             this.lblVolver.AutoSize = true;
-            this.lblVolver.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.lblVolver.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVolver.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblVolver.ForeColor = System.Drawing.Color.White;
             this.lblVolver.Location = new System.Drawing.Point(19, 295);
             this.lblVolver.Name = "lblVolver";
             this.lblVolver.Size = new System.Drawing.Size(25, 26);
             this.lblVolver.TabIndex = 3;
             this.lblVolver.Text = "<";
             this.lblVolver.Click += new System.EventHandler(this.lblVolver_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Image = global::pryEDZarateF.Properties.Resources._2;
+            this.pictureBox1.Location = new System.Drawing.Point(-7, -42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(458, 444);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // frmDatosDesarrollador2
             // 

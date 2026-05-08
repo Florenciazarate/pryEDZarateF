@@ -58,34 +58,34 @@
     <Compile Include="Clases\clsListaSimple.cs" />
     <Compile Include="Clases\clsNodo.cs" />
     <Compile Include="Clases\clsPila.cs" />
-    <Compile Include="frmAlumnos.cs">
+    <Compile Include="Formularios POO\frmAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAlumnos.Designer.cs">
+    <Compile Include="Formularios POO\frmAlumnos.Designer.cs">
       <DependentUpon>frmAlumnos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCarreras.cs">
+    <Compile Include="Formularios POO\frmCarreras.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCarreras.Designer.cs">
+    <Compile Include="Formularios POO\frmCarreras.Designer.cs">
       <DependentUpon>frmCarreras.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmClientes.cs">
+    <Compile Include="Formularios POO\frmClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmClientes.Designer.cs">
+    <Compile Include="Formularios POO\frmClientes.Designer.cs">
       <DependentUpon>frmClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCola.cs">
+    <Compile Include="Formularios Estructuras lineales\frmCola.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCola.Designer.cs">
+    <Compile Include="Formularios Estructuras lineales\frmCola.Designer.cs">
       <DependentUpon>frmCola.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmColores.cs">
+    <Compile Include="Formularios POO\frmColores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmColores.Designer.cs">
+    <Compile Include="Formularios POO\frmColores.Designer.cs">
       <DependentUpon>frmColores.cs</DependentUpon>
     </Compile>
     <Compile Include="frmInicial.cs">
@@ -106,45 +106,45 @@
     <Compile Include="frmDatosDesarrollador2.Designer.cs">
       <DependentUpon>frmDatosDesarrollador2.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmListaDoble.cs">
+    <Compile Include="Formularios Estructuras lineales\frmListaDoble.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmListaDoble.Designer.cs">
+    <Compile Include="Formularios Estructuras lineales\frmListaDoble.Designer.cs">
       <DependentUpon>frmListaDoble.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMeses.cs">
+    <Compile Include="Formularios POO\frmMeses.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMeses.Designer.cs">
+    <Compile Include="Formularios POO\frmMeses.Designer.cs">
       <DependentUpon>frmMeses.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPila.cs">
+    <Compile Include="Formularios Estructuras lineales\frmPila.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPila.Designer.cs">
+    <Compile Include="Formularios Estructuras lineales\frmPila.Designer.cs">
       <DependentUpon>frmPila.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmListaSimple.cs">
+    <Compile Include="Formularios Estructuras lineales\frmListaSimple.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmListaSimple.Designer.cs">
+    <Compile Include="Formularios Estructuras lineales\frmListaSimple.Designer.cs">
       <DependentUpon>frmListaSimple.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAlumnos.resx">
+    <EmbeddedResource Include="Formularios POO\frmAlumnos.resx">
       <DependentUpon>frmAlumnos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCarreras.resx">
+    <EmbeddedResource Include="Formularios POO\frmCarreras.resx">
       <DependentUpon>frmCarreras.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmClientes.resx">
+    <EmbeddedResource Include="Formularios POO\frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCola.resx">
+    <EmbeddedResource Include="Formularios Estructuras lineales\frmCola.resx">
       <DependentUpon>frmCola.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmColores.resx">
+    <EmbeddedResource Include="Formularios POO\frmColores.resx">
       <DependentUpon>frmColores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInicial.resx">
@@ -156,16 +156,16 @@
     <EmbeddedResource Include="frmDatosDesarrollador2.resx">
       <DependentUpon>frmDatosDesarrollador2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmListaDoble.resx">
+    <EmbeddedResource Include="Formularios Estructuras lineales\frmListaDoble.resx">
       <DependentUpon>frmListaDoble.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMeses.resx">
+    <EmbeddedResource Include="Formularios POO\frmMeses.resx">
       <DependentUpon>frmMeses.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPila.resx">
+    <EmbeddedResource Include="Formularios Estructuras lineales\frmPila.resx">
       <DependentUpon>frmPila.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmListaSimple.resx">
+    <EmbeddedResource Include="Formularios Estructuras lineales\frmListaSimple.resx">
       <DependentUpon>frmListaSimple.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -233,6 +233,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

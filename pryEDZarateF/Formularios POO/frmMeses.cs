@@ -49,19 +49,8 @@ namespace pryEDZarateF
             }
             string mes = cmbMeses.SelectedItem.ToString();
 
-            string archivo = "Meses.csv";
-            if (File.Exists(archivo))
-            {
-                var lineas = File.ReadAllLines(archivo);
-                if (lineas.Any(l => l.Trim().Equals(mes, StringComparison.OrdinalIgnoreCase)))
-                {
-                    MessageBox.Show("Ese mes ya está cargado.");
-                    return;
-                }
-            }
-
             clsArchivoTexto x = new clsArchivoTexto();
-            x.NombreArchivo = archivo;
+            x.NombreArchivo = "Meses.csv";
             x.Grabar(mes);
             MessageBox.Show("Mes grabado correctamente");
             cmbMeses.SelectedIndex = -1;

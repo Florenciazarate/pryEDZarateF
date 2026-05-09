@@ -18,14 +18,10 @@ namespace pryEDZarateF
         {
             InitializeComponent();
         }
-
-
-
         private void frmListaSimple_Load(object sender, EventArgs e)
         {
             ActualizarBotones();
         }
-
         private void ActualizarBotones()
         {
             bool camposCompletos = !string.IsNullOrWhiteSpace(txtCodigo.Text)
@@ -86,15 +82,22 @@ namespace pryEDZarateF
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (Lista.Primero != null)
+            if (Lista.Primero == null)
             {
-                Int32 x = Convert.ToInt32(cmbCodigo.Text);
-                Lista.Eliminar(x);
-                Lista.Recorrer(dgvElementos);
-                Lista.Recorrer(lstElementos);
-                Lista.Recorrer(cmbCodigo);
-                Lista.Recorrer();
+                MessageBox.Show("No hay elementos para eliminar.");
+                return;
             }
+            if (cmbCodigo.SelectedItem == null)
+            {
+                MessageBox.Show("Seleccioná un código para eliminar.");
+                return;
+            }
+            Int32 x = Convert.ToInt32(cmbCodigo.SelectedItem);
+            Lista.Eliminar(x);
+            Lista.Recorrer(dgvElementos);
+            Lista.Recorrer(lstElementos);
+            Lista.Recorrer(cmbCodigo);
+            Lista.Recorrer();
             ActualizarBotones();
         }
     }

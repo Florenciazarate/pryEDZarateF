@@ -65,8 +65,8 @@ namespace pryEDZarateF
             // 
             // pnlBarraColor
             // 
-            this.pnlBarraColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(11)))));
-            this.pnlBarraColor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(11)))));
+            this.pnlBarraColor.BackColor = ColoresApp.Ambar;
+            this.pnlBarraColor.FillColor = ColoresApp.Ambar;
             this.pnlBarraColor.Location = new System.Drawing.Point(35, 25);
             this.pnlBarraColor.Name = "pnlBarraColor";
             this.pnlBarraColor.Size = new System.Drawing.Size(5, 50);
@@ -76,7 +76,7 @@ namespace pryEDZarateF
             // 
             this.lblSubtitulo.AutoSize = true;
             this.lblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
+            this.lblSubtitulo.ForeColor = ColoresApp.TextoSubtitulo;
             this.lblSubtitulo.Location = new System.Drawing.Point(54, 56);
             this.lblSubtitulo.Name = "lblSubtitulo";
             this.lblSubtitulo.Size = new System.Drawing.Size(213, 19);
@@ -87,7 +87,7 @@ namespace pryEDZarateF
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
-            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblTitulo.ForeColor = ColoresApp.TextoTitulo;
             this.lblTitulo.Location = new System.Drawing.Point(50, 20);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(94, 37);
@@ -107,7 +107,7 @@ namespace pryEDZarateF
             this.pnlNuevo.Location = new System.Drawing.Point(25, 115);
             this.pnlNuevo.Name = "pnlNuevo";
             this.pnlNuevo.ShadowDecoration.BorderRadius = 14;
-            this.pnlNuevo.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(235)))));
+            this.pnlNuevo.ShadowDecoration.Color = ColoresApp.SombraPanel;
             this.pnlNuevo.ShadowDecoration.Depth = 8;
             this.pnlNuevo.ShadowDecoration.Enabled = true;
             this.pnlNuevo.Size = new System.Drawing.Size(380, 242);
@@ -118,12 +118,12 @@ namespace pryEDZarateF
             this.btnListar.BorderRadius = 8;
             this.btnListar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnListar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnListar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
-            this.btnListar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(163)))), ((int)(((byte)(175)))));
-            this.btnListar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(243)))), ((int)(((byte)(199)))));
+            this.btnListar.DisabledState.FillColor = ColoresApp.BordeSuave;
+            this.btnListar.DisabledState.ForeColor = ColoresApp.TextoBotonDisabled;
+            this.btnListar.FillColor = ColoresApp.AmbarFondoSuave;
             this.btnListar.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnListar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(119)))), ((int)(((byte)(6)))));
-            this.btnListar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(138)))));
+            this.btnListar.ForeColor = ColoresApp.AmbarHover;
+            this.btnListar.HoverState.FillColor = ColoresApp.AmbarBordeHover;
             this.btnListar.Location = new System.Drawing.Point(32, 151);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(150, 45);
@@ -136,13 +136,13 @@ namespace pryEDZarateF
             this.btnGrabar.BorderRadius = 8;
             this.btnGrabar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGrabar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnGrabar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
-            this.btnGrabar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(163)))), ((int)(((byte)(175)))));
+            this.btnGrabar.DisabledState.FillColor = ColoresApp.BordeSuave;
+            this.btnGrabar.DisabledState.ForeColor = ColoresApp.TextoBotonDisabled;
             this.btnGrabar.Enabled = false;
-            this.btnGrabar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(11)))));
+            this.btnGrabar.FillColor = ColoresApp.Ambar;
             this.btnGrabar.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.btnGrabar.ForeColor = System.Drawing.Color.White;
-            this.btnGrabar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(119)))), ((int)(((byte)(6)))));
+            this.btnGrabar.HoverState.FillColor = ColoresApp.AmbarHover;
             this.btnGrabar.Location = new System.Drawing.Point(202, 151);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(160, 45);
@@ -153,14 +153,14 @@ namespace pryEDZarateF
             // cmbMeses
             // 
             this.cmbMeses.BackColor = System.Drawing.Color.Transparent;
-            this.cmbMeses.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
+            this.cmbMeses.BorderColor = ColoresApp.BordeSuave;
             this.cmbMeses.BorderRadius = 8;
             this.cmbMeses.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbMeses.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMeses.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(11)))));
-            this.cmbMeses.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(11)))));
+            this.cmbMeses.FocusedColor = ColoresApp.Ambar;
+            this.cmbMeses.FocusedState.BorderColor = ColoresApp.Ambar;
             this.cmbMeses.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbMeses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbMeses.ForeColor = ColoresApp.TextoCombo;
             this.cmbMeses.ItemHeight = 30;
             this.cmbMeses.Location = new System.Drawing.Point(32, 96);
             this.cmbMeses.Name = "cmbMeses";
@@ -172,7 +172,7 @@ namespace pryEDZarateF
             // 
             this.lblNuevoSub.AutoSize = true;
             this.lblNuevoSub.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblNuevoSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
+            this.lblNuevoSub.ForeColor = ColoresApp.TextoSubtitulo;
             this.lblNuevoSub.Location = new System.Drawing.Point(30, 61);
             this.lblNuevoSub.Name = "lblNuevoSub";
             this.lblNuevoSub.Size = new System.Drawing.Size(164, 15);
@@ -183,7 +183,7 @@ namespace pryEDZarateF
             // 
             this.lblNuevoTitulo.AutoSize = true;
             this.lblNuevoTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.lblNuevoTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblNuevoTitulo.ForeColor = ColoresApp.TextoTitulo;
             this.lblNuevoTitulo.Location = new System.Drawing.Point(27, 30);
             this.lblNuevoTitulo.Name = "lblNuevoTitulo";
             this.lblNuevoTitulo.Size = new System.Drawing.Size(109, 25);
@@ -201,7 +201,7 @@ namespace pryEDZarateF
             this.pnlListado.Location = new System.Drawing.Point(425, 115);
             this.pnlListado.Name = "pnlListado";
             this.pnlListado.ShadowDecoration.BorderRadius = 14;
-            this.pnlListado.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(235)))));
+            this.pnlListado.ShadowDecoration.Color = ColoresApp.SombraPanel;
             this.pnlListado.ShadowDecoration.Depth = 8;
             this.pnlListado.ShadowDecoration.Enabled = true;
             this.pnlListado.Size = new System.Drawing.Size(450, 360);
@@ -209,10 +209,10 @@ namespace pryEDZarateF
             // 
             // lstMeses
             // 
-            this.lstMeses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.lstMeses.BackColor = ColoresApp.FondoListBox;
             this.lstMeses.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstMeses.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lstMeses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.lstMeses.ForeColor = ColoresApp.TextoGrilla;
             this.lstMeses.FormattingEnabled = true;
             this.lstMeses.IntegralHeight = false;
             this.lstMeses.ItemHeight = 17;
@@ -225,7 +225,7 @@ namespace pryEDZarateF
             // 
             this.lblListadoSub.AutoSize = true;
             this.lblListadoSub.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblListadoSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
+            this.lblListadoSub.ForeColor = ColoresApp.TextoSubtitulo;
             this.lblListadoSub.Location = new System.Drawing.Point(25, 55);
             this.lblListadoSub.Name = "lblListadoSub";
             this.lblListadoSub.Size = new System.Drawing.Size(162, 15);
@@ -236,7 +236,7 @@ namespace pryEDZarateF
             // 
             this.lblListado.AutoSize = true;
             this.lblListado.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.lblListado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblListado.ForeColor = ColoresApp.TextoTitulo;
             this.lblListado.Location = new System.Drawing.Point(22, 25);
             this.lblListado.Name = "lblListado";
             this.lblListado.Size = new System.Drawing.Size(157, 25);
@@ -247,7 +247,7 @@ namespace pryEDZarateF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
+            this.BackColor = ColoresApp.FondoForm;
             this.ClientSize = new System.Drawing.Size(900, 500);
             this.Controls.Add(this.pnlListado);
             this.Controls.Add(this.pnlNuevo);

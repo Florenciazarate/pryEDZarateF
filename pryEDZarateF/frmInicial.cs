@@ -18,22 +18,6 @@ namespace pryEDZarateF
             menu.Renderer = new ToolStripProfessionalRenderer(new MenuColors());
         }
 
-        private class MenuColors : ProfessionalColorTable
-        {
-            public override Color MenuItemSelected => Color.FromArgb(241, 245, 249);
-            public override Color MenuItemSelectedGradientBegin => Color.FromArgb(71, 85, 105);
-            public override Color MenuItemSelectedGradientEnd => Color.FromArgb(71, 85, 105);
-            public override Color MenuItemBorder => Color.FromArgb(203, 213, 225);
-            public override Color MenuItemPressedGradientBegin => Color.FromArgb(71, 85, 105);
-            public override Color MenuItemPressedGradientMiddle => Color.FromArgb(71, 85, 105);
-            public override Color MenuItemPressedGradientEnd => Color.FromArgb(71, 85, 105);
-            public override Color MenuBorder => Color.FromArgb(30, 41, 59);
-            public override Color ToolStripDropDownBackground => Color.White;
-            public override Color ImageMarginGradientBegin => Color.White;
-            public override Color ImageMarginGradientMiddle => Color.White;
-            public override Color ImageMarginGradientEnd => Color.White;
-        }
-
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();

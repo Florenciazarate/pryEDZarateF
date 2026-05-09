@@ -58,6 +58,8 @@
     <Compile Include="Clases\clsListaSimple.cs" />
     <Compile Include="Clases\clsNodo.cs" />
     <Compile Include="Clases\clsPila.cs" />
+    <Compile Include="Clases\ColoresApp.cs" />
+    <Compile Include="Clases\MenuColors.cs" />
     <Compile Include="Formularios POO\frmAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>

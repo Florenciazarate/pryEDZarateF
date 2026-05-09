@@ -20,21 +20,6 @@ namespace pryEDZarateF
             ActualizarEstadoBotonGrabar();
 
         }
-        public List<string> ObtenerCarreras()
-        {
-            List<string> lista = new List<string>();
-
-            using (StreamReader sr = new StreamReader("Carreras.csv"))
-            {
-                string linea;
-                while ((linea = sr.ReadLine()) != null)
-                {
-                    lista.Add(linea);
-                }
-            }
-
-            return lista;
-        }
         private bool CamposCompletos()
         {
             return txtCodigo.Text.Trim() != "" &&
@@ -88,11 +73,6 @@ namespace pryEDZarateF
             txtNombre.Text = "";
             cmbCarrera.SelectedIndex = -1;
             ActualizarEstadoBotonGrabar();
-        }
-
-        private void frmClientes_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void frmAlumnos_Load(object sender, EventArgs e)

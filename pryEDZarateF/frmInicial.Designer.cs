@@ -62,7 +62,7 @@ namespace pryEDZarateF
             // 
             // menu
             // 
-            this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.menu.BackColor = ColoresApp.MenuFondo;
             this.menu.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.menu.ForeColor = System.Drawing.Color.White;
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -261,9 +261,9 @@ namespace pryEDZarateF
             // 
             // pnlAccent
             // 
-            this.pnlAccent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
+            this.pnlAccent.BackColor = ColoresApp.Indigo;
             this.pnlAccent.BorderRadius = 2;
-            this.pnlAccent.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
+            this.pnlAccent.FillColor = ColoresApp.Indigo;
             this.pnlAccent.Location = new System.Drawing.Point(440, 195);
             this.pnlAccent.Name = "pnlAccent";
             this.pnlAccent.Size = new System.Drawing.Size(60, 4);
@@ -272,7 +272,7 @@ namespace pryEDZarateF
             // lblTitulo
             // 
             this.lblTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 28F, System.Drawing.FontStyle.Bold);
-            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblTitulo.ForeColor = ColoresApp.TextoTitulo;
             this.lblTitulo.Location = new System.Drawing.Point(0, 215);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(940, 60);
@@ -283,7 +283,7 @@ namespace pryEDZarateF
             // lblSubtitulo
             // 
             this.lblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.lblSubtitulo.ForeColor = ColoresApp.TextoEtiqueta;
             this.lblSubtitulo.Location = new System.Drawing.Point(0, 280);
             this.lblSubtitulo.Name = "lblSubtitulo";
             this.lblSubtitulo.Size = new System.Drawing.Size(940, 25);
@@ -294,7 +294,7 @@ namespace pryEDZarateF
             // lblFooter
             // 
             this.lblFooter.Font = new System.Drawing.Font("Segoe UI", 8.5F);
-            this.lblFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(163)))), ((int)(((byte)(184)))));
+            this.lblFooter.ForeColor = ColoresApp.TextoFooter;
             this.lblFooter.Location = new System.Drawing.Point(0, 590);
             this.lblFooter.Name = "lblFooter";
             this.lblFooter.Size = new System.Drawing.Size(940, 20);
@@ -306,7 +306,7 @@ namespace pryEDZarateF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
+            this.BackColor = ColoresApp.FondoFormPrincipal;
             this.ClientSize = new System.Drawing.Size(940, 620);
             this.Controls.Add(this.lblFooter);
             this.Controls.Add(this.lblSubtitulo);

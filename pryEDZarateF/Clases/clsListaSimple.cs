@@ -16,6 +16,11 @@ namespace pryEDZarateF
                 {
                     Primero = Nuevo;
                 }
+                else if (Nuevo.Codigo <= Primero.Codigo)
+                {
+                    Nuevo.Siguiente = Primero;
+                    Primero = Nuevo;
+                }
                 else
                 {
                     clsNodo aux = Primero;
@@ -35,6 +40,7 @@ namespace pryEDZarateF
             }
         public void Eliminar (Int32 Codigo)
         {
+            if (Primero == null) return;
             if (Primero.Codigo == Codigo)
             {
                 Primero = Primero.Siguiente;
@@ -43,11 +49,12 @@ namespace pryEDZarateF
             {
                 clsNodo aux1 = Primero;
                 clsNodo aux2 = Primero;
-                while (aux1.Codigo != Codigo)
+                while (aux1 != null && aux1.Codigo != Codigo)
                 {
                     aux2 = aux1;
                     aux1 = aux1.Siguiente;
                 }
+                if (aux1 == null) return;
                 aux2.Siguiente = aux1.Siguiente;
             }
         }

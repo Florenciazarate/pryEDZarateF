@@ -10,7 +10,7 @@ namespace pryEDZarateF
 {
     internal class clsArchivoTexto
     {
-        public string NombreArchivo = "Colores.csv";
+        public string NombreArchivo = "";
 
         public void Grabar()
         {

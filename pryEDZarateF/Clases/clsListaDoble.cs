@@ -133,13 +133,26 @@ namespace pryEDZarateF
         public void RecorrerDesc()
         {
             clsNodo aux = Ultimo;
-            StreamWriter AD = new StreamWriter("ListaDoble.csv", true, Encoding.UTF8);
+            StreamWriter AD = new StreamWriter("ListaDoble.csv", false, Encoding.UTF8);
             AD.WriteLine("Lista doble\n");
             AD.WriteLine("Codigo;Nombre;Tramite");
             while (aux != null)
             {
                 AD.WriteLine(aux.Codigo + ";" + aux.Nombre + ";" + aux.Tramite);
                 aux = aux.Anterior;
+            }
+            AD.Close();
+        }
+        public new void Recorrer()
+        {
+            clsNodo aux = Primero;
+            StreamWriter AD = new StreamWriter("ListaDoble.csv", false, Encoding.UTF8);
+            AD.WriteLine("Lista doble\n");
+            AD.WriteLine("Código;Nombre;Tramite");
+            while (aux != null)
+            {
+                AD.WriteLine(aux.Codigo + ";" + aux.Nombre + ";" + aux.Tramite);
+                aux = aux.Siguiente;
             }
             AD.Close();
         }

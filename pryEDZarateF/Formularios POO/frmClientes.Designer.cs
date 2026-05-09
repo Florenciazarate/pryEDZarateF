@@ -77,8 +77,8 @@ namespace pryEDZarateF
             // 
             // pnlBarraColor
             // 
-            this.pnlBarraColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(115)))), ((int)(((byte)(22)))));
-            this.pnlBarraColor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(115)))), ((int)(((byte)(22)))));
+            this.pnlBarraColor.BackColor = ColoresApp.Naranja;
+            this.pnlBarraColor.FillColor = ColoresApp.Naranja;
             this.pnlBarraColor.Location = new System.Drawing.Point(35, 25);
             this.pnlBarraColor.Name = "pnlBarraColor";
             this.pnlBarraColor.Size = new System.Drawing.Size(5, 50);
@@ -88,7 +88,7 @@ namespace pryEDZarateF
             // 
             this.lblSubtitulo.AutoSize = true;
             this.lblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
+            this.lblSubtitulo.ForeColor = ColoresApp.TextoSubtitulo;
             this.lblSubtitulo.Location = new System.Drawing.Point(54, 56);
             this.lblSubtitulo.Name = "lblSubtitulo";
             this.lblSubtitulo.Size = new System.Drawing.Size(183, 19);
@@ -99,7 +99,7 @@ namespace pryEDZarateF
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
-            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblTitulo.ForeColor = ColoresApp.TextoTitulo;
             this.lblTitulo.Location = new System.Drawing.Point(50, 20);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(114, 37);
@@ -123,7 +123,7 @@ namespace pryEDZarateF
             this.pnlNuevo.Location = new System.Drawing.Point(25, 115);
             this.pnlNuevo.Name = "pnlNuevo";
             this.pnlNuevo.ShadowDecoration.BorderRadius = 14;
-            this.pnlNuevo.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(235)))));
+            this.pnlNuevo.ShadowDecoration.Color = ColoresApp.SombraPanel;
             this.pnlNuevo.ShadowDecoration.Depth = 8;
             this.pnlNuevo.ShadowDecoration.Enabled = true;
             this.pnlNuevo.Size = new System.Drawing.Size(380, 410);
@@ -134,13 +134,13 @@ namespace pryEDZarateF
             this.btnGrabar.BorderRadius = 8;
             this.btnGrabar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGrabar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnGrabar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
-            this.btnGrabar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(163)))), ((int)(((byte)(175)))));
+            this.btnGrabar.DisabledState.FillColor = ColoresApp.BordeSuave;
+            this.btnGrabar.DisabledState.ForeColor = ColoresApp.TextoBotonDisabled;
             this.btnGrabar.Enabled = false;
-            this.btnGrabar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(115)))), ((int)(((byte)(22)))));
+            this.btnGrabar.FillColor = ColoresApp.Naranja;
             this.btnGrabar.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.btnGrabar.ForeColor = System.Drawing.Color.White;
-            this.btnGrabar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(88)))), ((int)(((byte)(12)))));
+            this.btnGrabar.HoverState.FillColor = ColoresApp.NaranjaHover;
             this.btnGrabar.Location = new System.Drawing.Point(27, 322);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(330, 45);
@@ -150,17 +150,17 @@ namespace pryEDZarateF
             // 
             // txtDeuda
             // 
-            this.txtDeuda.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
+            this.txtDeuda.BorderColor = ColoresApp.BordeSuave;
             this.txtDeuda.BorderRadius = 8;
             this.txtDeuda.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDeuda.DefaultText = "";
-            this.txtDeuda.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtDeuda.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtDeuda.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDeuda.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDeuda.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(115)))), ((int)(((byte)(22)))));
+            this.txtDeuda.DisabledState.BorderColor = ColoresApp.BordeDisabled;
+            this.txtDeuda.DisabledState.FillColor = ColoresApp.FondoTextDisabled;
+            this.txtDeuda.DisabledState.ForeColor = ColoresApp.TextoDisabled;
+            this.txtDeuda.DisabledState.PlaceholderForeColor = ColoresApp.TextoDisabled;
+            this.txtDeuda.FocusedState.BorderColor = ColoresApp.Naranja;
             this.txtDeuda.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtDeuda.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(215)))), ((int)(((byte)(170)))));
+            this.txtDeuda.HoverState.BorderColor = ColoresApp.NaranjaBordeHover;
             this.txtDeuda.Location = new System.Drawing.Point(27, 262);
             this.txtDeuda.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDeuda.Name = "txtDeuda";
@@ -173,17 +173,17 @@ namespace pryEDZarateF
             // 
             // txtNombre
             // 
-            this.txtNombre.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
+            this.txtNombre.BorderColor = ColoresApp.BordeSuave;
             this.txtNombre.BorderRadius = 8;
             this.txtNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNombre.DefaultText = "";
-            this.txtNombre.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNombre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNombre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(115)))), ((int)(((byte)(22)))));
+            this.txtNombre.DisabledState.BorderColor = ColoresApp.BordeDisabled;
+            this.txtNombre.DisabledState.FillColor = ColoresApp.FondoTextDisabled;
+            this.txtNombre.DisabledState.ForeColor = ColoresApp.TextoDisabled;
+            this.txtNombre.DisabledState.PlaceholderForeColor = ColoresApp.TextoDisabled;
+            this.txtNombre.FocusedState.BorderColor = ColoresApp.Naranja;
             this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(215)))), ((int)(((byte)(170)))));
+            this.txtNombre.HoverState.BorderColor = ColoresApp.NaranjaBordeHover;
             this.txtNombre.Location = new System.Drawing.Point(27, 177);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombre.Name = "txtNombre";
@@ -195,17 +195,17 @@ namespace pryEDZarateF
             // 
             // txtCodigo
             // 
-            this.txtCodigo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
+            this.txtCodigo.BorderColor = ColoresApp.BordeSuave;
             this.txtCodigo.BorderRadius = 8;
             this.txtCodigo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCodigo.DefaultText = "";
-            this.txtCodigo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCodigo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCodigo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCodigo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCodigo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(115)))), ((int)(((byte)(22)))));
+            this.txtCodigo.DisabledState.BorderColor = ColoresApp.BordeDisabled;
+            this.txtCodigo.DisabledState.FillColor = ColoresApp.FondoTextDisabled;
+            this.txtCodigo.DisabledState.ForeColor = ColoresApp.TextoDisabled;
+            this.txtCodigo.DisabledState.PlaceholderForeColor = ColoresApp.TextoDisabled;
+            this.txtCodigo.FocusedState.BorderColor = ColoresApp.Naranja;
             this.txtCodigo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtCodigo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(215)))), ((int)(((byte)(170)))));
+            this.txtCodigo.HoverState.BorderColor = ColoresApp.NaranjaBordeHover;
             this.txtCodigo.Location = new System.Drawing.Point(27, 107);
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCodigo.Name = "txtCodigo";
@@ -219,7 +219,7 @@ namespace pryEDZarateF
             // 
             this.lblDeuda.AutoSize = true;
             this.lblDeuda.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.lblDeuda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.lblDeuda.ForeColor = ColoresApp.TextoEtiqueta;
             this.lblDeuda.Location = new System.Drawing.Point(27, 242);
             this.lblDeuda.Name = "lblDeuda";
             this.lblDeuda.Size = new System.Drawing.Size(48, 15);
@@ -230,7 +230,7 @@ namespace pryEDZarateF
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.lblNombre.ForeColor = ColoresApp.TextoEtiqueta;
             this.lblNombre.Location = new System.Drawing.Point(27, 157);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(58, 15);
@@ -241,7 +241,7 @@ namespace pryEDZarateF
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.lblCodigo.ForeColor = ColoresApp.TextoEtiqueta;
             this.lblCodigo.Location = new System.Drawing.Point(27, 87);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(54, 15);
@@ -252,7 +252,7 @@ namespace pryEDZarateF
             // 
             this.lblNuevoSub.AutoSize = true;
             this.lblNuevoSub.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblNuevoSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
+            this.lblNuevoSub.ForeColor = ColoresApp.TextoSubtitulo;
             this.lblNuevoSub.Location = new System.Drawing.Point(25, 56);
             this.lblNuevoSub.Name = "lblNuevoSub";
             this.lblNuevoSub.Size = new System.Drawing.Size(238, 15);
@@ -263,7 +263,7 @@ namespace pryEDZarateF
             // 
             this.lblNuevoTitulo.AutoSize = true;
             this.lblNuevoTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.lblNuevoTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblNuevoTitulo.ForeColor = ColoresApp.TextoTitulo;
             this.lblNuevoTitulo.Location = new System.Drawing.Point(22, 25);
             this.lblNuevoTitulo.Name = "lblNuevoTitulo";
             this.lblNuevoTitulo.Size = new System.Drawing.Size(131, 25);
@@ -281,7 +281,7 @@ namespace pryEDZarateF
             this.pnlListado.Location = new System.Drawing.Point(425, 115);
             this.pnlListado.Name = "pnlListado";
             this.pnlListado.ShadowDecoration.BorderRadius = 14;
-            this.pnlListado.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(235)))));
+            this.pnlListado.ShadowDecoration.Color = ColoresApp.SombraPanel;
             this.pnlListado.ShadowDecoration.Depth = 8;
             this.pnlListado.ShadowDecoration.Enabled = true;
             this.pnlListado.Size = new System.Drawing.Size(650, 410);
@@ -296,11 +296,11 @@ namespace pryEDZarateF
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvClientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle2.BackColor = ColoresApp.NaranjaFondoSuave;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(115)))), ((int)(((byte)(22)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(115)))), ((int)(((byte)(22)))));
+            dataGridViewCellStyle2.ForeColor = ColoresApp.Naranja;
+            dataGridViewCellStyle2.SelectionBackColor = ColoresApp.NaranjaFondoSuave;
+            dataGridViewCellStyle2.SelectionForeColor = ColoresApp.Naranja;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvClientes.ColumnHeadersHeight = 38;
@@ -312,13 +312,13 @@ namespace pryEDZarateF
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle3.ForeColor = ColoresApp.TextoGrilla;
             dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle3.SelectionBackColor = ColoresApp.NaranjaFondoSuave;
+            dataGridViewCellStyle3.SelectionForeColor = ColoresApp.TextoGrilla;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvClientes.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvClientes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
+            this.dgvClientes.GridColor = ColoresApp.BordeSuave;
             this.dgvClientes.Location = new System.Drawing.Point(25, 95);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.ReadOnly = true;
@@ -327,9 +327,9 @@ namespace pryEDZarateF
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle4.ForeColor = ColoresApp.TextoGrilla;
+            dataGridViewCellStyle4.SelectionBackColor = ColoresApp.NaranjaFondoSuave;
+            dataGridViewCellStyle4.SelectionForeColor = ColoresApp.TextoGrilla;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvClientes.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvClientes.RowTemplate.Height = 32;
@@ -341,21 +341,21 @@ namespace pryEDZarateF
             this.dgvClientes.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvClientes.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.dgvClientes.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgvClientes.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
-            this.dgvClientes.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(237)))));
+            this.dgvClientes.ThemeStyle.GridColor = ColoresApp.BordeSuave;
+            this.dgvClientes.ThemeStyle.HeaderStyle.BackColor = ColoresApp.NaranjaFondoSuave;
             this.dgvClientes.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvClientes.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.dgvClientes.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(115)))), ((int)(((byte)(22)))));
+            this.dgvClientes.ThemeStyle.HeaderStyle.ForeColor = ColoresApp.Naranja;
             this.dgvClientes.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvClientes.ThemeStyle.HeaderStyle.Height = 38;
             this.dgvClientes.ThemeStyle.ReadOnly = true;
             this.dgvClientes.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvClientes.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvClientes.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dgvClientes.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.dgvClientes.ThemeStyle.RowsStyle.ForeColor = ColoresApp.TextoGrilla;
             this.dgvClientes.ThemeStyle.RowsStyle.Height = 32;
-            this.dgvClientes.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(237)))));
-            this.dgvClientes.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.dgvClientes.ThemeStyle.RowsStyle.SelectionBackColor = ColoresApp.NaranjaFondoSuave;
+            this.dgvClientes.ThemeStyle.RowsStyle.SelectionForeColor = ColoresApp.TextoGrilla;
             // 
             // clmCodigo
             // 
@@ -382,7 +382,7 @@ namespace pryEDZarateF
             // 
             this.lblListadoSub.AutoSize = true;
             this.lblListadoSub.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblListadoSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
+            this.lblListadoSub.ForeColor = ColoresApp.TextoSubtitulo;
             this.lblListadoSub.Location = new System.Drawing.Point(25, 55);
             this.lblListadoSub.Name = "lblListadoSub";
             this.lblListadoSub.Size = new System.Drawing.Size(171, 15);
@@ -393,7 +393,7 @@ namespace pryEDZarateF
             // 
             this.lblListado.AutoSize = true;
             this.lblListado.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.lblListado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblListado.ForeColor = ColoresApp.TextoTitulo;
             this.lblListado.Location = new System.Drawing.Point(22, 25);
             this.lblListado.Name = "lblListado";
             this.lblListado.Size = new System.Drawing.Size(169, 25);
@@ -404,7 +404,7 @@ namespace pryEDZarateF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
+            this.BackColor = ColoresApp.FondoForm;
             this.ClientSize = new System.Drawing.Size(1100, 550);
             this.Controls.Add(this.pnlListado);
             this.Controls.Add(this.pnlNuevo);

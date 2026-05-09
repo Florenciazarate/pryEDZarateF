@@ -38,7 +38,7 @@ namespace pryEDZarateF
             // lblSalir
             // 
             this.lblSalir.AutoSize = true;
-            this.lblSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.lblSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalir.ForeColor = System.Drawing.Color.White;
             this.lblSalir.Location = new System.Drawing.Point(21, 14);
@@ -76,7 +76,7 @@ namespace pryEDZarateF
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Image = global::pryEDZarateF.Properties.Resources._2;
+            this.pictureBox1.Image = global::pryEDZarateF.Properties.Resources._21;
             this.pictureBox1.Location = new System.Drawing.Point(-7, -42);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(458, 444);

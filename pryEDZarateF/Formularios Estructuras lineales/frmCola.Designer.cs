@@ -150,11 +150,11 @@ namespace pryEDZarateF
             this.btnGrabar.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.btnGrabar.ForeColor = System.Drawing.Color.White;
             this.btnGrabar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(145)))), ((int)(((byte)(178)))));
-            this.btnGrabar.Location = new System.Drawing.Point(25, 278);
+            this.btnGrabar.Location = new System.Drawing.Point(25, 292);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(330, 45);
             this.btnGrabar.TabIndex = 7;
-            this.btnGrabar.Text = "Encolar";
+            this.btnGrabar.Text = "Agregar";
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // txtTramite
@@ -170,7 +170,7 @@ namespace pryEDZarateF
             this.txtTramite.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(182)))), ((int)(((byte)(212)))));
             this.txtTramite.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtTramite.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(243)))), ((int)(((byte)(252)))));
-            this.txtTramite.Location = new System.Drawing.Point(25, 213);
+            this.txtTramite.Location = new System.Drawing.Point(25, 227);
             this.txtTramite.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTramite.Name = "txtTramite";
             this.txtTramite.PlaceholderText = "Tipo de trámite";
@@ -191,7 +191,7 @@ namespace pryEDZarateF
             this.txtNombre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(182)))), ((int)(((byte)(212)))));
             this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(243)))), ((int)(((byte)(252)))));
-            this.txtNombre.Location = new System.Drawing.Point(25, 148);
+            this.txtNombre.Location = new System.Drawing.Point(25, 155);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.PlaceholderText = "Nombre completo";
@@ -225,7 +225,7 @@ namespace pryEDZarateF
             this.lblTramite.AutoSize = true;
             this.lblTramite.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblTramite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.lblTramite.Location = new System.Drawing.Point(25, 193);
+            this.lblTramite.Location = new System.Drawing.Point(25, 207);
             this.lblTramite.Name = "lblTramite";
             this.lblTramite.Size = new System.Drawing.Size(58, 15);
             this.lblTramite.TabIndex = 3;
@@ -236,7 +236,7 @@ namespace pryEDZarateF
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.lblNombre.Location = new System.Drawing.Point(25, 128);
+            this.lblNombre.Location = new System.Drawing.Point(25, 135);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(58, 15);
             this.lblNombre.TabIndex = 2;
@@ -364,11 +364,11 @@ namespace pryEDZarateF
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btnEliminar.Location = new System.Drawing.Point(245, 60);
+            this.btnEliminar.Location = new System.Drawing.Point(245, 37);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(110, 40);
             this.btnEliminar.TabIndex = 2;
-            this.btnEliminar.Text = "Desencolar";
+            this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblEliminarSub
@@ -378,9 +378,9 @@ namespace pryEDZarateF
             this.lblEliminarSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
             this.lblEliminarSub.Location = new System.Drawing.Point(25, 60);
             this.lblEliminarSub.Name = "lblEliminarSub";
-            this.lblEliminarSub.Size = new System.Drawing.Size(182, 30);
+            this.lblEliminarSub.Size = new System.Drawing.Size(155, 30);
             this.lblEliminarSub.TabIndex = 1;
-            this.lblEliminarSub.Text = "Saca el primero que entró (front).\r\nÚltimo elemento eliminado:";
+            this.lblEliminarSub.Text = "Saca el primero que entró. \r\nÚltimo elemento eliminado:";
             // 
             // lblEliminado
             // 
@@ -389,9 +389,9 @@ namespace pryEDZarateF
             this.lblEliminado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.lblEliminado.Location = new System.Drawing.Point(22, 25);
             this.lblEliminado.Name = "lblEliminado";
-            this.lblEliminado.Size = new System.Drawing.Size(193, 25);
+            this.lblEliminado.Size = new System.Drawing.Size(168, 25);
             this.lblEliminado.TabIndex = 0;
-            this.lblEliminado.Text = "Desencolar elemento";
+            this.lblEliminado.Text = "Eliminar elemento";
             // 
             // pnlListado
             // 

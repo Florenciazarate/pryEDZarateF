@@ -145,7 +145,7 @@ namespace pryEDZarateF
             this.btnGrabar.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.btnGrabar.ForeColor = System.Drawing.Color.White;
             this.btnGrabar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(82)))), ((int)(((byte)(221)))));
-            this.btnGrabar.Location = new System.Drawing.Point(25, 330);
+            this.btnGrabar.Location = new System.Drawing.Point(25, 302);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(330, 45);
             this.btnGrabar.TabIndex = 7;
@@ -165,7 +165,7 @@ namespace pryEDZarateF
             this.txtTramite.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
             this.txtTramite.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtTramite.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(184)))), ((int)(((byte)(220)))));
-            this.txtTramite.Location = new System.Drawing.Point(25, 256);
+            this.txtTramite.Location = new System.Drawing.Point(25, 227);
             this.txtTramite.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTramite.Name = "txtTramite";
             this.txtTramite.PlaceholderText = "Tipo de trámite";
@@ -187,7 +187,7 @@ namespace pryEDZarateF
             this.txtNombre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
             this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(184)))), ((int)(((byte)(220)))));
-            this.txtNombre.Location = new System.Drawing.Point(25, 183);
+            this.txtNombre.Location = new System.Drawing.Point(25, 155);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.PlaceholderText = "Nombre completo";
@@ -209,7 +209,7 @@ namespace pryEDZarateF
             this.txtCodigo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
             this.txtCodigo.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtCodigo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(184)))), ((int)(((byte)(220)))));
-            this.txtCodigo.Location = new System.Drawing.Point(25, 110);
+            this.txtCodigo.Location = new System.Drawing.Point(25, 83);
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.PlaceholderText = "Ej: 1001";
@@ -223,7 +223,7 @@ namespace pryEDZarateF
             this.lblTramite.AutoSize = true;
             this.lblTramite.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblTramite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.lblTramite.Location = new System.Drawing.Point(25, 236);
+            this.lblTramite.Location = new System.Drawing.Point(25, 207);
             this.lblTramite.Name = "lblTramite";
             this.lblTramite.Size = new System.Drawing.Size(58, 15);
             this.lblTramite.TabIndex = 3;
@@ -234,7 +234,7 @@ namespace pryEDZarateF
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.lblNombre.Location = new System.Drawing.Point(25, 163);
+            this.lblNombre.Location = new System.Drawing.Point(25, 135);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(58, 15);
             this.lblNombre.TabIndex = 2;
@@ -245,7 +245,7 @@ namespace pryEDZarateF
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.lblCodigo.Location = new System.Drawing.Point(25, 90);
+            this.lblCodigo.Location = new System.Drawing.Point(25, 63);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(54, 15);
             this.lblCodigo.TabIndex = 1;
@@ -291,7 +291,7 @@ namespace pryEDZarateF
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btnEliminar.Location = new System.Drawing.Point(245, 95);
+            this.btnEliminar.Location = new System.Drawing.Point(245, 87);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(110, 40);
             this.btnEliminar.TabIndex = 3;
@@ -310,7 +310,7 @@ namespace pryEDZarateF
             this.cmbCodigo.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbCodigo.ItemHeight = 30;
-            this.cmbCodigo.Location = new System.Drawing.Point(25, 95);
+            this.cmbCodigo.Location = new System.Drawing.Point(25, 90);
             this.cmbCodigo.Name = "cmbCodigo";
             this.cmbCodigo.Size = new System.Drawing.Size(210, 36);
             this.cmbCodigo.TabIndex = 2;
@@ -321,7 +321,7 @@ namespace pryEDZarateF
             this.lblCodigo2.AutoSize = true;
             this.lblCodigo2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblCodigo2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.lblCodigo2.Location = new System.Drawing.Point(25, 72);
+            this.lblCodigo2.Location = new System.Drawing.Point(25, 67);
             this.lblCodigo2.Name = "lblCodigo2";
             this.lblCodigo2.Size = new System.Drawing.Size(124, 15);
             this.lblCodigo2.TabIndex = 1;

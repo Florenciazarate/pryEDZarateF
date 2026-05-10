@@ -26,7 +26,6 @@ namespace pryEDZarateF
                 aux = aux.Siguiente;
             }
         }
-
         public void Recorrer(ListBox Lista)
         {
             clsNodo aux = Primero;

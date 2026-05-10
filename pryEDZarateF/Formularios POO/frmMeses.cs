@@ -18,28 +18,23 @@ namespace pryEDZarateF
             "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
             "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
         };
-
         public frmMeses()
         {
             InitializeComponent();
             cmbMeses.Items.AddRange(meses);
             ActualizarEstadoBotonGrabar();
         }
-
         private void frmMeses_Load(object sender, EventArgs e)
         {
         }
-
         private void ActualizarEstadoBotonGrabar()
         {
             btnGrabar.Enabled = cmbMeses.SelectedIndex >= 0;
         }
-
         private void cmbMeses_SelectedIndexChanged(object sender, EventArgs e)
         {
             ActualizarEstadoBotonGrabar();
         }
-
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             if (cmbMeses.SelectedIndex < 0)
@@ -56,7 +51,6 @@ namespace pryEDZarateF
             cmbMeses.SelectedIndex = -1;
             ActualizarEstadoBotonGrabar();
         }
-
         private void btnListar_Click_1(object sender, EventArgs e)
         {
             clsArchivoTexto x = new clsArchivoTexto();

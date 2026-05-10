@@ -11,14 +11,13 @@ using System.Windows.Forms;
 
 namespace pryEDZarateF
 {
-    internal class clsListaDoble: clsEstructurasLineales
+    internal class clsListaDoble : clsEstructurasLineales
     {
         private clsNodo ult;
         public clsNodo Ultimo
         {
             get { return ult; }
             set { ult = value; }
-
         }
         public void Agregar(clsNodo Nuevo)
         {
@@ -103,7 +102,7 @@ namespace pryEDZarateF
             combo.Items.Clear();
             while (aux != null)
             {
-                combo.Items.Add ($" Código: {aux.Codigo}, Nombre: {aux.Nombre}, Trámite: {aux.Tramite}"); 
+                combo.Items.Add($" Código: {aux.Codigo}, Nombre: {aux.Nombre}, Trámite: {aux.Tramite}");
                 aux = aux.Anterior;
             }
         }
@@ -113,12 +112,10 @@ namespace pryEDZarateF
             Grilla.Rows.Clear();
             while (aux != null)
             {
-                Grilla.Rows.Add( aux.Codigo,aux.Nombre,aux.Tramite);
+                Grilla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);
                 aux = aux.Anterior;
             }
         }
-
-
         public void RecorrerDesc(ComboBox combo)
         {
             clsNodo aux = Ultimo;
@@ -129,7 +126,6 @@ namespace pryEDZarateF
                 aux = aux.Anterior;
             }
         }
-
         public void RecorrerDesc()
         {
             clsNodo aux = Ultimo;
@@ -159,4 +155,3 @@ namespace pryEDZarateF
     }
 }
 
-        

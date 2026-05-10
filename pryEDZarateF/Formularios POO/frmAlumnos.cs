@@ -26,22 +26,18 @@ namespace pryEDZarateF
                    txtNombre.Text.Trim() != "" &&
                    cmbCarrera.SelectedIndex >= 0;
         }
-
         private void ActualizarEstadoBotonGrabar()
         {
             btnGrabar.Enabled = CamposCompletos();
         }
-
         private void txtCampos_TextChanged(object sender, EventArgs e)
         {
             ActualizarEstadoBotonGrabar();
         }
-
         private void cmbCarrera_SelectedIndexChanged(object sender, EventArgs e)
         {
             ActualizarEstadoBotonGrabar();
         }
-
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             if (!CamposCompletos())
@@ -49,7 +45,6 @@ namespace pryEDZarateF
                 MessageBox.Show("Complete todos los campos antes de grabar.");
                 return;
             }
-
             string archivo = "Alumnos.csv";
             string codigoNuevo = txtCodigo.Text.Trim();
 
@@ -62,7 +57,6 @@ namespace pryEDZarateF
                     return;
                 }
             }
-
             clsArchivoTexto objCliente = new clsArchivoTexto();
             objCliente.NombreArchivo = archivo;
             objCliente.Grabar(txtCodigo.Text, txtNombre.Text, cmbCarrera.Text);
@@ -80,7 +74,6 @@ namespace pryEDZarateF
             {
                 clsArchivoTexto x = new clsArchivoTexto();
                 x.NombreArchivo = "Carreras.csv";
-
                 x.Recorrer(cmbCarrera);
             }
         }

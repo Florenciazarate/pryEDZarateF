@@ -7,38 +7,38 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace pryEDZarateF
+{
+    internal class clsListaSimple : clsEstructurasLineales
     {
-        internal class clsListaSimple: clsEstructurasLineales
+        public void Agregar(clsNodo Nuevo)
         {
-            public void Agregar(clsNodo Nuevo)
+            if (Primero == null)
             {
-                if (Primero == null)
-                {
-                    Primero = Nuevo;
-                }
-                else if (Nuevo.Codigo <= Primero.Codigo)
-                {
-                    Nuevo.Siguiente = Primero;
-                    Primero = Nuevo;
-                }
-                else
-                {
-                    clsNodo aux = Primero;
-                    clsNodo ant = Primero;
-                    while (Nuevo.Codigo > aux.Codigo)
-                    {
-                        ant = aux;
-                        aux = aux.Siguiente;
-                        if (aux == null)
-                        {
-                            break;
-                        }
-                    }
-                    ant.Siguiente = Nuevo;
-                    Nuevo.Siguiente = aux;
-                }
+                Primero = Nuevo;
             }
-        public void Eliminar (Int32 Codigo)
+            else if (Nuevo.Codigo <= Primero.Codigo)
+            {
+                Nuevo.Siguiente = Primero;
+                Primero = Nuevo;
+            }
+            else
+            {
+                clsNodo aux = Primero;
+                clsNodo ant = Primero;
+                while (Nuevo.Codigo > aux.Codigo)
+                {
+                    ant = aux;
+                    aux = aux.Siguiente;
+                    if (aux == null)
+                    {
+                        break;
+                    }
+                }
+                ant.Siguiente = Nuevo;
+                Nuevo.Siguiente = aux;
+            }
+        }
+        public void Eliminar(Int32 Codigo)
         {
             if (Primero == null) return;
             if (Primero.Codigo == Codigo)
@@ -71,7 +71,5 @@ namespace pryEDZarateF
             }
             AD.Close();
         }
-
     }
-    
 }

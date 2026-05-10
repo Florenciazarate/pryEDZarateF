@@ -17,7 +17,6 @@ namespace pryEDZarateF
             InitializeComponent();
             ActualizarEstadoBotonGrabar();
         }
-
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             if (!CamposCompletos())
@@ -25,26 +24,22 @@ namespace pryEDZarateF
                 MessageBox.Show("Complete todos los campos antes de grabar.");
                 return;
             }
-
             clsArchivoTexto objCliente = new clsArchivoTexto();
             objCliente.NombreArchivo = "Clientes.csv";
             objCliente.Grabar(txtCodigo.Text, txtNombre.Text, txtDeuda.Text);
             MessageBox.Show("Cliente grabado correctamente");
             objCliente.Recorrer(dgvClientes);
         }
-
         private void frmClientes_Load(object sender, EventArgs e)
         {
 
         }
-
         private bool CamposCompletos()
         {
             return txtCodigo.Text.Trim() != "" &&
                    txtNombre.Text.Trim() != "" &&
                    txtDeuda.Text.Trim() != "";
         }
-
         private void ActualizarEstadoBotonGrabar()
         {
             btnGrabar.Enabled = CamposCompletos();
@@ -54,7 +49,6 @@ namespace pryEDZarateF
         {
             ActualizarEstadoBotonGrabar();
         }
-
         private void txtDeuda_KeyPress(object sender, KeyPressEventArgs e)
         {
             string separador = System.Globalization.CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator;

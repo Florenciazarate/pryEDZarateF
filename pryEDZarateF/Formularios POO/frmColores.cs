@@ -17,7 +17,6 @@ namespace pryEDZarateF
             InitializeComponent();
             ActualizarEstadoBotonGrabar();
         }
-
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             if (txtNombreColor.Text == "" || txtNombreColor.Text.Any(char.IsDigit))
@@ -26,31 +25,26 @@ namespace pryEDZarateF
                 txtNombreColor.Text = "";
                 return;
             }
-            clsArchivoTexto x= new clsArchivoTexto();
+            clsArchivoTexto x = new clsArchivoTexto();
             x.NombreArchivo = "Colores.csv";
             x.Grabar(txtNombreColor.Text);
             x.Recorrer(lstColor);
             MessageBox.Show("Color grabado correctamente");
-
         }
-
         private void ActualizarEstadoBotonGrabar()
         {
             btnGrabar.Enabled = txtNombreColor.Text.Trim() != "";
         }
-
         private void txtNombreColor_TextChanged(object sender, EventArgs e)
         {
             ActualizarEstadoBotonGrabar();
         }
-
         private void btnListar_Click(object sender, EventArgs e)
         {
             clsArchivoTexto x = new clsArchivoTexto();
             x.NombreArchivo = "Colores.csv";
             x.Recorrer(lstColor);
         }
-
         private void frmColores_Load(object sender, EventArgs e)
         {
 

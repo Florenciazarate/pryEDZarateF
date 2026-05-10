@@ -17,7 +17,6 @@ namespace pryEDZarateF
             InitializeComponent();
             ActualizarEstadoBotonGrabar();
         }
-
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             if (txtNombreCarrera.Text == "" || txtNombreCarrera.Text.Any(char.IsDigit))
@@ -26,7 +25,6 @@ namespace pryEDZarateF
                 txtNombreCarrera.Text = "";
                 return;
             }
-
             string nueva = txtNombreCarrera.Text.Trim();
             string archivo = "Carreras.csv";
 
@@ -44,12 +42,10 @@ namespace pryEDZarateF
             x.Grabar(nueva);
             x.Recorrer(lstCarreras);
         }
-
         private void ActualizarEstadoBotonGrabar()
         {
             btnGrabar.Enabled = txtNombreCarrera.Text.Trim() != "";
         }
-
         private void txtNombreCarrera_TextChanged(object sender, EventArgs e)
         {
             ActualizarEstadoBotonGrabar();

@@ -13,7 +13,6 @@ namespace pryEDZarateF
         private String tra;
         private clsNodo sig;
         private clsNodo ant;
-
         public Int32 Codigo
         {
             get { return cod; }

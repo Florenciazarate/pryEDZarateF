@@ -13,7 +13,6 @@ namespace pryEDZarateF
     public partial class frmListaSimple : Form
     {
         clsListaSimple Lista = new clsListaSimple();
-
         public frmListaSimple()
         {
             InitializeComponent();
@@ -32,27 +31,22 @@ namespace pryEDZarateF
             bool puedeEliminar = Lista.Primero != null && cmbCodigo.SelectedIndex >= 0;
             btnEliminar.Enabled = puedeEliminar;
         }
-
         private void txtCodigo_TextChanged(object sender, EventArgs e)
         {
             ActualizarBotones();
         }
-
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
             ActualizarBotones();
         }
-
         private void txtTramite_TextChanged(object sender, EventArgs e)
         {
             ActualizarBotones();
         }
-
         private void cmbCodigo_SelectedIndexChanged(object sender, EventArgs e)
         {
             ActualizarBotones();
         }
-
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(txtCodigo.Text, out int codigo))
@@ -79,7 +73,6 @@ namespace pryEDZarateF
             txtTramite.Text = "";
             ActualizarBotones();
         }
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             if (Lista.Primero == null)

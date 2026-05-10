@@ -16,10 +16,8 @@ namespace pryEDZarateF
         {
             InitializeComponent();
         }
-
         private void frmDatosDesarrollador_Load(object sender, EventArgs e)
         {
-   
 
         }
         private void label1_Click(object sender, EventArgs e)
@@ -32,11 +30,9 @@ namespace pryEDZarateF
             x.ShowDialog();
             this.Close();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
     }
 }
- 

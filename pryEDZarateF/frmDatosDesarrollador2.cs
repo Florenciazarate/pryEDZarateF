@@ -16,7 +16,6 @@ namespace pryEDZarateF
         {
             InitializeComponent();
         }
-
         private void frmDatosDesarrollador2_Load(object sender, EventArgs e)
         {
 
@@ -25,7 +24,6 @@ namespace pryEDZarateF
         {
             this.Close();
         }
-
         private void lblVolver_Click(object sender, EventArgs e)
         {
             frmDatosDesarrollador x = new frmDatosDesarrollador();

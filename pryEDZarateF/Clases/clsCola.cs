@@ -43,9 +43,9 @@ namespace pryEDZarateF
                 Primero = Primero.Siguiente;
             }
         }
-       
-        }
-   } 
+
+    }
+}
 
 
 

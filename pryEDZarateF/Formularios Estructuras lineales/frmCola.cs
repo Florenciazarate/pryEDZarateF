@@ -16,7 +16,6 @@ namespace pryEDZarateF
         {
             InitializeComponent();
         }
-
         clsCola fila = new clsCola();
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -38,7 +37,6 @@ namespace pryEDZarateF
                 lblTramiteEliminado.Text = "";
             }
         }
-
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(txtCodigo.Text, out int codigo))
@@ -66,7 +64,6 @@ namespace pryEDZarateF
             txtTramite.Text = "";
 
         }
-
         private void frmCola_Load(object sender, EventArgs e)
         {
 

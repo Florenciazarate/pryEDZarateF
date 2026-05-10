@@ -17,7 +17,6 @@ namespace pryEDZarateF
             InitializeComponent();
         }
         clsPila fila = new clsPila();
-
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(txtCodigo.Text, out int codigo))
@@ -45,7 +44,6 @@ namespace pryEDZarateF
             txtTramite.Text = "";
 
         }
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             if (fila.Primero != null)
@@ -67,6 +65,6 @@ namespace pryEDZarateF
             }
         }
     }
-  }
+}
 
 

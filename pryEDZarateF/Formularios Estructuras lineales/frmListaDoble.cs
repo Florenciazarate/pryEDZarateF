@@ -19,12 +19,10 @@ namespace pryEDZarateF
 
         }
         clsListaDoble lista = new clsListaDoble();
-
         private void frmListaDoble_Load(object sender, EventArgs e)
         {
 
         }
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             if (lista.Primero == null)
@@ -63,12 +61,10 @@ namespace pryEDZarateF
             txtNombre.Clear();
             txtTramite.Clear();
         }
-
         private void radioAscendente_CheckedChanged(object sender, EventArgs e)
         {
             ActualizarVistas();
         }
-
         private void ActualizarVistas()
         {
             if (radioAscendente.Checked)

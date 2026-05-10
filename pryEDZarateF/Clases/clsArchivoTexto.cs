@@ -11,7 +11,6 @@ namespace pryEDZarateF
     internal class clsArchivoTexto
     {
         public string NombreArchivo = "";
-
         public void Grabar()
         {
             using (StreamWriter AD = new StreamWriter(NombreArchivo, true))
@@ -50,7 +49,6 @@ namespace pryEDZarateF
         {
             if (!File.Exists(NombreArchivo))
                 return;
-
             string DatoLeido;
             lst.Items.Clear();
             using (StreamReader AD = new StreamReader(NombreArchivo))
@@ -84,16 +82,14 @@ namespace pryEDZarateF
             cmb.Items.Clear();
             if (!File.Exists(NombreArchivo))
                 return;
-            StreamReader AD = new StreamReader (NombreArchivo);
-            dato = AD.ReadLine(); 
-
+            StreamReader AD = new StreamReader(NombreArchivo);
+            dato = AD.ReadLine();
             while (dato != null)
             {
                 cmb.Items.Add(dato);
                 dato = AD.ReadLine();
             }
-
-            AD.Close(); 
+            AD.Close();
         }
     }
 }

@@ -139,7 +139,7 @@ namespace pryEDZarateF
             }
             AD.Close();
         }
-        public new void Recorrer()
+        public void Recorrer()
         {
             clsNodo aux = Primero;
             StreamWriter AD = new StreamWriter("ListaDoble.csv", false, Encoding.UTF8);

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,32 +32,15 @@ namespace pryEDZarateF
             bool puedeEliminar = Lista.Primero != null && cmbCodigo.SelectedIndex >= 0;
             btnEliminar.Enabled = puedeEliminar;
         }
-        private void txtCodigo_TextChanged(object sender, EventArgs e)
-        {
-            ActualizarBotones();
-        }
-        private void txtNombre_TextChanged(object sender, EventArgs e)
-        {
-            ActualizarBotones();
-        }
-        private void txtTramite_TextChanged(object sender, EventArgs e)
-        {
-            ActualizarBotones();
-        }
-        private void cmbCodigo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            ActualizarBotones();
-        }
+        private void txtCodigo_TextChanged(object sender, EventArgs e) => ActualizarBotones();
+        private void txtNombre_TextChanged(object sender, EventArgs e) => ActualizarBotones();
+        private void txtTramite_TextChanged(object sender, EventArgs e) => ActualizarBotones();
+        private void cmbCodigo_SelectedIndexChanged(object sender, EventArgs e) => ActualizarBotones();
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(txtCodigo.Text, out int codigo))
             {
                 MessageBox.Show("Ingresá un código numérico válido.");
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtTramite.Text))
-            {
-                MessageBox.Show("Completá todos los campos.");
                 return;
             }
             clsNodo ObjNodo = new clsNodo();
@@ -75,23 +59,17 @@ namespace pryEDZarateF
         }
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (Lista.Primero == null)
+            if (cmbCodigo.SelectedIndex != -1)
             {
-                MessageBox.Show("No hay elementos para eliminar.");
-                return;
+                Int32 codigo = Convert.ToInt32(cmbCodigo.Text);
+                Lista.Eliminar(codigo);
+                Lista.Recorrer(dgvElementos);
+                Lista.Recorrer(lstElementos);
+                Lista.Recorrer(cmbCodigo);  
+                Lista.Recorrer();
+                MessageBox.Show("Elemento eliminado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ActualizarBotones();
             }
-            if (cmbCodigo.SelectedItem == null)
-            {
-                MessageBox.Show("Seleccioná un código para eliminar.");
-                return;
-            }
-            Int32 x = Convert.ToInt32(cmbCodigo.SelectedItem);
-            Lista.Eliminar(x);
-            Lista.Recorrer(dgvElementos);
-            Lista.Recorrer(lstElementos);
-            Lista.Recorrer(cmbCodigo);
-            Lista.Recorrer();
-            ActualizarBotones();
         }
     }
 }

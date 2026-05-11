@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,41 +13,31 @@ namespace pryEDZarateF
 {
     public partial class frmCola : Form
     {
+        clsCola fila = new clsCola();
         public frmCola()
         {
             InitializeComponent();
         }
-        clsCola fila = new clsCola();
-        private void btnEliminar_Click(object sender, EventArgs e)
+        private void frmCola_Load(object sender, EventArgs e)
         {
-            if (fila.Primero != null)
-            {
-                MessageBox.Show("Se eliminó el elemento: " + fila.Primero.Nombre);
-                lblCodigo22.Text = Convert.ToString(fila.Primero.Codigo);
-                lblNombreEliminado.Text = fila.Primero.Nombre;
-                lblTramiteEliminado.Text = fila.Primero.Tramite;
-                fila.Eliminar();
-                fila.Recorrer(dgvElementos);
-                fila.Recorrer(lstElementos);
-                fila.Recorrer();
-            }
-            else
-            {
-                lblCodigo22.Text = "";
-                lblNombreEliminado.Text = "";
-                lblTramiteEliminado.Text = "";
-            }
+            ActualizarBotones();
         }
+        private void ActualizarBotones()
+        {
+            bool camposCompletos = !string.IsNullOrWhiteSpace(txtCodigo.Text)
+                                && !string.IsNullOrWhiteSpace(txtNombre.Text)
+                                && !string.IsNullOrWhiteSpace(txtTramite.Text);
+            btnGrabar.Enabled = camposCompletos;
+            btnEliminar.Enabled = (fila.Primero != null);
+        }
+        private void txtCodigo_TextChanged(object sender, EventArgs e) => ActualizarBotones();
+        private void txtNombre_TextChanged(object sender, EventArgs e) => ActualizarBotones();
+        private void txtTramite_TextChanged(object sender, EventArgs e) => ActualizarBotones();
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(txtCodigo.Text, out int codigo))
             {
                 MessageBox.Show("Ingresá un código numérico válido.");
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtTramite.Text))
-            {
-                MessageBox.Show("Completá todos los campos.");
                 return;
             }
             clsNodo n = new clsNodo();
@@ -62,11 +53,22 @@ namespace pryEDZarateF
             txtCodigo.Text = "";
             txtNombre.Text = "";
             txtTramite.Text = "";
-
+            ActualizarBotones();
         }
-        private void frmCola_Load(object sender, EventArgs e)
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
-
+            if (fila.Primero != null)
+            {
+                lblCodigo22.Text = Convert.ToString(fila.Primero.Codigo);
+                lblNombreEliminado.Text = fila.Primero.Nombre;
+                lblTramiteEliminado.Text = fila.Primero.Tramite;
+                fila.Eliminar();
+                fila.Recorrer(dgvElementos); 
+                fila.Recorrer(lstElementos); 
+                fila.Recorrer();
+                MessageBox.Show("Elemento eliminado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ActualizarBotones();
+            }
         }
     }
 }

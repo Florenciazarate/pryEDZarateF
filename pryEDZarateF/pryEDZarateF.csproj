@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>EjOYTYuXsAAwFqf-removebg-preview.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
@@ -244,6 +247,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EjOYTYuXsAAwFqf-removebg-preview.ico" />
+    <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa %284%29.png" />
+    <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa %283%291.png" />
+    <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa %282%29.png" />
+    <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa %281%292.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa3.png" />
+    <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa2.png" />
+    <None Include="Resources\EjOYTYuXsAAwFqf-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

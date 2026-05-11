@@ -12,43 +12,35 @@ namespace pryEDZarateF
 {
     public partial class frmListaDoble : Form
     {
+        clsListaDoble lista = new clsListaDoble();
         public frmListaDoble()
         {
             InitializeComponent();
             radioAscendente.Checked = true;
 
         }
-        clsListaDoble lista = new clsListaDoble();
         private void frmListaDoble_Load(object sender, EventArgs e)
         {
-
+            ActualizarBotones();
         }
-        private void btnEliminar_Click(object sender, EventArgs e)
+        private void ActualizarBotones()
         {
-            if (lista.Primero == null)
-            {
-                MessageBox.Show("No hay elementos para eliminar.");
-                return;
-            }
-            if (cmbCodigo.SelectedItem == null)
-            {
-                MessageBox.Show("Seleccioná un código para eliminar.");
-                return;
-            }
-            int codigo = Convert.ToInt32(cmbCodigo.SelectedItem);
-            lista.Eliminar(codigo);
-            ActualizarVistas();
+            bool camposCompletos = !string.IsNullOrWhiteSpace(txtCodigo.Text)
+                                && !string.IsNullOrWhiteSpace(txtNombre.Text)
+                                && !string.IsNullOrWhiteSpace(txtTramite.Text);
+            btnGrabar.Enabled = camposCompletos;
+            bool puedeEliminar = lista.Primero != null && cmbCodigo.SelectedIndex >= 0;
+            btnEliminar.Enabled = puedeEliminar;
         }
+        private void txtCodigo_TextChanged(object sender, EventArgs e) => ActualizarBotones();
+        private void txtNombre_TextChanged(object sender, EventArgs e) => ActualizarBotones();
+        private void txtTramite_TextChanged(object sender, EventArgs e) => ActualizarBotones();
+        private void cmbCodigo_SelectedIndexChanged(object sender, EventArgs e) => ActualizarBotones();
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(txtCodigo.Text, out int codigo))
             {
                 MessageBox.Show("Ingresá un código numérico válido.");
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtTramite.Text))
-            {
-                MessageBox.Show("Completá todos los campos.");
                 return;
             }
             clsNodo n = new clsNodo();
@@ -60,6 +52,18 @@ namespace pryEDZarateF
             txtCodigo.Clear();
             txtNombre.Clear();
             txtTramite.Clear();
+            ActualizarBotones();
+        }
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (cmbCodigo.SelectedIndex != -1)
+            {
+                Int32 codigo = Convert.ToInt32(cmbCodigo.Text);
+                lista.Eliminar(codigo);
+                MessageBox.Show("Elemento eliminado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ActualizarVistas();
+                ActualizarBotones();
+            }
         }
         private void radioAscendente_CheckedChanged(object sender, EventArgs e)
         {

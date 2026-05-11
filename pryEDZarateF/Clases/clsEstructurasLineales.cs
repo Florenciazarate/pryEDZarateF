@@ -46,22 +46,6 @@ namespace pryEDZarateF
                 aux = aux.Siguiente;
             }
         }
-        public void Recorrer()
-        {
-            clsNodo aux = Primero;
-            StreamWriter AD = new StreamWriter("Cola.csv", false, Encoding.UTF8);
-            AD.WriteLine("Lista de espera\n");
-            AD.WriteLine("Código;Nombre;Tramite");
-            while (aux != null)
-            {
-                AD.WriteLine(aux.Codigo);
-                AD.Write(";");
-                AD.Write(aux.Nombre);
-                AD.Write(";");
-                AD.WriteLine(aux.Tramite);
-                aux = aux.Siguiente;
-            }
-            AD.Close();
-        }
     }
 }
+

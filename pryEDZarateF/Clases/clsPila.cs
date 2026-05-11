@@ -29,7 +29,7 @@ namespace pryEDZarateF
                 Primero = Primero.Siguiente;
             }
         }
-        public new void Recorrer()
+        public void Recorrer()
         {
             clsNodo aux = Primero;
             StreamWriter AD = new StreamWriter("Pila.csv", false, Encoding.UTF8);

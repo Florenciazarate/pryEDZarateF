@@ -153,9 +153,39 @@ namespace pryEDZarateF.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4 {
+            get {
+                object obj = ResourceManager.GetObject("4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5 {
+            get {
+                object obj = ResourceManager.GetObject("5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap b10 {
             get {
                 object obj = ResourceManager.GetObject("b10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EjOYTYuXsAAwFqf_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("EjOYTYuXsAAwFqf-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,6 +243,26 @@ namespace pryEDZarateF.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logotipo_Estudio_Shonos_Diseño_multimedia_divertido_retro_y2k_rosa__1_2 {
+            get {
+                object obj = ResourceManager.GetObject("Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa (1)2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logotipo_Estudio_Shonos_Diseño_multimedia_divertido_retro_y2k_rosa__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logotipo_Estudio_Shonos_Diseño_multimedia_divertido_retro_y2k_rosa__3_ {
             get {
                 object obj = ResourceManager.GetObject("Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa (3)", resourceCulture);
@@ -223,9 +273,49 @@ namespace pryEDZarateF.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logotipo_Estudio_Shonos_Diseño_multimedia_divertido_retro_y2k_rosa__3_1 {
+            get {
+                object obj = ResourceManager.GetObject("Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa (3)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logotipo_Estudio_Shonos_Diseño_multimedia_divertido_retro_y2k_rosa__4_ {
+            get {
+                object obj = ResourceManager.GetObject("Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logotipo_Estudio_Shonos_Diseño_multimedia_divertido_retro_y2k_rosa1 {
             get {
                 object obj = ResourceManager.GetObject("Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logotipo_Estudio_Shonos_Diseño_multimedia_divertido_retro_y2k_rosa2 {
+            get {
+                object obj = ResourceManager.GetObject("Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logotipo_Estudio_Shonos_Diseño_multimedia_divertido_retro_y2k_rosa3 {
+            get {
+                object obj = ResourceManager.GetObject("Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

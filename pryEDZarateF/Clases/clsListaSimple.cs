@@ -58,7 +58,7 @@ namespace pryEDZarateF
                 aux2.Siguiente = aux1.Siguiente;
             }
         }
-        public new void Recorrer()
+        public void Recorrer()
         {
             clsNodo aux = Primero;
             StreamWriter AD = new StreamWriter("ListaSimple.csv", false, Encoding.UTF8);

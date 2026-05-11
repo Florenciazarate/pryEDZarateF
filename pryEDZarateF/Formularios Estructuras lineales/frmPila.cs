@@ -12,11 +12,26 @@ namespace pryEDZarateF
 {
     public partial class frmPila : Form
     {
+        clsPila fila = new clsPila();
         public frmPila()
         {
             InitializeComponent();
         }
-        clsPila fila = new clsPila();
+        private void frmPila_Load(object sender, EventArgs e)
+        {
+            ActualizarBotones();
+        }
+        private void ActualizarBotones()
+        {
+            bool camposCompletos = !string.IsNullOrWhiteSpace(txtCodigo.Text)
+                                && !string.IsNullOrWhiteSpace(txtNombre.Text)
+                                && !string.IsNullOrWhiteSpace(txtTramite.Text);
+            btnGrabar.Enabled = camposCompletos;
+            btnEliminar.Enabled = (fila.Primero != null);
+        }
+        private void txtCodigo_TextChanged(object sender, EventArgs e) => ActualizarBotones();
+        private void txtNombre_TextChanged(object sender, EventArgs e) => ActualizarBotones();
+        private void txtTramite_TextChanged(object sender, EventArgs e) => ActualizarBotones();
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(txtCodigo.Text, out int codigo))
@@ -24,11 +39,7 @@ namespace pryEDZarateF
                 MessageBox.Show("Ingresá un código numérico válido.");
                 return;
             }
-            if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtTramite.Text))
-            {
-                MessageBox.Show("Completá todos los campos.");
-                return;
-            }
+
             clsNodo n = new clsNodo();
             n.Codigo = codigo;
             n.Nombre = txtNombre.Text;
@@ -42,7 +53,7 @@ namespace pryEDZarateF
             txtCodigo.Text = "";
             txtNombre.Text = "";
             txtTramite.Text = "";
-
+            ActualizarBotones();
         }
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -56,6 +67,7 @@ namespace pryEDZarateF
                 fila.Recorrer(dgvElementos);
                 fila.Recorrer(lstElementos);
                 fila.Recorrer();
+                ActualizarBotones();
             }
             else
             {

@@ -41,6 +41,8 @@ namespace pryEDZarateF
             x.NombreArchivo = archivo;
             x.Grabar(nueva);
             x.Recorrer(lstCarreras);
+            MessageBox.Show("Carrera cargada.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
         private void ActualizarEstadoBotonGrabar()
         {
@@ -49,6 +51,11 @@ namespace pryEDZarateF
         private void txtNombreCarrera_TextChanged(object sender, EventArgs e)
         {
             ActualizarEstadoBotonGrabar();
+        }
+
+        private void frmCarreras_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

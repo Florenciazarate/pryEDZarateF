@@ -29,6 +29,7 @@ namespace pryEDZarateF
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.menu = new System.Windows.Forms.MenuStrip();
             this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,12 +58,14 @@ namespace pryEDZarateF
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblSubtitulo = new System.Windows.Forms.Label();
             this.lblFooter = new System.Windows.Forms.Label();
+            this.pctInicial = new System.Windows.Forms.PictureBox();
             this.menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctInicial)).BeginInit();
             this.SuspendLayout();
             // 
             // menu
             // 
-            this.menu.BackColor = ColoresApp.MenuFondo;
+            this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.menu.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.menu.ForeColor = System.Drawing.Color.White;
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -89,20 +92,23 @@ namespace pryEDZarateF
             this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
             this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(68, 23);
             this.sistemaToolStripMenuItem.Text = "Sistema";
+            this.sistemaToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
+            this.acercaDeToolStripMenuItem.Tag = "frmDatosDesarrollador";
             this.acercaDeToolStripMenuItem.Text = "Acerca de...";
-            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
+            this.salirToolStripMenuItem.Tag = "Salir";
             this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // programaciónOOToolStripMenuItem
             // 
@@ -122,36 +128,41 @@ namespace pryEDZarateF
             // 
             this.coloresToolStripMenuItem.Name = "coloresToolStripMenuItem";
             this.coloresToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
+            this.coloresToolStripMenuItem.Tag = "frmColores";
             this.coloresToolStripMenuItem.Text = "Colores...";
-            this.coloresToolStripMenuItem.Click += new System.EventHandler(this.coloresToolStripMenuItem_Click);
+            this.coloresToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // mesesToolStripMenuItem1
             // 
             this.mesesToolStripMenuItem1.Name = "mesesToolStripMenuItem1";
             this.mesesToolStripMenuItem1.Size = new System.Drawing.Size(141, 24);
+            this.mesesToolStripMenuItem1.Tag = "frmMeses";
             this.mesesToolStripMenuItem1.Text = "Meses...";
-            this.mesesToolStripMenuItem1.Click += new System.EventHandler(this.mesesToolStripMenuItem1_Click);
+            this.mesesToolStripMenuItem1.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
+            this.clientesToolStripMenuItem.Tag = "frmClientes";
             this.clientesToolStripMenuItem.Text = "Clientes...";
-            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // alumnosToolStripMenuItem
             // 
             this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
             this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
+            this.alumnosToolStripMenuItem.Tag = "frmAlumnos";
             this.alumnosToolStripMenuItem.Text = "Alumnos...";
-            this.alumnosToolStripMenuItem.Click += new System.EventHandler(this.alumnosToolStripMenuItem_Click_1);
+            this.alumnosToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // carrerasToolStripMenuItem
             // 
             this.carrerasToolStripMenuItem.Name = "carrerasToolStripMenuItem";
             this.carrerasToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
+            this.carrerasToolStripMenuItem.Tag = "frmCarreras";
             this.carrerasToolStripMenuItem.Text = "Carreras...";
-            this.carrerasToolStripMenuItem.Click += new System.EventHandler(this.carrerasToolStripMenuItem_Click);
+            this.carrerasToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // estructurasLinealesToolStripMenuItem
             // 
@@ -170,29 +181,33 @@ namespace pryEDZarateF
             // 
             this.colaToolStripMenuItem.Name = "colaToolStripMenuItem";
             this.colaToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
+            this.colaToolStripMenuItem.Tag = "frmCola";
             this.colaToolStripMenuItem.Text = "Cola...";
-            this.colaToolStripMenuItem.Click += new System.EventHandler(this.colaToolStripMenuItem_Click);
+            this.colaToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // pilaToolStripMenuItem
             // 
             this.pilaToolStripMenuItem.Name = "pilaToolStripMenuItem";
             this.pilaToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
+            this.pilaToolStripMenuItem.Tag = "frmPila";
             this.pilaToolStripMenuItem.Text = "Pila...";
-            this.pilaToolStripMenuItem.Click += new System.EventHandler(this.pilaToolStripMenuItem_Click);
+            this.pilaToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // listaSimpleToolStripMenuItem
             // 
             this.listaSimpleToolStripMenuItem.Name = "listaSimpleToolStripMenuItem";
             this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
+            this.listaSimpleToolStripMenuItem.Tag = "frmListaSimple";
             this.listaSimpleToolStripMenuItem.Text = "Lista simple...";
-            this.listaSimpleToolStripMenuItem.Click += new System.EventHandler(this.listaSimpleToolStripMenuItem_Click);
+            this.listaSimpleToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // listaDobleToolStripMenuItem
             // 
             this.listaDobleToolStripMenuItem.Name = "listaDobleToolStripMenuItem";
             this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
+            this.listaDobleToolStripMenuItem.Tag = "frmListaDoble";
             this.listaDobleToolStripMenuItem.Text = "Lista doble...";
-            this.listaDobleToolStripMenuItem.Click += new System.EventHandler(this.listaDobleToolStripMenuItem_Click);
+            this.listaDobleToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // estructurasNoLinealesToolStripMenuItem
             // 
@@ -261,10 +276,10 @@ namespace pryEDZarateF
             // 
             // pnlAccent
             // 
-            this.pnlAccent.BackColor = ColoresApp.Indigo;
+            this.pnlAccent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
             this.pnlAccent.BorderRadius = 2;
-            this.pnlAccent.FillColor = ColoresApp.Indigo;
-            this.pnlAccent.Location = new System.Drawing.Point(440, 195);
+            this.pnlAccent.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
+            this.pnlAccent.Location = new System.Drawing.Point(439, 208);
             this.pnlAccent.Name = "pnlAccent";
             this.pnlAccent.Size = new System.Drawing.Size(60, 4);
             this.pnlAccent.TabIndex = 1;
@@ -272,10 +287,10 @@ namespace pryEDZarateF
             // lblTitulo
             // 
             this.lblTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 28F, System.Drawing.FontStyle.Bold);
-            this.lblTitulo.ForeColor = ColoresApp.TextoTitulo;
-            this.lblTitulo.Location = new System.Drawing.Point(0, 215);
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblTitulo.Location = new System.Drawing.Point(279, 215);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(940, 60);
+            this.lblTitulo.Size = new System.Drawing.Size(399, 60);
             this.lblTitulo.TabIndex = 2;
             this.lblTitulo.Text = "Estructuras de Datos";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -283,10 +298,10 @@ namespace pryEDZarateF
             // lblSubtitulo
             // 
             this.lblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblSubtitulo.ForeColor = ColoresApp.TextoEtiqueta;
-            this.lblSubtitulo.Location = new System.Drawing.Point(0, 280);
+            this.lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.lblSubtitulo.Location = new System.Drawing.Point(297, 275);
             this.lblSubtitulo.Name = "lblSubtitulo";
-            this.lblSubtitulo.Size = new System.Drawing.Size(940, 25);
+            this.lblSubtitulo.Size = new System.Drawing.Size(401, 25);
             this.lblSubtitulo.TabIndex = 3;
             this.lblSubtitulo.Text = "Instancia Evaluativa · Programación Orientada a Objetos";
             this.lblSubtitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -294,25 +309,37 @@ namespace pryEDZarateF
             // lblFooter
             // 
             this.lblFooter.Font = new System.Drawing.Font("Segoe UI", 8.5F);
-            this.lblFooter.ForeColor = ColoresApp.TextoFooter;
-            this.lblFooter.Location = new System.Drawing.Point(0, 590);
+            this.lblFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(163)))), ((int)(((byte)(184)))));
+            this.lblFooter.Location = new System.Drawing.Point(0, 595);
             this.lblFooter.Name = "lblFooter";
             this.lblFooter.Size = new System.Drawing.Size(940, 20);
             this.lblFooter.TabIndex = 5;
             this.lblFooter.Text = "Comisión MB - Profesora Erica Bongiovanni";
             this.lblFooter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pctInicial
+            // 
+            this.pctInicial.BackgroundImage = global::pryEDZarateF.Properties.Resources.Logotipo_Estudio_Shonos_Diseño_multimedia_divertido_retro_y2k_rosa2;
+            this.pctInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pctInicial.InitialImage = ((System.Drawing.Image)(resources.GetObject("pctInicial.InitialImage")));
+            this.pctInicial.Location = new System.Drawing.Point(-84, 215);
+            this.pctInicial.Name = "pctInicial";
+            this.pctInicial.Size = new System.Drawing.Size(431, 437);
+            this.pctInicial.TabIndex = 6;
+            this.pctInicial.TabStop = false;
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = ColoresApp.FondoFormPrincipal;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(940, 620);
             this.Controls.Add(this.lblFooter);
             this.Controls.Add(this.lblSubtitulo);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.pnlAccent);
             this.Controls.Add(this.menu);
+            this.Controls.Add(this.pctInicial);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -321,8 +348,10 @@ namespace pryEDZarateF
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctInicial)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,5 +387,6 @@ namespace pryEDZarateF
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblSubtitulo;
         private System.Windows.Forms.Label lblFooter;
+        private System.Windows.Forms.PictureBox pctInicial;
     }
 }

@@ -299,7 +299,7 @@ namespace pryEDZarateF
             // 
             this.lblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.lblSubtitulo.Location = new System.Drawing.Point(297, 275);
+            this.lblSubtitulo.Location = new System.Drawing.Point(277, 264);
             this.lblSubtitulo.Name = "lblSubtitulo";
             this.lblSubtitulo.Size = new System.Drawing.Size(401, 25);
             this.lblSubtitulo.TabIndex = 3;

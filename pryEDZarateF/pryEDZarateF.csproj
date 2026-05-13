@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>EjOYTYuXsAAwFqf-removebg-preview.ico</ApplicationIcon>
+    <ApplicationIcon>3406421-animal-lazy-mammal-sloth-slow-wildlife-zoo_107592.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2">
@@ -63,6 +63,12 @@
     <Compile Include="Clases\clsPila.cs" />
     <Compile Include="Clases\ColoresApp.cs" />
     <Compile Include="Clases\MenuColors.cs" />
+    <Compile Include="Formularios Estructuras no lineales\frmGrafo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios Estructuras no lineales\frmGrafo.Designer.cs">
+      <DependentUpon>frmGrafo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios POO\frmAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,12 @@
     </Compile>
     <Compile Include="Formularios POO\frmColores.Designer.cs">
       <DependentUpon>frmColores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios Estructuras no lineales\frmArbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios Estructuras no lineales\frmArbol.Designer.cs">
+      <DependentUpon>frmArbol.cs</DependentUpon>
     </Compile>
     <Compile Include="frmInicial.cs">
       <SubType>Form</SubType>
@@ -137,6 +149,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios Estructuras no lineales\frmGrafo.resx">
+      <DependentUpon>frmGrafo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios POO\frmAlumnos.resx">
       <DependentUpon>frmAlumnos.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios POO\frmColores.resx">
       <DependentUpon>frmColores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios Estructuras no lineales\frmArbol.resx">
+      <DependentUpon>frmArbol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInicial.resx">
       <DependentUpon>frmInicial.cs</DependentUpon>
@@ -249,6 +267,7 @@
     <None Include="Resources\21.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="3406421-animal-lazy-mammal-sloth-slow-wildlife-zoo_107592.ico" />
     <Content Include="EjOYTYuXsAAwFqf-removebg-preview.ico" />
     <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa %284%29.png" />
     <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa %283%291.png" />
@@ -260,5 +279,6 @@
     <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa2.png" />
     <None Include="Resources\EjOYTYuXsAAwFqf-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

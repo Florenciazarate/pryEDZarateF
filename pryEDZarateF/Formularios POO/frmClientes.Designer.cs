@@ -218,35 +218,35 @@ namespace pryEDZarateF
             // lblDeuda
             // 
             this.lblDeuda.AutoSize = true;
-            this.lblDeuda.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblDeuda.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblDeuda.ForeColor = ColoresApp.TextoEtiqueta;
             this.lblDeuda.Location = new System.Drawing.Point(27, 242);
             this.lblDeuda.Name = "lblDeuda";
             this.lblDeuda.Size = new System.Drawing.Size(48, 15);
             this.lblDeuda.TabIndex = 4;
-            this.lblDeuda.Text = "DEUDA";
+            this.lblDeuda.Text = "Deuda";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblNombre.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblNombre.ForeColor = ColoresApp.TextoEtiqueta;
             this.lblNombre.Location = new System.Drawing.Point(27, 157);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(58, 15);
             this.lblNombre.TabIndex = 3;
-            this.lblNombre.Text = "NOMBRE";
+            this.lblNombre.Text = "Nombre";
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblCodigo.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblCodigo.ForeColor = ColoresApp.TextoEtiqueta;
             this.lblCodigo.Location = new System.Drawing.Point(27, 87);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(54, 15);
             this.lblCodigo.TabIndex = 2;
-            this.lblCodigo.Text = "CÓDIGO";
+            this.lblCodigo.Text = "Código";
             // 
             // lblNuevoSub
             // 

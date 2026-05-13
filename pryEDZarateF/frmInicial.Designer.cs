@@ -180,7 +180,7 @@ namespace pryEDZarateF
             // colaToolStripMenuItem
             // 
             this.colaToolStripMenuItem.Name = "colaToolStripMenuItem";
-            this.colaToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
+            this.colaToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.colaToolStripMenuItem.Tag = "frmCola";
             this.colaToolStripMenuItem.Text = "Cola...";
             this.colaToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
@@ -188,7 +188,7 @@ namespace pryEDZarateF
             // pilaToolStripMenuItem
             // 
             this.pilaToolStripMenuItem.Name = "pilaToolStripMenuItem";
-            this.pilaToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
+            this.pilaToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.pilaToolStripMenuItem.Tag = "frmPila";
             this.pilaToolStripMenuItem.Text = "Pila...";
             this.pilaToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
@@ -196,7 +196,7 @@ namespace pryEDZarateF
             // listaSimpleToolStripMenuItem
             // 
             this.listaSimpleToolStripMenuItem.Name = "listaSimpleToolStripMenuItem";
-            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
+            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.listaSimpleToolStripMenuItem.Tag = "frmListaSimple";
             this.listaSimpleToolStripMenuItem.Text = "Lista simple...";
             this.listaSimpleToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
@@ -204,7 +204,7 @@ namespace pryEDZarateF
             // listaDobleToolStripMenuItem
             // 
             this.listaDobleToolStripMenuItem.Name = "listaDobleToolStripMenuItem";
-            this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
+            this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.listaDobleToolStripMenuItem.Tag = "frmListaDoble";
             this.listaDobleToolStripMenuItem.Text = "Lista doble...";
             this.listaDobleToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
@@ -223,14 +223,18 @@ namespace pryEDZarateF
             // arbolToolStripMenuItem
             // 
             this.arbolToolStripMenuItem.Name = "arbolToolStripMenuItem";
-            this.arbolToolStripMenuItem.Size = new System.Drawing.Size(121, 24);
+            this.arbolToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.arbolToolStripMenuItem.Tag = "frmArbol";
             this.arbolToolStripMenuItem.Text = "Arbol...";
+            this.arbolToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // grafoToolStripMenuItem
             // 
             this.grafoToolStripMenuItem.Name = "grafoToolStripMenuItem";
-            this.grafoToolStripMenuItem.Size = new System.Drawing.Size(121, 24);
+            this.grafoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.grafoToolStripMenuItem.Tag = "frmGrafo";
             this.grafoToolStripMenuItem.Text = "Grafo...";
+            this.grafoToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // aToolStripMenuItem
             // 
@@ -299,7 +303,7 @@ namespace pryEDZarateF
             // 
             this.lblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.lblSubtitulo.Location = new System.Drawing.Point(277, 264);
+            this.lblSubtitulo.Location = new System.Drawing.Point(277, 266);
             this.lblSubtitulo.Name = "lblSubtitulo";
             this.lblSubtitulo.Size = new System.Drawing.Size(401, 25);
             this.lblSubtitulo.TabIndex = 3;

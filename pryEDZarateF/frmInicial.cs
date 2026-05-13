@@ -34,6 +34,8 @@ namespace pryEDZarateF
                 case "frmListaSimple": ventana = new frmListaSimple(); break;
                 case "frmListaDoble": ventana = new frmListaDoble(); break;
                 case "frmDatosDesarrollador": ventana = new frmDatosDesarrollador(); break;
+                case "frmArbol": ventana = new frmArbol(); break;
+                case "frmGrafo": ventana = new frmGrafo(); break;
                 case "Salir":
                     Application.Exit();
                     return;

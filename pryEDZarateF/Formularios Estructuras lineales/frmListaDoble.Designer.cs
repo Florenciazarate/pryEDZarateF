@@ -52,8 +52,8 @@ namespace pryEDZarateF
             this.lblCodigo2 = new System.Windows.Forms.Label();
             this.lblEliminado = new System.Windows.Forms.Label();
             this.pnlOrden = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblDescendenteTxt = new System.Windows.Forms.Label();
-            this.lblAscendenteTxt = new System.Windows.Forms.Label();
+            this.lblDescendente = new System.Windows.Forms.Label();
+            this.lblAscendente = new System.Windows.Forms.Label();
             this.radioDescendente = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.radioAscendente = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.lblOrdenSub = new System.Windows.Forms.Label();
@@ -229,35 +229,35 @@ namespace pryEDZarateF
             // lblTramite
             // 
             this.lblTramite.AutoSize = true;
-            this.lblTramite.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblTramite.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblTramite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.lblTramite.Location = new System.Drawing.Point(25, 207);
             this.lblTramite.Name = "lblTramite";
             this.lblTramite.Size = new System.Drawing.Size(58, 15);
             this.lblTramite.TabIndex = 3;
-            this.lblTramite.Text = "TRÁMITE";
+            this.lblTramite.Text = "Trámite";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblNombre.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.lblNombre.Location = new System.Drawing.Point(25, 135);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(58, 15);
             this.lblNombre.TabIndex = 2;
-            this.lblNombre.Text = "NOMBRE";
+            this.lblNombre.Text = "Nombre";
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblCodigo.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.lblCodigo.Location = new System.Drawing.Point(25, 63);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(54, 15);
             this.lblCodigo.TabIndex = 1;
-            this.lblCodigo.Text = "CÓDIGO";
+            this.lblCodigo.Text = "Código";
             // 
             // lblNuevoTitulo
             // 
@@ -327,13 +327,13 @@ namespace pryEDZarateF
             // lblCodigo2
             // 
             this.lblCodigo2.AutoSize = true;
-            this.lblCodigo2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblCodigo2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblCodigo2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.lblCodigo2.Location = new System.Drawing.Point(25, 69);
             this.lblCodigo2.Name = "lblCodigo2";
             this.lblCodigo2.Size = new System.Drawing.Size(124, 15);
             this.lblCodigo2.TabIndex = 1;
-            this.lblCodigo2.Text = "CÓDIGO A ELIMINAR";
+            this.lblCodigo2.Text = "Código a eliminar";
             // 
             // lblEliminado
             // 
@@ -350,8 +350,8 @@ namespace pryEDZarateF
             // 
             this.pnlOrden.BackColor = System.Drawing.Color.Transparent;
             this.pnlOrden.BorderRadius = 14;
-            this.pnlOrden.Controls.Add(this.lblDescendenteTxt);
-            this.pnlOrden.Controls.Add(this.lblAscendenteTxt);
+            this.pnlOrden.Controls.Add(this.lblDescendente);
+            this.pnlOrden.Controls.Add(this.lblAscendente);
             this.pnlOrden.Controls.Add(this.radioDescendente);
             this.pnlOrden.Controls.Add(this.radioAscendente);
             this.pnlOrden.Controls.Add(this.lblOrdenSub);
@@ -366,27 +366,27 @@ namespace pryEDZarateF
             this.pnlOrden.Size = new System.Drawing.Size(650, 155);
             this.pnlOrden.TabIndex = 4;
             // 
-            // lblDescendenteTxt
+            // lblDescendente
             // 
-            this.lblDescendenteTxt.AutoSize = true;
-            this.lblDescendenteTxt.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblDescendenteTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.lblDescendenteTxt.Location = new System.Drawing.Point(246, 101);
-            this.lblDescendenteTxt.Name = "lblDescendenteTxt";
-            this.lblDescendenteTxt.Size = new System.Drawing.Size(88, 19);
-            this.lblDescendenteTxt.TabIndex = 5;
-            this.lblDescendenteTxt.Text = "Descendente";
+            this.lblDescendente.AutoSize = true;
+            this.lblDescendente.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblDescendente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.lblDescendente.Location = new System.Drawing.Point(246, 101);
+            this.lblDescendente.Name = "lblDescendente";
+            this.lblDescendente.Size = new System.Drawing.Size(88, 19);
+            this.lblDescendente.TabIndex = 5;
+            this.lblDescendente.Text = "Descendente";
             // 
-            // lblAscendenteTxt
+            // lblAscendente
             // 
-            this.lblAscendenteTxt.AutoSize = true;
-            this.lblAscendenteTxt.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblAscendenteTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.lblAscendenteTxt.Location = new System.Drawing.Point(62, 101);
-            this.lblAscendenteTxt.Name = "lblAscendenteTxt";
-            this.lblAscendenteTxt.Size = new System.Drawing.Size(80, 19);
-            this.lblAscendenteTxt.TabIndex = 4;
-            this.lblAscendenteTxt.Text = "Ascendente";
+            this.lblAscendente.AutoSize = true;
+            this.lblAscendente.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblAscendente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.lblAscendente.Location = new System.Drawing.Point(62, 101);
+            this.lblAscendente.Name = "lblAscendente";
+            this.lblAscendente.Size = new System.Drawing.Size(80, 19);
+            this.lblAscendente.TabIndex = 4;
+            this.lblAscendente.Text = "Ascendente";
             // 
             // radioDescendente
             // 
@@ -434,7 +434,7 @@ namespace pryEDZarateF
             this.lblOrdenSub.AutoSize = true;
             this.lblOrdenSub.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblOrdenSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
-            this.lblOrdenSub.Location = new System.Drawing.Point(25, 60);
+            this.lblOrdenSub.Location = new System.Drawing.Point(24, 53);
             this.lblOrdenSub.Name = "lblOrdenSub";
             this.lblOrdenSub.Size = new System.Drawing.Size(258, 15);
             this.lblOrdenSub.TabIndex = 1;
@@ -578,7 +578,7 @@ namespace pryEDZarateF
             this.lblListadoSub.AutoSize = true;
             this.lblListadoSub.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblListadoSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
-            this.lblListadoSub.Location = new System.Drawing.Point(25, 60);
+            this.lblListadoSub.Location = new System.Drawing.Point(25, 52);
             this.lblListadoSub.Name = "lblListadoSub";
             this.lblListadoSub.Size = new System.Drawing.Size(126, 15);
             this.lblListadoSub.TabIndex = 1;
@@ -652,8 +652,8 @@ namespace pryEDZarateF
         private Guna.UI2.WinForms.Guna2Panel pnlOrden;
         private Guna.UI2.WinForms.Guna2CustomRadioButton radioDescendente;
         private Guna.UI2.WinForms.Guna2CustomRadioButton radioAscendente;
-        private System.Windows.Forms.Label lblAscendenteTxt;
-        private System.Windows.Forms.Label lblDescendenteTxt;
+        private System.Windows.Forms.Label lblAscendente;
+        private System.Windows.Forms.Label lblDescendente;
         private System.Windows.Forms.Label lblOrdenSub;
         private System.Windows.Forms.Label lblOrden;
         private Guna.UI2.WinForms.Guna2Panel pnlListado;

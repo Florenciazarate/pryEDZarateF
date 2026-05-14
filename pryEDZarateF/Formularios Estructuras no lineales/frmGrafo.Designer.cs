@@ -82,7 +82,7 @@ namespace pryEDZarateF
             this.pnlHeader.ShadowDecoration.Depth = 4;
             this.pnlHeader.ShadowDecoration.Enabled = true;
             this.pnlHeader.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 6);
-            this.pnlHeader.Size = new System.Drawing.Size(1180, 95);
+            this.pnlHeader.Size = new System.Drawing.Size(1188, 95);
             this.pnlHeader.TabIndex = 0;
             // 
             // pnlBarraColor
@@ -683,8 +683,9 @@ namespace pryEDZarateF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(1180, 970);
+            this.ClientSize = new System.Drawing.Size(1205, 730);
             this.Controls.Add(this.pnlListar);
             this.Controls.Add(this.pnlConsulta);
             this.Controls.Add(this.pnlCarga);

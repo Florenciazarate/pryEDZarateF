@@ -326,7 +326,7 @@ namespace pryEDZarateF
             this.pctInicial.BackgroundImage = global::pryEDZarateF.Properties.Resources.Logotipo_Estudio_Shonos_Diseño_multimedia_divertido_retro_y2k_rosa2;
             this.pctInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pctInicial.InitialImage = ((System.Drawing.Image)(resources.GetObject("pctInicial.InitialImage")));
-            this.pctInicial.Location = new System.Drawing.Point(-84, 208);
+            this.pctInicial.Location = new System.Drawing.Point(-91, 237);
             this.pctInicial.Name = "pctInicial";
             this.pctInicial.Size = new System.Drawing.Size(431, 437);
             this.pctInicial.TabIndex = 6;

@@ -89,7 +89,7 @@ namespace pryEDZarateF
             this.pnlOrden.Controls.Add(this.lblOrdenSub);
             this.pnlOrden.Controls.Add(this.lblOrden);
             this.pnlOrden.FillColor = System.Drawing.Color.White;
-            this.pnlOrden.Location = new System.Drawing.Point(425, 553);
+            this.pnlOrden.Location = new System.Drawing.Point(429, 521);
             this.pnlOrden.Name = "pnlOrden";
             this.pnlOrden.ShadowDecoration.BorderRadius = 14;
             this.pnlOrden.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(235)))));
@@ -222,13 +222,13 @@ namespace pryEDZarateF
             this.pnlListado.Controls.Add(this.lblListadoSub);
             this.pnlListado.Controls.Add(this.lblListado);
             this.pnlListado.FillColor = System.Drawing.Color.White;
-            this.pnlListado.Location = new System.Drawing.Point(425, 128);
+            this.pnlListado.Location = new System.Drawing.Point(429, 119);
             this.pnlListado.Name = "pnlListado";
             this.pnlListado.ShadowDecoration.BorderRadius = 14;
             this.pnlListado.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(235)))));
             this.pnlListado.ShadowDecoration.Depth = 8;
             this.pnlListado.ShadowDecoration.Enabled = true;
-            this.pnlListado.Size = new System.Drawing.Size(650, 410);
+            this.pnlListado.Size = new System.Drawing.Size(650, 385);
             this.pnlListado.TabIndex = 8;
             // 
             // lstElementos
@@ -240,7 +240,7 @@ namespace pryEDZarateF
             this.lstElementos.FormattingEnabled = true;
             this.lstElementos.IntegralHeight = false;
             this.lstElementos.ItemHeight = 17;
-            this.lstElementos.Location = new System.Drawing.Point(25, 280);
+            this.lstElementos.Location = new System.Drawing.Point(25, 252);
             this.lstElementos.Name = "lstElementos";
             this.lstElementos.Size = new System.Drawing.Size(600, 110);
             this.lstElementos.TabIndex = 3;
@@ -276,7 +276,7 @@ namespace pryEDZarateF
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvElementos.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvElementos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
-            this.dgvElementos.Location = new System.Drawing.Point(25, 95);
+            this.dgvElementos.Location = new System.Drawing.Point(25, 83);
             this.dgvElementos.Name = "dgvElementos";
             this.dgvElementos.ReadOnly = true;
             this.dgvElementos.RowHeadersVisible = false;
@@ -290,7 +290,7 @@ namespace pryEDZarateF
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvElementos.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvElementos.RowTemplate.Height = 32;
-            this.dgvElementos.Size = new System.Drawing.Size(600, 170);
+            this.dgvElementos.Size = new System.Drawing.Size(600, 150);
             this.dgvElementos.TabIndex = 2;
             this.dgvElementos.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvElementos.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -366,7 +366,7 @@ namespace pryEDZarateF
             this.pnlEliminar.Controls.Add(this.lblCodigo2);
             this.pnlEliminar.Controls.Add(this.lblEliminado);
             this.pnlEliminar.FillColor = System.Drawing.Color.White;
-            this.pnlEliminar.Location = new System.Drawing.Point(25, 543);
+            this.pnlEliminar.Location = new System.Drawing.Point(29, 511);
             this.pnlEliminar.Name = "pnlEliminar";
             this.pnlEliminar.ShadowDecoration.BorderRadius = 14;
             this.pnlEliminar.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(235)))));
@@ -416,7 +416,7 @@ namespace pryEDZarateF
             this.lblCodigo2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.lblCodigo2.Location = new System.Drawing.Point(25, 69);
             this.lblCodigo2.Name = "lblCodigo2";
-            this.lblCodigo2.Size = new System.Drawing.Size(124, 15);
+            this.lblCodigo2.Size = new System.Drawing.Size(100, 15);
             this.lblCodigo2.TabIndex = 1;
             this.lblCodigo2.Text = "Código a eliminar";
             // 
@@ -444,13 +444,13 @@ namespace pryEDZarateF
             this.pnlNuevo.Controls.Add(this.lblCodigo);
             this.pnlNuevo.Controls.Add(this.lblNuevoTitulo);
             this.pnlNuevo.FillColor = System.Drawing.Color.White;
-            this.pnlNuevo.Location = new System.Drawing.Point(25, 128);
+            this.pnlNuevo.Location = new System.Drawing.Point(29, 119);
             this.pnlNuevo.Name = "pnlNuevo";
             this.pnlNuevo.ShadowDecoration.BorderRadius = 14;
             this.pnlNuevo.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(235)))));
             this.pnlNuevo.ShadowDecoration.Depth = 8;
             this.pnlNuevo.ShadowDecoration.Enabled = true;
-            this.pnlNuevo.Size = new System.Drawing.Size(380, 400);
+            this.pnlNuevo.Size = new System.Drawing.Size(380, 372);
             this.pnlNuevo.TabIndex = 6;
             // 
             // btnGrabar
@@ -464,7 +464,7 @@ namespace pryEDZarateF
             this.btnGrabar.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.btnGrabar.ForeColor = System.Drawing.Color.White;
             this.btnGrabar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(58)))), ((int)(((byte)(237)))));
-            this.btnGrabar.Location = new System.Drawing.Point(24, 301);
+            this.btnGrabar.Location = new System.Drawing.Point(25, 290);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(330, 45);
             this.btnGrabar.TabIndex = 7;
@@ -540,7 +540,7 @@ namespace pryEDZarateF
             this.lblTramite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.lblTramite.Location = new System.Drawing.Point(25, 207);
             this.lblTramite.Name = "lblTramite";
-            this.lblTramite.Size = new System.Drawing.Size(58, 15);
+            this.lblTramite.Size = new System.Drawing.Size(47, 15);
             this.lblTramite.TabIndex = 3;
             this.lblTramite.Text = "Trámite";
             // 
@@ -551,7 +551,7 @@ namespace pryEDZarateF
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.lblNombre.Location = new System.Drawing.Point(25, 135);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(58, 15);
+            this.lblNombre.Size = new System.Drawing.Size(51, 15);
             this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "Nombre";
             // 
@@ -562,7 +562,7 @@ namespace pryEDZarateF
             this.lblCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.lblCodigo.Location = new System.Drawing.Point(25, 63);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(54, 15);
+            this.lblCodigo.Size = new System.Drawing.Size(45, 15);
             this.lblCodigo.TabIndex = 1;
             this.lblCodigo.Text = "Código";
             // 
@@ -627,7 +627,8 @@ namespace pryEDZarateF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1100, 720);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1100, 730);
             this.Controls.Add(this.pnlOrden);
             this.Controls.Add(this.pnlListado);
             this.Controls.Add(this.pnlEliminar);

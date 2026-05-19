@@ -11,8 +11,13 @@ namespace pryEDZarateF
         private Int32 cod;
         private String nom;
         private String tra;
+        // campos para estructuras lineales
         private clsNodo sig;
         private clsNodo ant;
+        // campos independientes para árbol binario
+        private clsNodo izq;
+        private clsNodo der;
+
         public Int32 Codigo
         {
             get { return cod; }
@@ -28,6 +33,7 @@ namespace pryEDZarateF
             get { return tra; }
             set { tra = value; }
         }
+        // Para estructuras lineales
         public clsNodo Siguiente
         {
             get { return sig; }
@@ -38,15 +44,16 @@ namespace pryEDZarateF
             get { return ant; }
             set { ant = value; }
         }
+        // Para árbol binario
         public clsNodo Izquierdo
         {
-            get { return sig; }
-            set { sig = value; }
+            get { return izq; }
+            set { izq = value; }
         }
         public clsNodo Derecho
         {
-            get { return ant; }
-            set { ant = value; }
+            get { return der; }
+            set { der = value; }
         }
     }
 }

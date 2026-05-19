@@ -35,7 +35,7 @@ namespace pryEDZarateF
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArbol));
             this.pnlOrden = new Guna.UI2.WinForms.Guna2Panel();
             this.lblPostOrden = new System.Windows.Forms.Label();
-            this.guna2CustomRadioButton1 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.radioPostOrden = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.lblPreOrden = new System.Windows.Forms.Label();
             this.lblInOrden = new System.Windows.Forms.Label();
             this.radioDescendente = new Guna.UI2.WinForms.Guna2CustomRadioButton();
@@ -81,7 +81,7 @@ namespace pryEDZarateF
             this.pnlOrden.BackColor = System.Drawing.Color.Transparent;
             this.pnlOrden.BorderRadius = 14;
             this.pnlOrden.Controls.Add(this.lblPostOrden);
-            this.pnlOrden.Controls.Add(this.guna2CustomRadioButton1);
+            this.pnlOrden.Controls.Add(this.radioPostOrden);
             this.pnlOrden.Controls.Add(this.lblPreOrden);
             this.pnlOrden.Controls.Add(this.lblInOrden);
             this.pnlOrden.Controls.Add(this.radioDescendente);
@@ -109,25 +109,25 @@ namespace pryEDZarateF
             this.lblPostOrden.TabIndex = 7;
             this.lblPostOrden.Text = "Post-Orden";
             // 
-            // guna2CustomRadioButton1
+            // radioPostOrden
             // 
-            this.guna2CustomRadioButton1.Animated = true;
-            this.guna2CustomRadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(150)))), ((int)(((byte)(105)))));
-            this.guna2CustomRadioButton1.CheckedState.BorderThickness = 0;
-            this.guna2CustomRadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(150)))), ((int)(((byte)(105)))));
-            this.guna2CustomRadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton1.CheckedState.InnerOffset = -4;
-            this.guna2CustomRadioButton1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2CustomRadioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.guna2CustomRadioButton1.Location = new System.Drawing.Point(354, 99);
-            this.guna2CustomRadioButton1.Name = "guna2CustomRadioButton1";
-            this.guna2CustomRadioButton1.Size = new System.Drawing.Size(118, 23);
-            this.guna2CustomRadioButton1.TabIndex = 6;
-            this.guna2CustomRadioButton1.Text = "Descendente";
-            this.guna2CustomRadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.guna2CustomRadioButton1.UncheckedState.BorderThickness = 2;
-            this.guna2CustomRadioButton1.UncheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton1.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.radioPostOrden.Animated = true;
+            this.radioPostOrden.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(150)))), ((int)(((byte)(105)))));
+            this.radioPostOrden.CheckedState.BorderThickness = 0;
+            this.radioPostOrden.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(150)))), ((int)(((byte)(105)))));
+            this.radioPostOrden.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.radioPostOrden.CheckedState.InnerOffset = -4;
+            this.radioPostOrden.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.radioPostOrden.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.radioPostOrden.Location = new System.Drawing.Point(354, 99);
+            this.radioPostOrden.Name = "radioPostOrden";
+            this.radioPostOrden.Size = new System.Drawing.Size(118, 23);
+            this.radioPostOrden.TabIndex = 6;
+            this.radioPostOrden.Text = "Descendente";
+            this.radioPostOrden.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.radioPostOrden.UncheckedState.BorderThickness = 2;
+            this.radioPostOrden.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.radioPostOrden.UncheckedState.InnerColor = System.Drawing.Color.White;
             // 
             // lblPreOrden
             // 
@@ -469,6 +469,7 @@ namespace pryEDZarateF
             this.btnGrabar.Size = new System.Drawing.Size(330, 45);
             this.btnGrabar.TabIndex = 7;
             this.btnGrabar.Text = "Agregar";
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // txtTramite
             // 
@@ -639,6 +640,7 @@ namespace pryEDZarateF
             this.Name = "frmArbol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Arbol";
+            this.Load += new System.EventHandler(this.frmArbol_Load);
             this.pnlOrden.ResumeLayout(false);
             this.pnlOrden.PerformLayout();
             this.pnlListado.ResumeLayout(false);
@@ -690,6 +692,6 @@ namespace pryEDZarateF
         private System.Windows.Forms.Label lblSubtitulo;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblPostOrden;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton guna2CustomRadioButton1;
+        private Guna.UI2.WinForms.Guna2CustomRadioButton radioPostOrden;
     }
 }

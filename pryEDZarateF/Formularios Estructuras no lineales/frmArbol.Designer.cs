@@ -103,7 +103,7 @@ namespace pryEDZarateF
             this.lblPostOrden.AutoSize = true;
             this.lblPostOrden.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblPostOrden.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.lblPostOrden.Location = new System.Drawing.Point(432, 101);
+            this.lblPostOrden.Location = new System.Drawing.Point(429, 101);
             this.lblPostOrden.Name = "lblPostOrden";
             this.lblPostOrden.Size = new System.Drawing.Size(80, 19);
             this.lblPostOrden.TabIndex = 7;
@@ -119,7 +119,7 @@ namespace pryEDZarateF
             this.guna2CustomRadioButton1.CheckedState.InnerOffset = -4;
             this.guna2CustomRadioButton1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2CustomRadioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.guna2CustomRadioButton1.Location = new System.Drawing.Point(357, 99);
+            this.guna2CustomRadioButton1.Location = new System.Drawing.Point(354, 99);
             this.guna2CustomRadioButton1.Name = "guna2CustomRadioButton1";
             this.guna2CustomRadioButton1.Size = new System.Drawing.Size(118, 23);
             this.guna2CustomRadioButton1.TabIndex = 6;

@@ -82,7 +82,7 @@ namespace pryEDZarateF
             this.pnlHeader.ShadowDecoration.Depth = 4;
             this.pnlHeader.ShadowDecoration.Enabled = true;
             this.pnlHeader.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 6);
-            this.pnlHeader.Size = new System.Drawing.Size(1188, 95);
+            this.pnlHeader.Size = new System.Drawing.Size(1284, 95);
             this.pnlHeader.TabIndex = 0;
             // 
             // pnlBarraColor
@@ -137,7 +137,7 @@ namespace pryEDZarateF
             this.pnlCarga.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(235)))));
             this.pnlCarga.ShadowDecoration.Depth = 8;
             this.pnlCarga.ShadowDecoration.Enabled = true;
-            this.pnlCarga.Size = new System.Drawing.Size(560, 320);
+            this.pnlCarga.Size = new System.Drawing.Size(560, 301);
             this.pnlCarga.TabIndex = 1;
             // 
             // btnCargar
@@ -147,9 +147,9 @@ namespace pryEDZarateF
             this.btnCargar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnCargar.ForeColor = System.Drawing.Color.White;
             this.btnCargar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(33)))), ((int)(((byte)(2)))));
-            this.btnCargar.Location = new System.Drawing.Point(290, 250);
+            this.btnCargar.Location = new System.Drawing.Point(290, 228);
             this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(250, 45);
+            this.btnCargar.Size = new System.Drawing.Size(250, 34);
             this.btnCargar.TabIndex = 9;
             this.btnCargar.Text = "Cargar";
             // 
@@ -162,9 +162,9 @@ namespace pryEDZarateF
             this.btnBorrarTodo.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnBorrarTodo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.btnBorrarTodo.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnBorrarTodo.Location = new System.Drawing.Point(22, 250);
+            this.btnBorrarTodo.Location = new System.Drawing.Point(22, 228);
             this.btnBorrarTodo.Name = "btnBorrarTodo";
-            this.btnBorrarTodo.Size = new System.Drawing.Size(250, 45);
+            this.btnBorrarTodo.Size = new System.Drawing.Size(250, 34);
             this.btnBorrarTodo.TabIndex = 8;
             this.btnBorrarTodo.Text = "Borrar Todo";
             // 
@@ -177,7 +177,7 @@ namespace pryEDZarateF
             this.txtCargaPrecio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(57)))), ((int)(((byte)(4)))));
             this.txtCargaPrecio.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtCargaPrecio.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.txtCargaPrecio.Location = new System.Drawing.Point(22, 185);
+            this.txtCargaPrecio.Location = new System.Drawing.Point(22, 163);
             this.txtCargaPrecio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCargaPrecio.Name = "txtCargaPrecio";
             this.txtCargaPrecio.PlaceholderText = "Precio del viaje";
@@ -190,7 +190,7 @@ namespace pryEDZarateF
             this.lblCargaPrecio.AutoSize = true;
             this.lblCargaPrecio.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblCargaPrecio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.lblCargaPrecio.Location = new System.Drawing.Point(22, 165);
+            this.lblCargaPrecio.Location = new System.Drawing.Point(22, 143);
             this.lblCargaPrecio.Name = "lblCargaPrecio";
             this.lblCargaPrecio.Size = new System.Drawing.Size(40, 15);
             this.lblCargaPrecio.TabIndex = 6;
@@ -208,7 +208,7 @@ namespace pryEDZarateF
             this.cmbCargaDestino.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbCargaDestino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbCargaDestino.ItemHeight = 30;
-            this.cmbCargaDestino.Location = new System.Drawing.Point(290, 110);
+            this.cmbCargaDestino.Location = new System.Drawing.Point(290, 96);
             this.cmbCargaDestino.Name = "cmbCargaDestino";
             this.cmbCargaDestino.Size = new System.Drawing.Size(250, 36);
             this.cmbCargaDestino.TabIndex = 5;
@@ -218,7 +218,7 @@ namespace pryEDZarateF
             this.lblCargaDestino.AutoSize = true;
             this.lblCargaDestino.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblCargaDestino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.lblCargaDestino.Location = new System.Drawing.Point(290, 90);
+            this.lblCargaDestino.Location = new System.Drawing.Point(290, 76);
             this.lblCargaDestino.Name = "lblCargaDestino";
             this.lblCargaDestino.Size = new System.Drawing.Size(48, 15);
             this.lblCargaDestino.TabIndex = 4;
@@ -236,7 +236,7 @@ namespace pryEDZarateF
             this.cmbCargaOrigen.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbCargaOrigen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbCargaOrigen.ItemHeight = 30;
-            this.cmbCargaOrigen.Location = new System.Drawing.Point(22, 110);
+            this.cmbCargaOrigen.Location = new System.Drawing.Point(22, 96);
             this.cmbCargaOrigen.Name = "cmbCargaOrigen";
             this.cmbCargaOrigen.Size = new System.Drawing.Size(250, 36);
             this.cmbCargaOrigen.TabIndex = 3;
@@ -246,7 +246,7 @@ namespace pryEDZarateF
             this.lblCargaOrigen.AutoSize = true;
             this.lblCargaOrigen.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblCargaOrigen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.lblCargaOrigen.Location = new System.Drawing.Point(22, 90);
+            this.lblCargaOrigen.Location = new System.Drawing.Point(22, 76);
             this.lblCargaOrigen.Name = "lblCargaOrigen";
             this.lblCargaOrigen.Size = new System.Drawing.Size(43, 15);
             this.lblCargaOrigen.TabIndex = 2;
@@ -257,7 +257,7 @@ namespace pryEDZarateF
             this.lblCargaSub.AutoSize = true;
             this.lblCargaSub.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblCargaSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
-            this.lblCargaSub.Location = new System.Drawing.Point(24, 50);
+            this.lblCargaSub.Location = new System.Drawing.Point(24, 47);
             this.lblCargaSub.Name = "lblCargaSub";
             this.lblCargaSub.Size = new System.Drawing.Size(194, 15);
             this.lblCargaSub.TabIndex = 1;
@@ -289,13 +289,13 @@ namespace pryEDZarateF
             this.pnlConsulta.Controls.Add(this.lblConsultaSub);
             this.pnlConsulta.Controls.Add(this.lblConsultaTitulo);
             this.pnlConsulta.FillColor = System.Drawing.Color.White;
-            this.pnlConsulta.Location = new System.Drawing.Point(605, 120);
+            this.pnlConsulta.Location = new System.Drawing.Point(25, 439);
             this.pnlConsulta.Name = "pnlConsulta";
             this.pnlConsulta.ShadowDecoration.BorderRadius = 14;
             this.pnlConsulta.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(235)))));
             this.pnlConsulta.ShadowDecoration.Depth = 8;
             this.pnlConsulta.ShadowDecoration.Enabled = true;
-            this.pnlConsulta.Size = new System.Drawing.Size(560, 320);
+            this.pnlConsulta.Size = new System.Drawing.Size(560, 301);
             this.pnlConsulta.TabIndex = 2;
             // 
             // btnBorrar
@@ -307,9 +307,9 @@ namespace pryEDZarateF
             this.btnBorrar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnBorrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.btnBorrar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnBorrar.Location = new System.Drawing.Point(290, 250);
+            this.btnBorrar.Location = new System.Drawing.Point(290, 238);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(250, 45);
+            this.btnBorrar.Size = new System.Drawing.Size(250, 36);
             this.btnBorrar.TabIndex = 9;
             this.btnBorrar.Text = "Borrar";
             // 
@@ -320,9 +320,9 @@ namespace pryEDZarateF
             this.btnConsultar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnConsultar.ForeColor = System.Drawing.Color.White;
             this.btnConsultar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(33)))), ((int)(((byte)(2)))));
-            this.btnConsultar.Location = new System.Drawing.Point(22, 250);
+            this.btnConsultar.Location = new System.Drawing.Point(22, 238);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(250, 45);
+            this.btnConsultar.Size = new System.Drawing.Size(250, 36);
             this.btnConsultar.TabIndex = 8;
             this.btnConsultar.Text = "Consultar";
             // 
@@ -336,7 +336,7 @@ namespace pryEDZarateF
             this.txtConsultaPrecio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(57)))), ((int)(((byte)(4)))));
             this.txtConsultaPrecio.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtConsultaPrecio.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.txtConsultaPrecio.Location = new System.Drawing.Point(22, 185);
+            this.txtConsultaPrecio.Location = new System.Drawing.Point(22, 169);
             this.txtConsultaPrecio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtConsultaPrecio.Name = "txtConsultaPrecio";
             this.txtConsultaPrecio.PlaceholderText = "Resultado de la consulta";
@@ -350,7 +350,7 @@ namespace pryEDZarateF
             this.lblConsultaPrecio.AutoSize = true;
             this.lblConsultaPrecio.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblConsultaPrecio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.lblConsultaPrecio.Location = new System.Drawing.Point(22, 165);
+            this.lblConsultaPrecio.Location = new System.Drawing.Point(22, 149);
             this.lblConsultaPrecio.Name = "lblConsultaPrecio";
             this.lblConsultaPrecio.Size = new System.Drawing.Size(40, 15);
             this.lblConsultaPrecio.TabIndex = 6;
@@ -368,7 +368,7 @@ namespace pryEDZarateF
             this.cmbConsultaDestino.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbConsultaDestino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbConsultaDestino.ItemHeight = 30;
-            this.cmbConsultaDestino.Location = new System.Drawing.Point(290, 110);
+            this.cmbConsultaDestino.Location = new System.Drawing.Point(290, 98);
             this.cmbConsultaDestino.Name = "cmbConsultaDestino";
             this.cmbConsultaDestino.Size = new System.Drawing.Size(250, 36);
             this.cmbConsultaDestino.TabIndex = 5;
@@ -378,7 +378,7 @@ namespace pryEDZarateF
             this.lblConsultaDestino.AutoSize = true;
             this.lblConsultaDestino.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblConsultaDestino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.lblConsultaDestino.Location = new System.Drawing.Point(290, 90);
+            this.lblConsultaDestino.Location = new System.Drawing.Point(290, 78);
             this.lblConsultaDestino.Name = "lblConsultaDestino";
             this.lblConsultaDestino.Size = new System.Drawing.Size(48, 15);
             this.lblConsultaDestino.TabIndex = 4;
@@ -396,7 +396,7 @@ namespace pryEDZarateF
             this.cmbConsultaOrigen.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbConsultaOrigen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbConsultaOrigen.ItemHeight = 30;
-            this.cmbConsultaOrigen.Location = new System.Drawing.Point(22, 110);
+            this.cmbConsultaOrigen.Location = new System.Drawing.Point(22, 98);
             this.cmbConsultaOrigen.Name = "cmbConsultaOrigen";
             this.cmbConsultaOrigen.Size = new System.Drawing.Size(250, 36);
             this.cmbConsultaOrigen.TabIndex = 3;
@@ -406,7 +406,7 @@ namespace pryEDZarateF
             this.lblConsultaOrigen.AutoSize = true;
             this.lblConsultaOrigen.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblConsultaOrigen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.lblConsultaOrigen.Location = new System.Drawing.Point(22, 90);
+            this.lblConsultaOrigen.Location = new System.Drawing.Point(22, 78);
             this.lblConsultaOrigen.Name = "lblConsultaOrigen";
             this.lblConsultaOrigen.Size = new System.Drawing.Size(43, 15);
             this.lblConsultaOrigen.TabIndex = 2;
@@ -417,7 +417,7 @@ namespace pryEDZarateF
             this.lblConsultaSub.AutoSize = true;
             this.lblConsultaSub.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblConsultaSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
-            this.lblConsultaSub.Location = new System.Drawing.Point(24, 50);
+            this.lblConsultaSub.Location = new System.Drawing.Point(24, 48);
             this.lblConsultaSub.Name = "lblConsultaSub";
             this.lblConsultaSub.Size = new System.Drawing.Size(245, 15);
             this.lblConsultaSub.TabIndex = 1;
@@ -443,13 +443,13 @@ namespace pryEDZarateF
             this.pnlListar.Controls.Add(this.lblMatrizTitulo);
             this.pnlListar.Controls.Add(this.pnlFiltros);
             this.pnlListar.FillColor = System.Drawing.Color.White;
-            this.pnlListar.Location = new System.Drawing.Point(25, 455);
+            this.pnlListar.Location = new System.Drawing.Point(601, 120);
             this.pnlListar.Name = "pnlListar";
             this.pnlListar.ShadowDecoration.BorderRadius = 14;
             this.pnlListar.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(235)))));
             this.pnlListar.ShadowDecoration.Depth = 8;
             this.pnlListar.ShadowDecoration.Enabled = true;
-            this.pnlListar.Size = new System.Drawing.Size(1140, 490);
+            this.pnlListar.Size = new System.Drawing.Size(648, 620);
             this.pnlListar.TabIndex = 3;
             // 
             // dgvMatriz
@@ -479,7 +479,7 @@ namespace pryEDZarateF
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvMatriz.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMatriz.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
-            this.dgvMatriz.Location = new System.Drawing.Point(20, 265);
+            this.dgvMatriz.Location = new System.Drawing.Point(20, 309);
             this.dgvMatriz.Name = "dgvMatriz";
             this.dgvMatriz.ReadOnly = true;
             this.dgvMatriz.RowHeadersVisible = false;
@@ -493,7 +493,7 @@ namespace pryEDZarateF
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvMatriz.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvMatriz.RowTemplate.Height = 32;
-            this.dgvMatriz.Size = new System.Drawing.Size(1100, 200);
+            this.dgvMatriz.Size = new System.Drawing.Size(621, 294);
             this.dgvMatriz.TabIndex = 3;
             this.dgvMatriz.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvMatriz.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -522,7 +522,7 @@ namespace pryEDZarateF
             this.lblMatrizSub.AutoSize = true;
             this.lblMatrizSub.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblMatrizSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
-            this.lblMatrizSub.Location = new System.Drawing.Point(22, 236);
+            this.lblMatrizSub.Location = new System.Drawing.Point(22, 282);
             this.lblMatrizSub.Name = "lblMatrizSub";
             this.lblMatrizSub.Size = new System.Drawing.Size(191, 15);
             this.lblMatrizSub.TabIndex = 2;
@@ -533,7 +533,7 @@ namespace pryEDZarateF
             this.lblMatrizTitulo.AutoSize = true;
             this.lblMatrizTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.lblMatrizTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
-            this.lblMatrizTitulo.Location = new System.Drawing.Point(20, 210);
+            this.lblMatrizTitulo.Location = new System.Drawing.Point(20, 256);
             this.lblMatrizTitulo.Name = "lblMatrizTitulo";
             this.lblMatrizTitulo.Size = new System.Drawing.Size(142, 25);
             this.lblMatrizTitulo.TabIndex = 1;
@@ -555,7 +555,7 @@ namespace pryEDZarateF
             this.pnlFiltros.FillColor = System.Drawing.Color.White;
             this.pnlFiltros.Location = new System.Drawing.Point(20, 20);
             this.pnlFiltros.Name = "pnlFiltros";
-            this.pnlFiltros.Size = new System.Drawing.Size(1100, 175);
+            this.pnlFiltros.Size = new System.Drawing.Size(605, 221);
             this.pnlFiltros.TabIndex = 0;
             // 
             // btnVerTodos
@@ -565,9 +565,9 @@ namespace pryEDZarateF
             this.btnVerTodos.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
             this.btnVerTodos.ForeColor = System.Drawing.Color.White;
             this.btnVerTodos.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(33)))), ((int)(((byte)(2)))));
-            this.btnVerTodos.Location = new System.Drawing.Point(812, 90);
+            this.btnVerTodos.Location = new System.Drawing.Point(406, 155);
             this.btnVerTodos.Name = "btnVerTodos";
-            this.btnVerTodos.Size = new System.Drawing.Size(270, 36);
+            this.btnVerTodos.Size = new System.Drawing.Size(164, 36);
             this.btnVerTodos.TabIndex = 8;
             this.btnVerTodos.Text = "Ver todos los viajes";
             // 
@@ -580,9 +580,9 @@ namespace pryEDZarateF
             this.btnListarOrigenes.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
             this.btnListarOrigenes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(57)))), ((int)(((byte)(4)))));
             this.btnListarOrigenes.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(243)))), ((int)(((byte)(233)))));
-            this.btnListarOrigenes.Location = new System.Drawing.Point(625, 90);
+            this.btnListarOrigenes.Location = new System.Drawing.Point(227, 160);
             this.btnListarOrigenes.Name = "btnListarOrigenes";
-            this.btnListarOrigenes.Size = new System.Drawing.Size(160, 36);
+            this.btnListarOrigenes.Size = new System.Drawing.Size(136, 31);
             this.btnListarOrigenes.TabIndex = 7;
             this.btnListarOrigenes.Text = "Listar Orígenes";
             // 
@@ -598,7 +598,7 @@ namespace pryEDZarateF
             this.cmbHasta.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbHasta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbHasta.ItemHeight = 30;
-            this.cmbHasta.Location = new System.Drawing.Point(417, 90);
+            this.cmbHasta.Location = new System.Drawing.Point(21, 158);
             this.cmbHasta.Name = "cmbHasta";
             this.cmbHasta.Size = new System.Drawing.Size(200, 36);
             this.cmbHasta.TabIndex = 6;
@@ -608,7 +608,7 @@ namespace pryEDZarateF
             this.lblHasta.AutoSize = true;
             this.lblHasta.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblHasta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.lblHasta.Location = new System.Drawing.Point(417, 70);
+            this.lblHasta.Location = new System.Drawing.Point(23, 138);
             this.lblHasta.Name = "lblHasta";
             this.lblHasta.Size = new System.Drawing.Size(37, 15);
             this.lblHasta.TabIndex = 5;
@@ -623,9 +623,9 @@ namespace pryEDZarateF
             this.btnListarDestinos.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
             this.btnListarDestinos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(57)))), ((int)(((byte)(4)))));
             this.btnListarDestinos.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(243)))), ((int)(((byte)(233)))));
-            this.btnListarDestinos.Location = new System.Drawing.Point(228, 90);
+            this.btnListarDestinos.Location = new System.Drawing.Point(227, 93);
             this.btnListarDestinos.Name = "btnListarDestinos";
-            this.btnListarDestinos.Size = new System.Drawing.Size(160, 36);
+            this.btnListarDestinos.Size = new System.Drawing.Size(136, 31);
             this.btnListarDestinos.TabIndex = 4;
             this.btnListarDestinos.Text = "Listar Destinos";
             // 
@@ -684,8 +684,8 @@ namespace pryEDZarateF
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(1205, 730);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1284, 765);
             this.Controls.Add(this.pnlListar);
             this.Controls.Add(this.pnlConsulta);
             this.Controls.Add(this.pnlCarga);

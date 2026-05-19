@@ -38,5 +38,15 @@ namespace pryEDZarateF
             get { return ant; }
             set { ant = value; }
         }
+        public clsNodo Izquierdo
+        {
+            get { return sig; }
+            set { sig = value; }
+        }
+        public clsNodo Derecho
+        {
+            get { return ant; }
+            set { ant = value; }
+        }
     }
 }

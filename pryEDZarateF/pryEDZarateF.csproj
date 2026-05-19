@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\clsArbolBinario.cs" />
     <Compile Include="Clases\clsArchivoTexto.cs" />
     <Compile Include="Clases\clsCola.cs" />
     <Compile Include="Clases\clsEstructurasLineales.cs" />
@@ -106,22 +107,22 @@
     <Compile Include="Formularios Estructuras no lineales\frmArbol.Designer.cs">
       <DependentUpon>frmArbol.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmInicial.cs">
+    <Compile Include="Formularios Iniciales\frmInicial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInicial.Designer.cs">
+    <Compile Include="Formularios Iniciales\frmInicial.Designer.cs">
       <DependentUpon>frmInicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDatosDesarrollador.cs">
+    <Compile Include="Formularios Iniciales\frmDatosDesarrollador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDatosDesarrollador.Designer.cs">
+    <Compile Include="Formularios Iniciales\frmDatosDesarrollador.Designer.cs">
       <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDatosDesarrollador2.cs">
+    <Compile Include="Formularios Iniciales\frmDatosDesarrollador2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDatosDesarrollador2.Designer.cs">
+    <Compile Include="Formularios Iniciales\frmDatosDesarrollador2.Designer.cs">
       <DependentUpon>frmDatosDesarrollador2.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios Estructuras lineales\frmListaDoble.cs">
@@ -171,13 +172,13 @@
     <EmbeddedResource Include="Formularios Estructuras no lineales\frmArbol.resx">
       <DependentUpon>frmArbol.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmInicial.resx">
+    <EmbeddedResource Include="Formularios Iniciales\frmInicial.resx">
       <DependentUpon>frmInicial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDatosDesarrollador.resx">
+    <EmbeddedResource Include="Formularios Iniciales\frmDatosDesarrollador.resx">
       <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDatosDesarrollador2.resx">
+    <EmbeddedResource Include="Formularios Iniciales\frmDatosDesarrollador2.resx">
       <DependentUpon>frmDatosDesarrollador2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios Estructuras lineales\frmListaDoble.resx">

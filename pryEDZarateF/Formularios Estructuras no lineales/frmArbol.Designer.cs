@@ -240,9 +240,9 @@ namespace pryEDZarateF
             this.lstElementos.FormattingEnabled = true;
             this.lstElementos.IntegralHeight = false;
             this.lstElementos.ItemHeight = 17;
-            this.lstElementos.Location = new System.Drawing.Point(25, 252);
+            this.lstElementos.Location = new System.Drawing.Point(27, 85);
             this.lstElementos.Name = "lstElementos";
-            this.lstElementos.Size = new System.Drawing.Size(600, 110);
+            this.lstElementos.Size = new System.Drawing.Size(600, 163);
             this.lstElementos.TabIndex = 3;
             // 
             // dgvElementos
@@ -276,7 +276,7 @@ namespace pryEDZarateF
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvElementos.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvElementos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
-            this.dgvElementos.Location = new System.Drawing.Point(25, 83);
+            this.dgvElementos.Location = new System.Drawing.Point(28, 265);
             this.dgvElementos.Name = "dgvElementos";
             this.dgvElementos.ReadOnly = true;
             this.dgvElementos.RowHeadersVisible = false;
@@ -290,7 +290,7 @@ namespace pryEDZarateF
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvElementos.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvElementos.RowTemplate.Height = 32;
-            this.dgvElementos.Size = new System.Drawing.Size(600, 150);
+            this.dgvElementos.Size = new System.Drawing.Size(600, 95);
             this.dgvElementos.TabIndex = 2;
             this.dgvElementos.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvElementos.ThemeStyle.AlternatingRowsStyle.Font = null;

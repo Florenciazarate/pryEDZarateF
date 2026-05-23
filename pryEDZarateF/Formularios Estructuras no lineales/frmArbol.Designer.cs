@@ -43,7 +43,7 @@ namespace pryEDZarateF
             this.lblOrdenSub = new System.Windows.Forms.Label();
             this.lblOrden = new System.Windows.Forms.Label();
             this.pnlListado = new Guna.UI2.WinForms.Guna2Panel();
-            this.lstElementos = new System.Windows.Forms.ListBox();
+            this.treeElementos = new System.Windows.Forms.TreeView();
             this.dgvElementos = new Guna.UI2.WinForms.Guna2DataGridView();
             this.clmCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -128,6 +128,7 @@ namespace pryEDZarateF
             this.radioPostOrden.UncheckedState.BorderThickness = 2;
             this.radioPostOrden.UncheckedState.FillColor = System.Drawing.Color.White;
             this.radioPostOrden.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.radioPostOrden.CheckedChanged += new System.EventHandler(this.radioAscendente_CheckedChanged);
             // 
             // lblPreOrden
             // 
@@ -170,6 +171,7 @@ namespace pryEDZarateF
             this.radioDescendente.UncheckedState.BorderThickness = 2;
             this.radioDescendente.UncheckedState.FillColor = System.Drawing.Color.White;
             this.radioDescendente.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.radioDescendente.CheckedChanged += new System.EventHandler(this.radioAscendente_CheckedChanged);
             // 
             // radioAscendente
             // 
@@ -190,6 +192,7 @@ namespace pryEDZarateF
             this.radioAscendente.UncheckedState.BorderThickness = 2;
             this.radioAscendente.UncheckedState.FillColor = System.Drawing.Color.White;
             this.radioAscendente.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.radioAscendente.CheckedChanged += new System.EventHandler(this.radioAscendente_CheckedChanged);
             // 
             // lblOrdenSub
             // 
@@ -217,7 +220,7 @@ namespace pryEDZarateF
             // 
             this.pnlListado.BackColor = System.Drawing.Color.Transparent;
             this.pnlListado.BorderRadius = 14;
-            this.pnlListado.Controls.Add(this.lstElementos);
+            this.pnlListado.Controls.Add(this.treeElementos);
             this.pnlListado.Controls.Add(this.dgvElementos);
             this.pnlListado.Controls.Add(this.lblListadoSub);
             this.pnlListado.Controls.Add(this.lblListado);
@@ -230,20 +233,17 @@ namespace pryEDZarateF
             this.pnlListado.ShadowDecoration.Enabled = true;
             this.pnlListado.Size = new System.Drawing.Size(650, 385);
             this.pnlListado.TabIndex = 8;
-            // 
-            // lstElementos
-            // 
-            this.lstElementos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.lstElementos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lstElementos.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lstElementos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.lstElementos.FormattingEnabled = true;
-            this.lstElementos.IntegralHeight = false;
-            this.lstElementos.ItemHeight = 17;
-            this.lstElementos.Location = new System.Drawing.Point(27, 85);
-            this.lstElementos.Name = "lstElementos";
-            this.lstElementos.Size = new System.Drawing.Size(600, 163);
-            this.lstElementos.TabIndex = 3;
+            //
+            // treeElementos
+            //
+            this.treeElementos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.treeElementos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.treeElementos.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.treeElementos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.treeElementos.Location = new System.Drawing.Point(27, 85);
+            this.treeElementos.Name = "treeElementos";
+            this.treeElementos.Size = new System.Drawing.Size(600, 163);
+            this.treeElementos.TabIndex = 3;
             // 
             // dgvElementos
             // 
@@ -491,6 +491,7 @@ namespace pryEDZarateF
             this.txtTramite.SelectedText = "";
             this.txtTramite.Size = new System.Drawing.Size(330, 40);
             this.txtTramite.TabIndex = 6;
+            this.txtTramite.TextChanged += new System.EventHandler(this.txtTramite_TextChanged);
             // 
             // txtNombre
             // 
@@ -512,6 +513,7 @@ namespace pryEDZarateF
             this.txtNombre.SelectedText = "";
             this.txtNombre.Size = new System.Drawing.Size(330, 40);
             this.txtNombre.TabIndex = 5;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtCodigo
             // 
@@ -533,6 +535,7 @@ namespace pryEDZarateF
             this.txtCodigo.SelectedText = "";
             this.txtCodigo.Size = new System.Drawing.Size(330, 40);
             this.txtCodigo.TabIndex = 4;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // lblTramite
             // 
@@ -666,7 +669,7 @@ namespace pryEDZarateF
         private System.Windows.Forms.Label lblOrdenSub;
         private System.Windows.Forms.Label lblOrden;
         private Guna.UI2.WinForms.Guna2Panel pnlListado;
-        private System.Windows.Forms.ListBox lstElementos;
+        private System.Windows.Forms.TreeView treeElementos;
         private Guna.UI2.WinForms.Guna2DataGridView dgvElementos;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmNombre;

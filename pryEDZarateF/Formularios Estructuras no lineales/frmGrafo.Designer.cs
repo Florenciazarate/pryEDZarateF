@@ -208,6 +208,12 @@ namespace pryEDZarateF
             this.cmbCargaDestino.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbCargaDestino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbCargaDestino.ItemHeight = 30;
+            this.cmbCargaDestino.Items.AddRange(new object[] {
+            "Cordoba",
+            "Mendoza",
+            "Buenos Aires",
+            "Bariloche",
+            "Ushuaia"});
             this.cmbCargaDestino.Location = new System.Drawing.Point(290, 96);
             this.cmbCargaDestino.Name = "cmbCargaDestino";
             this.cmbCargaDestino.Size = new System.Drawing.Size(250, 36);
@@ -236,6 +242,12 @@ namespace pryEDZarateF
             this.cmbCargaOrigen.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbCargaOrigen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbCargaOrigen.ItemHeight = 30;
+            this.cmbCargaOrigen.Items.AddRange(new object[] {
+            "Cordoba",
+            "Mendoza",
+            "Buenos Aires",
+            "Bariloche",
+            "Ushuaia"});
             this.cmbCargaOrigen.Location = new System.Drawing.Point(22, 96);
             this.cmbCargaOrigen.Name = "cmbCargaOrigen";
             this.cmbCargaOrigen.Size = new System.Drawing.Size(250, 36);
@@ -368,6 +380,12 @@ namespace pryEDZarateF
             this.cmbConsultaDestino.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbConsultaDestino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbConsultaDestino.ItemHeight = 30;
+            this.cmbConsultaDestino.Items.AddRange(new object[] {
+            "Cordoba",
+            "Mendoza",
+            "Buenos Aires",
+            "Bariloche",
+            "Ushuaia"});
             this.cmbConsultaDestino.Location = new System.Drawing.Point(290, 98);
             this.cmbConsultaDestino.Name = "cmbConsultaDestino";
             this.cmbConsultaDestino.Size = new System.Drawing.Size(250, 36);
@@ -396,6 +414,12 @@ namespace pryEDZarateF
             this.cmbConsultaOrigen.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbConsultaOrigen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbConsultaOrigen.ItemHeight = 30;
+            this.cmbConsultaOrigen.Items.AddRange(new object[] {
+            "Cordoba",
+            "Mendoza",
+            "Buenos Aires",
+            "Bariloche",
+            "Ushuaia"});
             this.cmbConsultaOrigen.Location = new System.Drawing.Point(22, 98);
             this.cmbConsultaOrigen.Name = "cmbConsultaOrigen";
             this.cmbConsultaOrigen.Size = new System.Drawing.Size(250, 36);
@@ -598,6 +622,12 @@ namespace pryEDZarateF
             this.cmbHasta.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbHasta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbHasta.ItemHeight = 30;
+            this.cmbHasta.Items.AddRange(new object[] {
+            "Cordoba",
+            "Mendoza",
+            "Buenos Aires",
+            "Bariloche",
+            "Ushuaia"});
             this.cmbHasta.Location = new System.Drawing.Point(21, 158);
             this.cmbHasta.Name = "cmbHasta";
             this.cmbHasta.Size = new System.Drawing.Size(200, 36);
@@ -641,6 +671,12 @@ namespace pryEDZarateF
             this.cmbDesde.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbDesde.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbDesde.ItemHeight = 30;
+            this.cmbDesde.Items.AddRange(new object[] {
+            "Cordoba",
+            "Mendoza",
+            "Buenos Aires",
+            "Bariloche",
+            "Ushuaia"});
             this.cmbDesde.Location = new System.Drawing.Point(20, 90);
             this.cmbDesde.Name = "cmbDesde";
             this.cmbDesde.Size = new System.Drawing.Size(200, 36);

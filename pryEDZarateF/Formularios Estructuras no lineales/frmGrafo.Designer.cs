@@ -152,6 +152,7 @@ namespace pryEDZarateF
             this.btnCargar.Size = new System.Drawing.Size(250, 34);
             this.btnCargar.TabIndex = 9;
             this.btnCargar.Text = "Cargar";
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
             // btnBorrarTodo
             // 
@@ -730,6 +731,7 @@ namespace pryEDZarateF
             this.Name = "frmGrafo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Operaciones en un Grafo";
+            this.Load += new System.EventHandler(this.frmGrafo_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlCarga.ResumeLayout(false);

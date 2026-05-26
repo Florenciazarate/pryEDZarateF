@@ -82,11 +82,21 @@ namespace pryEDZarateF.Clases
             for (Int32 f = 0; f < 5; f++)
             {
                 Grilla.Rows.Add(Ciudades[f]);
+
+                for (Int32 c = 0; c < 5; c++)
+                {
+                    Grilla.Rows[f].Cells[c + 1].Value = Precio[f, c];
+                }
             }
-            for (Int32 c = 0; c < 5; c++)
+        }
+        public void MostrarCiudades(ComboBox cmb)
+        {
+            cmb.Items.Clear();
+            for (Int32 i = 0; i < 5; i++)
             {
-                Grilla.Rows[f].Cells[c + 1].Value = Precio[f, c];
+                cmb.Items.Add(Ciudades[i]);
             }
+            cmb.SelectedIndex = 0;
         }
     }
 }

@@ -59,6 +59,7 @@
     <Compile Include="Clases\clsArchivoTexto.cs" />
     <Compile Include="Clases\clsCola.cs" />
     <Compile Include="Clases\clsEstructurasLineales.cs" />
+    <Compile Include="Clases\clsGrafoMatricial.cs" />
     <Compile Include="Clases\clsListaDoble.cs" />
     <Compile Include="Clases\clsListaSimple.cs" />
     <Compile Include="Clases\clsNodo.cs" />

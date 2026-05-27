@@ -40,7 +40,7 @@ namespace pryEDZarateF
             this.pnlConsulta = new Guna.UI2.WinForms.Guna2Panel();
             this.btnBorrar = new Guna.UI2.WinForms.Guna2Button();
             this.btnConsultar = new Guna.UI2.WinForms.Guna2Button();
-            this.txtConsultaPrecio = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblConsultaResultado = new System.Windows.Forms.Label();
             this.lblConsultaPrecio = new System.Windows.Forms.Label();
             this.cmbConsultaDestino = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblConsultaDestino = new System.Windows.Forms.Label();
@@ -168,7 +168,8 @@ namespace pryEDZarateF
             this.btnBorrarTodo.Size = new System.Drawing.Size(250, 34);
             this.btnBorrarTodo.TabIndex = 8;
             this.btnBorrarTodo.Text = "Borrar Todo";
-            // 
+            this.btnBorrarTodo.Click += new System.EventHandler(this.btnBorrarTodo_Click);
+            //
             // txtCargaPrecio
             // 
             this.txtCargaPrecio.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
@@ -293,7 +294,7 @@ namespace pryEDZarateF
             this.pnlConsulta.BorderRadius = 14;
             this.pnlConsulta.Controls.Add(this.btnBorrar);
             this.pnlConsulta.Controls.Add(this.btnConsultar);
-            this.pnlConsulta.Controls.Add(this.txtConsultaPrecio);
+            this.pnlConsulta.Controls.Add(this.lblConsultaResultado);
             this.pnlConsulta.Controls.Add(this.lblConsultaPrecio);
             this.pnlConsulta.Controls.Add(this.cmbConsultaDestino);
             this.pnlConsulta.Controls.Add(this.lblConsultaDestino);
@@ -325,7 +326,8 @@ namespace pryEDZarateF
             this.btnBorrar.Size = new System.Drawing.Size(250, 36);
             this.btnBorrar.TabIndex = 9;
             this.btnBorrar.Text = "Borrar";
-            // 
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
+            //
             // btnConsultar
             // 
             this.btnConsultar.BorderRadius = 8;
@@ -338,25 +340,20 @@ namespace pryEDZarateF
             this.btnConsultar.Size = new System.Drawing.Size(250, 36);
             this.btnConsultar.TabIndex = 8;
             this.btnConsultar.Text = "Consultar";
-            // 
-            // txtConsultaPrecio
-            // 
-            this.txtConsultaPrecio.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
-            this.txtConsultaPrecio.BorderRadius = 8;
-            this.txtConsultaPrecio.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtConsultaPrecio.DefaultText = "";
-            this.txtConsultaPrecio.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.txtConsultaPrecio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(57)))), ((int)(((byte)(4)))));
-            this.txtConsultaPrecio.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtConsultaPrecio.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.txtConsultaPrecio.Location = new System.Drawing.Point(22, 169);
-            this.txtConsultaPrecio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtConsultaPrecio.Name = "txtConsultaPrecio";
-            this.txtConsultaPrecio.PlaceholderText = "Resultado de la consulta";
-            this.txtConsultaPrecio.ReadOnly = true;
-            this.txtConsultaPrecio.SelectedText = "";
-            this.txtConsultaPrecio.Size = new System.Drawing.Size(518, 40);
-            this.txtConsultaPrecio.TabIndex = 7;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            //
+            // lblConsultaResultado
+            //
+            this.lblConsultaResultado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.lblConsultaResultado.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblConsultaResultado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
+            this.lblConsultaResultado.Location = new System.Drawing.Point(22, 169);
+            this.lblConsultaResultado.Name = "lblConsultaResultado";
+            this.lblConsultaResultado.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lblConsultaResultado.Size = new System.Drawing.Size(518, 40);
+            this.lblConsultaResultado.TabIndex = 7;
+            this.lblConsultaResultado.Text = "Resultado de la consulta";
+            this.lblConsultaResultado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblConsultaPrecio
             // 
@@ -595,7 +592,8 @@ namespace pryEDZarateF
             this.btnVerTodos.Size = new System.Drawing.Size(164, 36);
             this.btnVerTodos.TabIndex = 8;
             this.btnVerTodos.Text = "Ver todos los viajes";
-            // 
+            this.btnVerTodos.Click += new System.EventHandler(this.btnVerTodos_Click);
+            //
             // btnListarOrigenes
             // 
             this.btnListarOrigenes.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(57)))), ((int)(((byte)(4)))));
@@ -610,7 +608,8 @@ namespace pryEDZarateF
             this.btnListarOrigenes.Size = new System.Drawing.Size(136, 31);
             this.btnListarOrigenes.TabIndex = 7;
             this.btnListarOrigenes.Text = "Listar Orígenes";
-            // 
+            this.btnListarOrigenes.Click += new System.EventHandler(this.btnListarOrigenes_Click);
+            //
             // cmbHasta
             // 
             this.cmbHasta.BackColor = System.Drawing.Color.Transparent;
@@ -659,7 +658,8 @@ namespace pryEDZarateF
             this.btnListarDestinos.Size = new System.Drawing.Size(136, 31);
             this.btnListarDestinos.TabIndex = 4;
             this.btnListarDestinos.Text = "Listar Destinos";
-            // 
+            this.btnListarDestinos.Click += new System.EventHandler(this.btnListarDestinos_Click);
+            //
             // cmbDesde
             // 
             this.cmbDesde.BackColor = System.Drawing.Color.Transparent;
@@ -774,7 +774,7 @@ namespace pryEDZarateF
         private System.Windows.Forms.Label lblConsultaDestino;
         private Guna.UI2.WinForms.Guna2ComboBox cmbConsultaDestino;
         private System.Windows.Forms.Label lblConsultaPrecio;
-        private Guna.UI2.WinForms.Guna2TextBox txtConsultaPrecio;
+        private System.Windows.Forms.Label lblConsultaResultado;
         private Guna.UI2.WinForms.Guna2Button btnConsultar;
         private Guna.UI2.WinForms.Guna2Button btnBorrar;
 

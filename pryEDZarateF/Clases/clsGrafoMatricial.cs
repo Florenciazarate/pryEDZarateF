@@ -39,11 +39,10 @@ namespace pryEDZarateF.Clases
         {
             Grilla.Rows.Clear();
             Grilla.Columns.Clear();
-            Grilla.Rows.Add("Col1", "Destino");
-            Grilla.Rows.Add("Col2", "Precio");
+            Grilla.Columns.Add("Destino", "Destino");
+            Grilla.Columns.Add("Precio", "Precio");
             Grilla.Columns[0].Width = 200;
             Grilla.Columns[1].Width = 200;
-            Grilla.Rows.Clear();
             for (Int32 c = 0; c < 5; c++)
             {
                 if (Precio[f, c] > 0)
@@ -56,14 +55,12 @@ namespace pryEDZarateF.Clases
         {
             Grilla.Rows.Clear();
             Grilla.Columns.Clear();
-            Grilla.Rows.Add("Col1", "Origen");
-            Grilla.Rows.Add("Col2", "Precio");
+            Grilla.Columns.Add("Origen", "Origen");
+            Grilla.Columns.Add("Precio", "Precio");
             Grilla.Columns[0].Width = 200;
             Grilla.Columns[1].Width = 200;
-            Grilla.Rows.Clear();
             for (Int32 f = 0; f < 5; f++)
             {
-
                 if (Precio[f, c] > 0)
                 {
                     Grilla.Rows.Add(Ciudades[f], Precio[f, c]);

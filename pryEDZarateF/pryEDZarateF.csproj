@@ -177,6 +177,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios Bases de Datos\frmConsultasConOperaciones.resx">
+      <DependentUpon>frmConsultasConOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios Bases de Datos\frmConsultaSQL.resx">
+      <DependentUpon>frmConsultaSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios Bases de Datos\frmConsultaTabla.resx">
+      <DependentUpon>frmConsultaTabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios Bases de Datos\frmOperaciones.resx">
+      <DependentUpon>frmOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios Estructuras no lineales\frmGrafo.resx">
       <DependentUpon>frmGrafo.cs</DependentUpon>
     </EmbeddedResource>

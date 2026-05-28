@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Clases\clsArbolBinario.cs" />
     <Compile Include="Clases\clsArchivoTexto.cs" />
+    <Compile Include="Clases\clsBaseDatos.cs" />
     <Compile Include="Clases\clsCola.cs" />
     <Compile Include="Clases\clsEstructurasLineales.cs" />
     <Compile Include="Clases\clsGrafoMatricial.cs" />

@@ -40,6 +40,8 @@ namespace pryEDZarateF.Clases
                 MessageBox.Show(x.Message);
             }
         }
+    }
+}
 
 
 

@@ -200,10 +200,13 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             // btnJuntar
             // 
             this.btnJuntar.BorderRadius = 8;
-            this.btnJuntar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnJuntar.UseTransparentBackground = true;
+            this.btnJuntar.FillColor = System.Drawing.Color.White;
+            this.btnJuntar.BorderThickness = 2;
+            this.btnJuntar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
             this.btnJuntar.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnJuntar.ForeColor = System.Drawing.Color.White;
-            this.btnJuntar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(58)))), ((int)(((byte)(237)))));
+            this.btnJuntar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnJuntar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.btnJuntar.Location = new System.Drawing.Point(20, 158);
             this.btnJuntar.Name = "btnJuntar";
             this.btnJuntar.Size = new System.Drawing.Size(300, 40);
@@ -213,10 +216,13 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             // btnProyeccionMulti
             // 
             this.btnProyeccionMulti.BorderRadius = 8;
-            this.btnProyeccionMulti.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnProyeccionMulti.UseTransparentBackground = true;
+            this.btnProyeccionMulti.FillColor = System.Drawing.Color.White;
+            this.btnProyeccionMulti.BorderThickness = 2;
+            this.btnProyeccionMulti.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
             this.btnProyeccionMulti.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnProyeccionMulti.ForeColor = System.Drawing.Color.White;
-            this.btnProyeccionMulti.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(58)))), ((int)(((byte)(237)))));
+            this.btnProyeccionMulti.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnProyeccionMulti.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.btnProyeccionMulti.Location = new System.Drawing.Point(20, 108);
             this.btnProyeccionMulti.Name = "btnProyeccionMulti";
             this.btnProyeccionMulti.Size = new System.Drawing.Size(300, 40);
@@ -226,10 +232,13 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             // btnProyeccionSimple
             // 
             this.btnProyeccionSimple.BorderRadius = 8;
-            this.btnProyeccionSimple.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnProyeccionSimple.UseTransparentBackground = true;
+            this.btnProyeccionSimple.FillColor = System.Drawing.Color.White;
+            this.btnProyeccionSimple.BorderThickness = 2;
+            this.btnProyeccionSimple.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
             this.btnProyeccionSimple.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnProyeccionSimple.ForeColor = System.Drawing.Color.White;
-            this.btnProyeccionSimple.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(58)))), ((int)(((byte)(237)))));
+            this.btnProyeccionSimple.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnProyeccionSimple.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.btnProyeccionSimple.Location = new System.Drawing.Point(20, 58);
             this.btnProyeccionSimple.Name = "btnProyeccionSimple";
             this.btnProyeccionSimple.Size = new System.Drawing.Size(300, 40);
@@ -268,10 +277,13 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             // btnSeleccionConvolucion
             // 
             this.btnSeleccionConvolucion.BorderRadius = 8;
-            this.btnSeleccionConvolucion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnSeleccionConvolucion.UseTransparentBackground = true;
+            this.btnSeleccionConvolucion.FillColor = System.Drawing.Color.White;
+            this.btnSeleccionConvolucion.BorderThickness = 2;
+            this.btnSeleccionConvolucion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
             this.btnSeleccionConvolucion.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnSeleccionConvolucion.ForeColor = System.Drawing.Color.White;
-            this.btnSeleccionConvolucion.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(58)))), ((int)(((byte)(237)))));
+            this.btnSeleccionConvolucion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnSeleccionConvolucion.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.btnSeleccionConvolucion.Location = new System.Drawing.Point(20, 158);
             this.btnSeleccionConvolucion.Name = "btnSeleccionConvolucion";
             this.btnSeleccionConvolucion.Size = new System.Drawing.Size(300, 40);
@@ -281,10 +293,13 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             // btnSeleccionMulti
             // 
             this.btnSeleccionMulti.BorderRadius = 8;
-            this.btnSeleccionMulti.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnSeleccionMulti.UseTransparentBackground = true;
+            this.btnSeleccionMulti.FillColor = System.Drawing.Color.White;
+            this.btnSeleccionMulti.BorderThickness = 2;
+            this.btnSeleccionMulti.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
             this.btnSeleccionMulti.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnSeleccionMulti.ForeColor = System.Drawing.Color.White;
-            this.btnSeleccionMulti.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(58)))), ((int)(((byte)(237)))));
+            this.btnSeleccionMulti.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnSeleccionMulti.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.btnSeleccionMulti.Location = new System.Drawing.Point(20, 108);
             this.btnSeleccionMulti.Name = "btnSeleccionMulti";
             this.btnSeleccionMulti.Size = new System.Drawing.Size(300, 40);
@@ -294,10 +309,13 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             // btnSeleccionSimple
             // 
             this.btnSeleccionSimple.BorderRadius = 8;
-            this.btnSeleccionSimple.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnSeleccionSimple.UseTransparentBackground = true;
+            this.btnSeleccionSimple.FillColor = System.Drawing.Color.White;
+            this.btnSeleccionSimple.BorderThickness = 2;
+            this.btnSeleccionSimple.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
             this.btnSeleccionSimple.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnSeleccionSimple.ForeColor = System.Drawing.Color.White;
-            this.btnSeleccionSimple.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(58)))), ((int)(((byte)(237)))));
+            this.btnSeleccionSimple.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnSeleccionSimple.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.btnSeleccionSimple.Location = new System.Drawing.Point(20, 58);
             this.btnSeleccionSimple.Name = "btnSeleccionSimple";
             this.btnSeleccionSimple.Size = new System.Drawing.Size(300, 40);
@@ -336,10 +354,13 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             // btnDiferencia
             // 
             this.btnDiferencia.BorderRadius = 8;
-            this.btnDiferencia.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnDiferencia.UseTransparentBackground = true;
+            this.btnDiferencia.FillColor = System.Drawing.Color.White;
+            this.btnDiferencia.BorderThickness = 2;
+            this.btnDiferencia.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
             this.btnDiferencia.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnDiferencia.ForeColor = System.Drawing.Color.White;
-            this.btnDiferencia.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(58)))), ((int)(((byte)(237)))));
+            this.btnDiferencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnDiferencia.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.btnDiferencia.Location = new System.Drawing.Point(20, 158);
             this.btnDiferencia.Name = "btnDiferencia";
             this.btnDiferencia.Size = new System.Drawing.Size(300, 40);
@@ -349,10 +370,13 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             // btnInterseccion
             // 
             this.btnInterseccion.BorderRadius = 8;
-            this.btnInterseccion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnInterseccion.UseTransparentBackground = true;
+            this.btnInterseccion.FillColor = System.Drawing.Color.White;
+            this.btnInterseccion.BorderThickness = 2;
+            this.btnInterseccion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
             this.btnInterseccion.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnInterseccion.ForeColor = System.Drawing.Color.White;
-            this.btnInterseccion.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(58)))), ((int)(((byte)(237)))));
+            this.btnInterseccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnInterseccion.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.btnInterseccion.Location = new System.Drawing.Point(20, 108);
             this.btnInterseccion.Name = "btnInterseccion";
             this.btnInterseccion.Size = new System.Drawing.Size(300, 40);
@@ -362,10 +386,13 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             // btnUnion
             // 
             this.btnUnion.BorderRadius = 8;
-            this.btnUnion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnUnion.UseTransparentBackground = true;
+            this.btnUnion.FillColor = System.Drawing.Color.White;
+            this.btnUnion.BorderThickness = 2;
+            this.btnUnion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
             this.btnUnion.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnUnion.ForeColor = System.Drawing.Color.White;
-            this.btnUnion.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(58)))), ((int)(((byte)(237)))));
+            this.btnUnion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnUnion.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.btnUnion.Location = new System.Drawing.Point(20, 58);
             this.btnUnion.Name = "btnUnion";
             this.btnUnion.Size = new System.Drawing.Size(300, 40);

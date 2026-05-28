@@ -12,8 +12,8 @@ namespace pryEDZarateF.Clases
     internal class clsBaseDatos
     {
         private OleDbConnection conexion = new OleDbConnection();
-        private OleDbConnection comando = new OleDbConnection();
-        private OleDbConnection adaptador = new OleDbConnection();
+        private OleDbCommand comando = new OleDbCommand();
+        private OleDbDataAdapter adaptador = new OleDbDataAdapter();
         private string CadenaConexion1 = "Provider= Microsoft.Jet.OleDB.4.0;Data Source=Libreria.mb";
         private string CadenaConexion2 = "Provider= Microsoft.Jet.OleDB.12.0;Data Source=Libreria.mb";
         public void Listar(DataGridView Grilla)
@@ -22,7 +22,7 @@ namespace pryEDZarateF.Clases
             {
                 conexion.ConnectionString = CadenaConexion1;
                 conexion.Open();
-                comando.ConnectionString = conexion;
+                comando.Connection = conexion;
                 comando.CommandType = CommandType.TableDirect;
                 comando.CommandText = "Libro";
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pryEDZarateF.Formularios_Bases_de_Datos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,6 +37,11 @@ namespace pryEDZarateF
                 case "frmDatosDesarrollador": ventana = new frmDatosDesarrollador(); break;
                 case "frmArbol": ventana = new frmArbol(); break;
                 case "frmGrafo": ventana = new frmGrafo(); break;
+                case "frmConsultaTabla": ventana = new frmConsultaTabla(); break;
+                case "frmConsultaSQL": ventana = new frmConsultaSQL(); break;
+                case "frmConsultasConOperaciones": ventana = new frmConsultasConOperaciones(); break;
+                case "frmOperaciones": ventana = new frmOperaciones(); break;
+
                 case "Salir":
                     Application.Exit();
                     return;

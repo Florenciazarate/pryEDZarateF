@@ -180,7 +180,7 @@ namespace pryEDZarateF
             // colaToolStripMenuItem
             // 
             this.colaToolStripMenuItem.Name = "colaToolStripMenuItem";
-            this.colaToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
+            this.colaToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.colaToolStripMenuItem.Tag = "frmCola";
             this.colaToolStripMenuItem.Text = "Cola...";
             this.colaToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
@@ -188,7 +188,7 @@ namespace pryEDZarateF
             // pilaToolStripMenuItem
             // 
             this.pilaToolStripMenuItem.Name = "pilaToolStripMenuItem";
-            this.pilaToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
+            this.pilaToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.pilaToolStripMenuItem.Tag = "frmPila";
             this.pilaToolStripMenuItem.Text = "Pila...";
             this.pilaToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
@@ -196,7 +196,7 @@ namespace pryEDZarateF
             // listaSimpleToolStripMenuItem
             // 
             this.listaSimpleToolStripMenuItem.Name = "listaSimpleToolStripMenuItem";
-            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
+            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.listaSimpleToolStripMenuItem.Tag = "frmListaSimple";
             this.listaSimpleToolStripMenuItem.Text = "Lista simple...";
             this.listaSimpleToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
@@ -204,7 +204,7 @@ namespace pryEDZarateF
             // listaDobleToolStripMenuItem
             // 
             this.listaDobleToolStripMenuItem.Name = "listaDobleToolStripMenuItem";
-            this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
+            this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.listaDobleToolStripMenuItem.Tag = "frmListaDoble";
             this.listaDobleToolStripMenuItem.Text = "Lista doble...";
             this.listaDobleToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
@@ -253,25 +253,33 @@ namespace pryEDZarateF
             // 
             this.consultaDeUnaTablaToolStripMenuItem.Name = "consultaDeUnaTablaToolStripMenuItem";
             this.consultaDeUnaTablaToolStripMenuItem.Size = new System.Drawing.Size(289, 24);
+            this.consultaDeUnaTablaToolStripMenuItem.Tag = "frmConsultaTabla";
             this.consultaDeUnaTablaToolStripMenuItem.Text = "Consulta de una tabla...";
+            this.consultaDeUnaTablaToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // consultaDeUnaBaseDeDatosToolStripMenuItem
             // 
             this.consultaDeUnaBaseDeDatosToolStripMenuItem.Name = "consultaDeUnaBaseDeDatosToolStripMenuItem";
             this.consultaDeUnaBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(289, 24);
+            this.consultaDeUnaBaseDeDatosToolStripMenuItem.Tag = "frmConsultaSQL";
             this.consultaDeUnaBaseDeDatosToolStripMenuItem.Text = "Consulta de una Base de Datos...";
+            this.consultaDeUnaBaseDeDatosToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // operacionesEnBaseDeDatosToolStripMenuItem
             // 
             this.operacionesEnBaseDeDatosToolStripMenuItem.Name = "operacionesEnBaseDeDatosToolStripMenuItem";
             this.operacionesEnBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(289, 24);
+            this.operacionesEnBaseDeDatosToolStripMenuItem.Tag = "frmOperaciones";
             this.operacionesEnBaseDeDatosToolStripMenuItem.Text = "Operaciones en Base de Datos...";
+            this.operacionesEnBaseDeDatosToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // consultasVariasConOperacionesToolStripMenuItem
             // 
             this.consultasVariasConOperacionesToolStripMenuItem.Name = "consultasVariasConOperacionesToolStripMenuItem";
             this.consultasVariasConOperacionesToolStripMenuItem.Size = new System.Drawing.Size(289, 24);
+            this.consultasVariasConOperacionesToolStripMenuItem.Tag = "frmConsultasConOperaciones";
             this.consultasVariasConOperacionesToolStripMenuItem.Text = "Consultas varias con operaciones...";
+            this.consultasVariasConOperacionesToolStripMenuItem.Click += new System.EventHandler(this.AbrirFormulario_Click);
             // 
             // contextMenuStrip1
             // 

@@ -66,6 +66,30 @@
     <Compile Include="Clases\clsPila.cs" />
     <Compile Include="Clases\ColoresApp.cs" />
     <Compile Include="Clases\MenuColors.cs" />
+    <Compile Include="Formularios Bases de Datos\frmConsultasConOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios Bases de Datos\frmConsultasConOperaciones.Designer.cs">
+      <DependentUpon>frmConsultasConOperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios Bases de Datos\frmConsultaSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios Bases de Datos\frmConsultaSQL.Designer.cs">
+      <DependentUpon>frmConsultaSQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios Bases de Datos\frmConsultaTabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios Bases de Datos\frmConsultaTabla.Designer.cs">
+      <DependentUpon>frmConsultaTabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios Bases de Datos\frmOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios Bases de Datos\frmOperaciones.Designer.cs">
+      <DependentUpon>frmOperaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios Estructuras no lineales\frmGrafo.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -14,9 +14,9 @@ namespace pryEDZarateF.Clases
         private OleDbConnection conexion = new OleDbConnection();
         private OleDbCommand comando = new OleDbCommand();
         private OleDbDataAdapter adaptador = new OleDbDataAdapter();
-        private string CadenaConexion1 = "Provider= Microsoft.Jet.OleDB.4.0;Data Source=Libreria.mb";
-        private string CadenaConexion2 = "Provider= Microsoft.Jet.OleDB.12.0;Data Source=Libreria.mb";
-        public void Listar(DataGridView Grilla)
+        private string CadenaConexion1 = "Provider= Microsoft.Jet.OleDB.4.0;Data Source=Libreria.mdb";
+        private string CadenaConexion2 = "Provider= Microsoft.Jet.OleDB.12.0;Data Source=Libreria.mdb";
+        public void Listar(string tabla, DataGridView Grilla)
         {
             try
             {
@@ -24,14 +24,14 @@ namespace pryEDZarateF.Clases
                 conexion.Open();
                 comando.Connection = conexion;
                 comando.CommandType = CommandType.TableDirect;
-                comando.CommandText = "Libro";
+                comando.CommandText = tabla;
 
                 DataSet DS = new DataSet();
                 adaptador = new OleDbDataAdapter(comando);
-                adaptador.Fill(DS, "Libro");
+                adaptador.Fill(DS, tabla);
 
                 Grilla.DataSource = null;
-                Grilla.DataSource = DS.Tables["Libro"];
+                Grilla.DataSource = DS.Tables[tabla];
 
                 conexion.Close();
             }
@@ -39,6 +39,26 @@ namespace pryEDZarateF.Clases
             {
                 MessageBox.Show(x.Message);
             }
+        }
+
+        public List<string> ListarTablas()
+        {
+            List<string> tablas = new List<string>();
+            try
+            {
+                conexion.ConnectionString = CadenaConexion1;
+                conexion.Open();
+                DataTable esquema = conexion.GetOleDbSchemaTable(OleDbSchemaGuid.Tables,
+                    new object[] { null, null, null, "TABLE" });
+                foreach (DataRow fila in esquema.Rows)
+                    tablas.Add(fila["TABLE_NAME"].ToString());
+                conexion.Close();
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.Message);
+            }
+            return tablas;
         }
     }
 }

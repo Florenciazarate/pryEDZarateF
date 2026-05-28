@@ -309,6 +309,9 @@
   <ItemGroup>
     <Content Include="3406421-animal-lazy-mammal-sloth-slow-wildlife-zoo_107592.ico" />
     <Content Include="EjOYTYuXsAAwFqf-removebg-preview.ico" />
+    <Content Include="Libreria.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa %284%29.png" />
     <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa %283%291.png" />
     <None Include="Resources\Logotipo Estudio Shonos Diseño multimedia divertido retro y2k rosa %282%29.png" />

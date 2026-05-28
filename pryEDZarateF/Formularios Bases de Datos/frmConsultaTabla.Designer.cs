@@ -122,6 +122,7 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             this.btnListar.Size = new System.Drawing.Size(125, 45);
             this.btnListar.TabIndex = 3;
             this.btnListar.Text = "Listar";
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // cmbTabla
             // 
@@ -223,6 +224,7 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             this.Name = "frmConsultaTabla";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de una tabla";
+            this.Load += new System.EventHandler(this.frmConsultaTabla_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlContenido.ResumeLayout(false);

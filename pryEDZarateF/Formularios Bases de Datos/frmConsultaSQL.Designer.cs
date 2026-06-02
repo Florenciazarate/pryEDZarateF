@@ -124,6 +124,7 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             this.btnListar.Size = new System.Drawing.Size(125, 42);
             this.btnListar.TabIndex = 2;
             this.btnListar.Text = "Listar";
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // txtSQL
             // 
@@ -254,6 +255,7 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             this.Name = "frmConsultaSQL";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultas en la Base de Datos";
+            this.Load += new System.EventHandler(this.frmConsultaSQL_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlConsulta.ResumeLayout(false);

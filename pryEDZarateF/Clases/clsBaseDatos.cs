@@ -11,71 +11,86 @@ namespace pryEDZarateF.Clases
 {
     internal class clsBaseDatos
     {
-        private OleDbConnection conexion = new OleDbConnection();
-        private OleDbCommand comando = new OleDbCommand();
-        private OleDbDataAdapter adaptador = new OleDbDataAdapter();
-        private string CadenaConexion1 = "Provider= Microsoft.Jet.OleDB.4.0;Data Source=Libreria.mdb";
-        private string CadenaConexion2 = "Provider= Microsoft.Jet.OleDB.12.0;Data Source=Libreria.mdb";
+        // La cadena usa ruta relativa: la BD se copia a bin\Debug junto al .exe.
+        private string CadenaConexion1 = "Provider=Microsoft.Jet.OleDB.4.0;Data Source=Libreria.mdb";
+
+        // Lista una tabla completa por su nombre (TableDirect).
         public void Listar(string tabla, DataGridView Grilla)
         {
             try
             {
-                conexion.ConnectionString = CadenaConexion1;
-                conexion.Open();
-                comando.Connection = conexion;
-                comando.CommandType = CommandType.TableDirect;
-                comando.CommandText = tabla;
+                // 'using' garantiza que la conexión se cierre y libere SIEMPRE,
+                // incluso si hay una excepción. Así la BD nunca queda "abierta".
+                using (OleDbConnection conexion = new OleDbConnection(CadenaConexion1))
+                {
+                    conexion.Open();
 
-                DataSet DS = new DataSet();
-                adaptador = new OleDbDataAdapter(comando);
-                adaptador.Fill(DS, tabla);
+                    OleDbCommand comando = new OleDbCommand();
+                    comando.Connection = conexion;
+                    comando.CommandType = CommandType.TableDirect;
+                    comando.CommandText = tabla;
 
-                Grilla.DataSource = null;
-                Grilla.DataSource = DS.Tables[tabla];
+                    DataSet DS = new DataSet();
+                    OleDbDataAdapter adaptador = new OleDbDataAdapter(comando);
+                    adaptador.Fill(DS, tabla);
 
-                conexion.Close();
+                    Grilla.DataSource = null;
+                    Grilla.DataSource = DS.Tables[tabla];
+                }
             }
             catch (Exception x)
             {
                 MessageBox.Show(x.Message);
             }
         }
-        public void Listar (DataGridView Grilla, String varInstruccionSQL)
+
+        // Lista directamente la tabla Libro.
+        public void Listar(DataGridView Grilla)
+        {
+            Listar("Libro", Grilla);
+        }
+
+        // Ejecuta una instrucción SQL de texto (SELECT, etc.) y la muestra en la grilla.
+        public void Listar(DataGridView Grilla, String varInstruccionSQL)
         {
             try
             {
-                conexion.ConnectionString = CadenaConexion1;
-                conexion.Open();
+                using (OleDbConnection conexion = new OleDbConnection(CadenaConexion1))
+                {
+                    conexion.Open();
 
-                comando.Connection = conexion;
-                comando.CommandType = CommandType.Text;
-                comando.CommandText = varInstruccionSQL;
-                adaptador = new OleDbDataAdapter(comando);
-                DataSet DS = new DataSet();
-                adaptador.Fill(DS, "Resultado");
+                    OleDbCommand comando = new OleDbCommand();
+                    comando.Connection = conexion;
+                    comando.CommandType = CommandType.Text;
+                    comando.CommandText = varInstruccionSQL;
 
-                Grilla.DataSource = null;
-                Grilla.DataSource = DS.Tables["Resultado"];
-                conexion.Close();
+                    DataSet DS = new DataSet();
+                    OleDbDataAdapter adaptador = new OleDbDataAdapter(comando);
+                    adaptador.Fill(DS, "Resultado");
+
+                    Grilla.DataSource = null;
+                    Grilla.DataSource = DS.Tables["Resultado"];
+                }
             }
             catch (Exception x)
             {
                 MessageBox.Show(x.Message);
-                conexion.Close();
             }
         }
+
         public List<string> ListarTablas()
         {
             List<string> tablas = new List<string>();
             try
             {
-                conexion.ConnectionString = CadenaConexion1;
-                conexion.Open();
-                DataTable esquema = conexion.GetOleDbSchemaTable(OleDbSchemaGuid.Tables,
-                    new object[] { null, null, null, "TABLE" });
-                foreach (DataRow fila in esquema.Rows)
-                    tablas.Add(fila["TABLE_NAME"].ToString());
-                conexion.Close();
+                using (OleDbConnection conexion = new OleDbConnection(CadenaConexion1))
+                {
+                    conexion.Open();
+                    DataTable esquema = conexion.GetOleDbSchemaTable(OleDbSchemaGuid.Tables,
+                        new object[] { null, null, null, "TABLE" });
+                    foreach (DataRow fila in esquema.Rows)
+                        tablas.Add(fila["TABLE_NAME"].ToString());
+                }
             }
             catch (Exception x)
             {

@@ -228,6 +228,7 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             this.btnProyeccionMulti.TabIndex = 2;
             this.btnProyeccionMulti.Text = "Proyección multiatributo";
             this.btnProyeccionMulti.UseTransparentBackground = true;
+            this.btnProyeccionMulti.Click += new System.EventHandler(this.btnProyeccionMulti_Click);
             // 
             // btnProyeccionSimple
             // 

@@ -86,14 +86,5 @@ namespace pryEDZarateF.Clases
                 }
             }
         }
-        public void MostrarCiudades(ComboBox cmb)
-        {
-            cmb.Items.Clear();
-            for (Int32 i = 0; i < 5; i++)
-            {
-                cmb.Items.Add(Ciudades[i]);
-            }
-            cmb.SelectedIndex = 0;
-        }
     }
 }

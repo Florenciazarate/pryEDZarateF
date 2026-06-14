@@ -211,7 +211,7 @@ namespace pryEDZarateF
             this.cmbCargaDestino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbCargaDestino.ItemHeight = 30;
             this.cmbCargaDestino.Items.AddRange(new object[] {
-            "Cordoba",
+            "Córdoba",
             "Mendoza",
             "Buenos Aires",
             "Bariloche",
@@ -245,7 +245,7 @@ namespace pryEDZarateF
             this.cmbCargaOrigen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbCargaOrigen.ItemHeight = 30;
             this.cmbCargaOrigen.Items.AddRange(new object[] {
-            "Cordoba",
+            "Córdoba",
             "Mendoza",
             "Buenos Aires",
             "Bariloche",
@@ -379,7 +379,7 @@ namespace pryEDZarateF
             this.cmbConsultaDestino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbConsultaDestino.ItemHeight = 30;
             this.cmbConsultaDestino.Items.AddRange(new object[] {
-            "Cordoba",
+            "Córdoba",
             "Mendoza",
             "Buenos Aires",
             "Bariloche",
@@ -413,7 +413,7 @@ namespace pryEDZarateF
             this.cmbConsultaOrigen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbConsultaOrigen.ItemHeight = 30;
             this.cmbConsultaOrigen.Items.AddRange(new object[] {
-            "Cordoba",
+            "Córdoba",
             "Mendoza",
             "Buenos Aires",
             "Bariloche",
@@ -623,7 +623,7 @@ namespace pryEDZarateF
             this.cmbHasta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbHasta.ItemHeight = 30;
             this.cmbHasta.Items.AddRange(new object[] {
-            "Cordoba",
+            "Córdoba",
             "Mendoza",
             "Buenos Aires",
             "Bariloche",
@@ -673,7 +673,7 @@ namespace pryEDZarateF
             this.cmbDesde.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbDesde.ItemHeight = 30;
             this.cmbDesde.Items.AddRange(new object[] {
-            "Cordoba",
+            "Córdoba",
             "Mendoza",
             "Buenos Aires",
             "Bariloche",

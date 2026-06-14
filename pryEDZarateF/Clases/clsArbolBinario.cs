@@ -91,6 +91,30 @@ namespace pryEDZarateF.Clases
             if (R.Izquierdo != null) InOrdenDesc(Lst, R.Izquierdo);
         }
 
+        public void RecorrerInOrdenDesc(DataGridView Grilla)
+        {
+            Grilla.Rows.Clear();
+            if (Raiz != null) InOrdenDesc(Grilla, Raiz);
+        }
+        public void RecorrerInOrdenDesc(ComboBox Combo)
+        {
+            Combo.Items.Clear();
+            if (Raiz != null) InOrdenDesc(Combo, Raiz);
+        }
+
+        private void InOrdenDesc(DataGridView Dgv, clsNodo R)
+        {
+            if (R.Derecho != null) InOrdenDesc(Dgv, R.Derecho);
+            Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
+            if (R.Izquierdo != null) InOrdenDesc(Dgv, R.Izquierdo);
+        }
+        private void InOrdenDesc(ComboBox Cmb, clsNodo R)
+        {
+            if (R.Derecho != null) InOrdenDesc(Cmb, R.Derecho);
+            Cmb.Items.Add(R.Codigo);
+            if (R.Izquierdo != null) InOrdenDesc(Cmb, R.Izquierdo);
+        }
+
         public void RecorrerPreOrden(DataGridView Grilla)
         {
             Grilla.Rows.Clear();

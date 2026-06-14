@@ -40,6 +40,11 @@ namespace pryEDZarateF
             }
             Int32 f = cmbCargaOrigen.SelectedIndex;
             Int32 c = cmbCargaDestino.SelectedIndex;
+            if (f == c)
+            {
+                MessageBox.Show("El origen y el destino no pueden ser la misma ciudad.");
+                return;
+            }
             Grafo.Agregar(f, c, p);
             Grafo.MostrarTodo(dgvMatriz);
             lblMatrizTitulo.Text = "Listado completo de viajes";

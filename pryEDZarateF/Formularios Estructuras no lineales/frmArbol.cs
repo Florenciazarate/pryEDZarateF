@@ -96,8 +96,8 @@ namespace pryEDZarateF
             }
             else if (radioDescendente.Checked)
             {
-                arbol.RecorrerPreOrden(dgvElementos);
-                arbol.RecorrerPreOrden(cmbCodigo);
+                arbol.RecorrerInOrdenDesc(dgvElementos);
+                arbol.RecorrerInOrdenDesc(cmbCodigo);
             }
             else if (radioPostOrden.Checked)
             {

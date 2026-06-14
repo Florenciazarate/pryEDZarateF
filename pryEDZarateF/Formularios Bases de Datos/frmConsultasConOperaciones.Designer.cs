@@ -126,6 +126,7 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             this.btnListar.Size = new System.Drawing.Size(125, 42);
             this.btnListar.TabIndex = 2;
             this.btnListar.Text = "Listar";
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // cmbOperacion
             // 
@@ -143,6 +144,7 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             this.cmbOperacion.Name = "cmbOperacion";
             this.cmbOperacion.Size = new System.Drawing.Size(555, 36);
             this.cmbOperacion.TabIndex = 1;
+            this.cmbOperacion.SelectedIndexChanged += new System.EventHandler(this.cmbOperacion_SelectedIndexChanged);
             // 
             // lblOperacion
             // 
@@ -278,6 +280,7 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             this.Name = "frmConsultasConOperaciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Repaso de Operaciones de Base de Datos";
+            this.Load += new System.EventHandler(this.frmConsultasConOperaciones_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlControles.ResumeLayout(false);

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,8 +11,28 @@ namespace pryEDZarateF.Clases
 {
     internal class clsBaseDatos
     {
-        // La cadena usa ruta relativa: la BD se copia a bin\Debug junto al .exe.
-        private string CadenaConexion1 = "Provider=Microsoft.Jet.OleDB.4.0;Data Source=Libreria.mdb";
+        // Dos proveedores para la misma base. La ruta es relativa: el .mdb se copia
+        // a bin\Debug junto al .exe.
+        private string CadenaJet = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=Libreria.mdb";
+        private string CadenaAce = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Libreria.mdb";
+
+        // Abre la conexión probando primero Jet (viene con Windows) y, si falla,
+        // ACE (Access Database Engine). Devuelve la conexión ya abierta.
+        private OleDbConnection AbrirConexion()
+        {
+            OleDbConnection conexion = new OleDbConnection();
+            try
+            {
+                conexion.ConnectionString = CadenaJet;
+                conexion.Open();
+            }
+            catch
+            {
+                conexion.ConnectionString = CadenaAce;
+                conexion.Open();
+            }
+            return conexion;
+        }
 
         // Lista una tabla completa por su nombre (TableDirect).
         public void Listar(string tabla, DataGridView Grilla)
@@ -21,10 +41,8 @@ namespace pryEDZarateF.Clases
             {
                 // 'using' garantiza que la conexión se cierre y libere SIEMPRE,
                 // incluso si hay una excepción. Así la BD nunca queda "abierta".
-                using (OleDbConnection conexion = new OleDbConnection(CadenaConexion1))
+                using (OleDbConnection conexion = AbrirConexion())
                 {
-                    conexion.Open();
-
                     OleDbCommand comando = new OleDbCommand();
                     comando.Connection = conexion;
                     comando.CommandType = CommandType.TableDirect;
@@ -55,10 +73,8 @@ namespace pryEDZarateF.Clases
         {
             try
             {
-                using (OleDbConnection conexion = new OleDbConnection(CadenaConexion1))
+                using (OleDbConnection conexion = AbrirConexion())
                 {
-                    conexion.Open();
-
                     OleDbCommand comando = new OleDbCommand();
                     comando.Connection = conexion;
                     comando.CommandType = CommandType.Text;
@@ -83,9 +99,8 @@ namespace pryEDZarateF.Clases
             List<string> tablas = new List<string>();
             try
             {
-                using (OleDbConnection conexion = new OleDbConnection(CadenaConexion1))
+                using (OleDbConnection conexion = AbrirConexion())
                 {
-                    conexion.Open();
                     DataTable esquema = conexion.GetOleDbSchemaTable(OleDbSchemaGuid.Tables,
                         new object[] { null, null, null, "TABLE" });
                     foreach (DataRow fila in esquema.Rows)
@@ -100,7 +115,3 @@ namespace pryEDZarateF.Clases
         }
     }
 }
-
-
-
-

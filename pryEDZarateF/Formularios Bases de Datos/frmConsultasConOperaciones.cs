@@ -23,12 +23,9 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
         private void frmConsultasConOperaciones_Load(object sender, EventArgs e)
         {
             cmbOperacion.Items.Add("Todos los libros");
-            cmbOperacion.Items.Add("Proyección: título y precio");
-            cmbOperacion.Items.Add("Selección: libros de más de 100");
-            cmbOperacion.Items.Add("Junta: libros con su autor");
-            cmbOperacion.Items.Add("Cantidad de libros");
-            cmbOperacion.Items.Add("Precio promedio");
-            cmbOperacion.Items.Add("Cantidad de libros por autor");
+            cmbOperacion.Items.Add("Título y precio");
+            cmbOperacion.Items.Add("Libros de más de 100");
+            cmbOperacion.Items.Add("Libros con su autor");
         }
 
         // Según la operación elegida, muestra la consulta SQL en el cuadro de descripción.
@@ -47,15 +44,6 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
                     break;
                 case 3:
                     txtDescripcion.Text = "SELECT L.Titulo, A.Nombre FROM Libro L INNER JOIN Autor A ON L.IdAutor = A.IdAutor";
-                    break;
-                case 4:
-                    txtDescripcion.Text = "SELECT COUNT(*) AS Cantidad FROM Libro";
-                    break;
-                case 5:
-                    txtDescripcion.Text = "SELECT AVG(Precio) AS Promedio FROM Libro";
-                    break;
-                case 6:
-                    txtDescripcion.Text = "SELECT A.Nombre, COUNT(*) AS Cantidad FROM Libro L INNER JOIN Autor A ON L.IdAutor = A.IdAutor GROUP BY A.Nombre";
                     break;
             }
         }

@@ -212,6 +212,7 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             this.btnJuntar.TabIndex = 3;
             this.btnJuntar.Text = "Juntar";
             this.btnJuntar.UseTransparentBackground = true;
+            this.btnJuntar.Click += new System.EventHandler(this.btnJuntar_Click);
             // 
             // btnProyeccionMulti
             // 
@@ -291,6 +292,7 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             this.btnSeleccionConvolucion.TabIndex = 3;
             this.btnSeleccionConvolucion.Text = "Selección por convolución";
             this.btnSeleccionConvolucion.UseTransparentBackground = true;
+            this.btnSeleccionConvolucion.Click += new System.EventHandler(this.btnSeleccionConvolucion_Click);
             // 
             // btnSeleccionMulti
             // 
@@ -307,6 +309,7 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             this.btnSeleccionMulti.TabIndex = 2;
             this.btnSeleccionMulti.Text = "Selección multiatributo";
             this.btnSeleccionMulti.UseTransparentBackground = true;
+            this.btnSeleccionMulti.Click += new System.EventHandler(this.btnSeleccionMulti_Click);
             // 
             // btnSeleccionSimple
             // 
@@ -323,6 +326,7 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             this.btnSeleccionSimple.TabIndex = 1;
             this.btnSeleccionSimple.Text = "Selección simple";
             this.btnSeleccionSimple.UseTransparentBackground = true;
+            this.btnSeleccionSimple.Click += new System.EventHandler(this.btnSeleccionSimple_Click);
             // 
             // lblSeleccion
             // 
@@ -368,6 +372,7 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             this.btnDiferencia.TabIndex = 3;
             this.btnDiferencia.Text = "Diferencia";
             this.btnDiferencia.UseTransparentBackground = true;
+            this.btnDiferencia.Click += new System.EventHandler(this.btnDiferencia_Click);
             // 
             // btnInterseccion
             // 
@@ -384,6 +389,7 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             this.btnInterseccion.TabIndex = 2;
             this.btnInterseccion.Text = "Intersección";
             this.btnInterseccion.UseTransparentBackground = true;
+            this.btnInterseccion.Click += new System.EventHandler(this.btnInterseccion_Click);
             // 
             // btnUnion
             // 
@@ -400,6 +406,7 @@ namespace pryEDZarateF.Formularios_Bases_de_Datos
             this.btnUnion.TabIndex = 1;
             this.btnUnion.Text = "Unión";
             this.btnUnion.UseTransparentBackground = true;
+            this.btnUnion.Click += new System.EventHandler(this.btnUnion_Click);
             // 
             // lblAlgebraicas
             // 

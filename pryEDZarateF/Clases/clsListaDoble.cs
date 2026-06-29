@@ -61,39 +61,39 @@ namespace pryEDZarateF
         }
         public void Eliminar(Int32 Codigo)
         {
-            if (Primero.Codigo == Codigo && Ultimo == Primero)
+            // Lista vacía: no hay nada que eliminar.
+            if (Primero == null) return;
+
+            // Único nodo y es el buscado.
+            if (Primero == Ultimo && Primero.Codigo == Codigo)
             {
                 Primero = null;
                 Ultimo = null;
             }
+            // Es el primero.
+            else if (Primero.Codigo == Codigo)
+            {
+                Primero = Primero.Siguiente;
+                Primero.Anterior = null;
+            }
+            // Es el último.
+            else if (Ultimo.Codigo == Codigo)
+            {
+                Ultimo = Ultimo.Anterior;
+                Ultimo.Siguiente = null;
+            }
+            // Está en el medio: busco el nodo EXACTO.
             else
             {
-                if (Primero.Codigo == Codigo)
+                clsNodo aux = Primero;
+                while (aux != null && aux.Codigo != Codigo)
                 {
-                    Primero = Primero.Siguiente;
-                    Primero.Anterior = null;
+                    aux = aux.Siguiente;
                 }
-                else
-                {
-                    if (Ultimo.Codigo == Codigo)
-                    {
-                        Ultimo = Ultimo.Anterior;
-                        Ultimo.Siguiente = null;
-                    }
-                    else
-                    {
-                        clsNodo aux = Primero;
-                        clsNodo Ant = Primero;
-                        while (aux.Codigo < Codigo)
-                        {
-                            Ant = aux;
-                            aux = aux.Siguiente;
-                        }
-                        aux = aux.Siguiente;
-                        aux.Anterior = Ant;
-                        Ant.Siguiente = aux;
-                    }
-                }
+                if (aux == null) return; // el código no existe: no toco nada.
+                // aux está en el medio, así que Anterior y Siguiente no son null.
+                aux.Anterior.Siguiente = aux.Siguiente;
+                aux.Siguiente.Anterior = aux.Anterior;
             }
         }
         public void RecorrerDesc(ListBox combo)
